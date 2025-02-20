@@ -1,0 +1,3 @@
+Query_ID	Top_Match_ID	Similarity_Score	Annotation
+seq_1	tr|K8E1A2|K8E1A2_CARML N-acetylglucosaminyldiphosphoundecaprenol N-acetyl-beta-D-mannosaminyltransferase OS=Carnobacterium maltaromaticum LMA28 OX=1234679 GN=tagA PE=3 SV=1	1.0000	tr|K8E1A2|K8E1A2_CARML N-acetylglucosaminyldiphosphoundecaprenol N-acetyl-beta-D-mannosaminyltransferase OS=Carnobacterium maltaromaticum LMA28 OX=1234679 GN=tagA PE=3 SV=1
+seq_2	tr|K8E1B9|K8E1B9_CARML Alpha-glycerophosphate oxidase OS=Carnobacterium maltaromaticum LMA28 OX=1234679 GN=glpO PE=3 SV=2	1.0000	tr|K8E1B9|K8E1B9_CARML Alpha-glycerophosphate oxidase OS=Carnobacterium maltaromaticum LMA28 OX=1234679 GN=glpO PE=3 SV=2

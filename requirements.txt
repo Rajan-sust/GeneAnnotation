@@ -1,0 +1,5 @@
+numpy
+transformers
+torch
+biopython
+qdrant-client
