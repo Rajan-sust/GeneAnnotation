@@ -1,3 +1,9 @@
+### Prerequisite
+- Docker (https://docs.docker.com/engine/install/)
+- Prodigal (https://github.com/hyattpd/prodigal)
+- HF Access Token (https://huggingface.co/docs/hub/en/security-tokens)
+
+### Clone the repo
 ```
 git clone https://github.com/Rajan-sust/GeneAnnotation.git
 cd GeneAnnotation
@@ -33,7 +39,7 @@ prodigal -i my.genome.fna  -g 11 -a protein.translations.faa
 
 ### Protein Annotation
 ```
- pyton3 annotate.py --input_faa test.faa --db_name prot_vec --output_file annotation.txt 
+ pyton3 annotate.py --input_faa protein.translations.faa --db_name prot_vec --output_file annotation.txt 
 ```
 
 
