@@ -8,11 +8,15 @@ import argparse
 import platform
 import uuid
 import logging
-from typing import List, Optional, Dict, Any
+from typing import List, Optional, Dict, Any, Tuple
 from pathlib import Path
 from tqdm import tqdm
 import sys
 from dataclasses import dataclass
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import queue
+from threading import Lock
+import multiprocessing
 
 # Configure logging
 logging.basicConfig(
@@ -33,6 +37,19 @@ class ProcessingStats:
     processed_sequences: int = 0
     failed_sequences: int = 0
     empty_sequences: int = 0
+    lock: Lock = Lock()  # Thread-safe counter updates
+
+    def increment_processed(self):
+        with self.lock:
+            self.processed_sequences += 1
+
+    def increment_failed(self):
+        with self.lock:
+            self.failed_sequences += 1
+
+    def increment_empty(self):
+        with self.lock:
+            self.empty_sequences += 1
 
 
 class ConfigurationError(Exception):
@@ -46,12 +63,7 @@ class EmbeddingError(Exception):
 
 
 def parse_args() -> argparse.Namespace:
-    """
-    Parse command line arguments with input validation.
-
-    Returns:
-        argparse.Namespace: Parsed command line arguments
-    """
+    """Parse command line arguments with input validation."""
     parser = argparse.ArgumentParser(
         description='Build protein vector database from FASTA file',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
@@ -60,25 +72,22 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--db_name', type=str, required=True, help='Name of the database to create')
     parser.add_argument('--batch_size', type=int, default=50, help='Batch size for processing sequences')
     parser.add_argument('--qdrant_url', type=str, default="http://localhost:6333", help='URL for Qdrant server')
+    parser.add_argument('--num_threads', type=int, default=max(1, multiprocessing.cpu_count() - 1), help='Number of worker threads')
 
     args = parser.parse_args()
 
-    # Validate arguments
     if not Path(args.fasta_path).exists():
         raise ConfigurationError(f"FASTA file not found: {args.fasta_path}")
     if args.batch_size < 1:
         raise ConfigurationError("Batch size must be positive")
+    if args.num_threads < 1:
+        raise ConfigurationError("Number of threads must be positive")
 
     return args
 
 
 def get_device() -> torch.device:
-    """
-    Determine the appropriate device for computation.
-
-    Returns:
-        torch.device: Selected computation device
-    """
+    """Determine the appropriate device for computation."""
     if torch.cuda.is_available():
         return torch.device('cuda')
     elif torch.backends.mps.is_available() and platform.system() == 'Darwin':
@@ -88,15 +97,7 @@ def get_device() -> torch.device:
 
 
 def normalize_l2(x: np.ndarray) -> np.ndarray:
-    """
-    Normalize vector using L2 normalization.
-
-    Args:
-        x: Input vector
-
-    Returns:
-        Normalized vector
-    """
+    """Normalize vector using L2 normalization."""
     norm = np.linalg.norm(x)
     return x / (norm if norm > 0 else 1)
 
@@ -105,12 +106,7 @@ class ProteinEmbedder:
     """Handles protein sequence embedding using BERT model."""
 
     def __init__(self):
-        """
-        Initialize the embedder with specified device.
-
-        Args:
-            device: Computation device to use
-        """
+        """Initialize the embedder with specified device."""
         self.device = get_device()
         logger.info(f"Initializing ProteinEmbedder using device: {self.device}")
 
@@ -126,37 +122,21 @@ class ProteinEmbedder:
             raise ConfigurationError(f"Failed to initialize BERT model: {str(e)}")
 
     def get_protein_embedding(self, sequence: str) -> List[float]:
-        """
-        Generate embedding for a protein sequence.
-
-        Args:
-            sequence: Protein sequence string
-
-        Returns:
-            List of embedding values
-
-        Raises:
-            EmbeddingError: If embedding generation fails
-        """
+        """Generate embedding for a protein sequence."""
         try:
-            # Preprocess sequence
             sequence = " ".join(re.sub(r"[UZOB]", "X", sequence))
 
-            # Encode sequence
             encoded_input = self.tokenizer(sequence, return_tensors='pt')
             encoded_input = {k: v.to(self.device) for k, v in encoded_input.items()}
 
-            # Generate embedding
             with torch.no_grad():
                 outputs = self.model(**encoded_input)
                 embeddings = outputs.last_hidden_state.mean(dim=1)
                 embeddings = embeddings.cpu()
 
-            # Post-process embedding
             normalized_embedding = normalize_l2(embeddings.numpy()[0])
             embedding_list = normalized_embedding.tolist()
 
-            # Validate embedding
             if not embedding_list:
                 raise EmbeddingError("Generated embedding is empty")
             if not all(isinstance(x, float) for x in embedding_list):
@@ -170,33 +150,47 @@ class ProteinEmbedder:
             raise EmbeddingError(f"Failed to generate embedding: {str(e)}")
 
 
+def process_sequence(embedder: ProteinEmbedder, seq_record, stats: ProcessingStats) -> Optional[models.PointStruct]:
+    """Process a single sequence and return a PointStruct for database insertion."""
+    seq = str(seq_record.seq).strip('*')
+
+    if not seq:
+        stats.increment_empty()
+        logger.warning(f"Empty sequence found: {seq_record.description}")
+        return None
+
+    try:
+        embedding = embedder.get_protein_embedding(seq)
+        stats.increment_processed()
+
+        return models.PointStruct(
+            id=str(uuid.uuid4()),
+            vector=embedding,
+            payload={
+                'protein_info': seq_record.description,
+                'sequence_length': len(seq)
+            }
+        )
+
+    except EmbeddingError as e:
+        stats.increment_failed()
+        logger.error(f"Failed to process sequence: {str(e)}")
+        return None
+
+
 def build_vector_database_of_protein(
         fasta_file_path: str,
         db_name: str,
         qdrant_url: str = "http://localhost:6333",
-        batch_size: int = 50
+        batch_size: int = 50,
+        num_threads: int = 4
 ) -> ProcessingStats:
-    """
-    Build vector database from protein sequences in FASTA file.
-
-    Args:
-        fasta_file_path: Path to input FASTA file
-        db_name: Name of the database to create
-        qdrant_url: URL for Qdrant server
-        batch_size: Number of sequences to process in each batch
-
-
-    Returns:
-        ProcessingStats: Statistics about the processing run
-    """
+    """Build vector database from protein sequences in FASTA file using multiple threads."""
     stats = ProcessingStats()
 
     try:
         # Initialize Qdrant client
         qdrant_client = QdrantClient(qdrant_url)
-
-        # Initialize embedder
-        embedder = ProteinEmbedder()
 
         # Create or check collection
         if not qdrant_client.collection_exists(db_name):
@@ -214,50 +208,52 @@ def build_vector_database_of_protein(
         # Count total sequences
         stats.total_sequences = sum(1 for _ in SeqIO.parse(fasta_file_path, "fasta"))
 
-        points = []
-        with tqdm(total=stats.total_sequences, desc="Processing sequences") as pbar:
-            for seq_record in SeqIO.parse(fasta_file_path, "fasta"):
-                seq = str(seq_record.seq).strip('*')
+        # Create thread-safe queue for batch processing
+        points_queue = queue.Queue()
 
-                if not seq:
-                    stats.empty_sequences += 1
-                    logger.warning(f"Empty sequence found: {seq_record.description}")
-                    continue
+        # Initialize embedders for each thread
+        embedders = [ProteinEmbedder() for _ in range(num_threads)]
 
-                try:
-                    embedding = embedder.get_protein_embedding(seq)
-                    points.append(
-                        models.PointStruct(
-                            id=str(uuid.uuid4()),
-                            vector=embedding,
-                            payload={
-                                'protein_info': seq_record.description,
-                                'sequence_length': len(seq)
-                            }
-                        )
-                    )
-                    stats.processed_sequences += 1
+        def upload_batch():
+            points = []
+            while not points_queue.empty() and len(points) < batch_size:
+                point = points_queue.get()
+                if point is not None:
+                    points.append(point)
 
-                    # Upload batch when it reaches batch_size
-                    if len(points) >= batch_size:
-                        qdrant_client.upload_points(
-                            collection_name=db_name,
-                            points=points
-                        )
-                        points = []
+            if points:
+                qdrant_client.upload_points(
+                    collection_name=db_name,
+                    points=points
+                )
 
-                except EmbeddingError as e:
-                    stats.failed_sequences += 1
-                    logger.error(f"Failed to process sequence: {str(e)}")
+        with ThreadPoolExecutor(max_workers=num_threads) as executor:
+            futures = []
 
-                pbar.update(1)
+            # Submit sequences for processing
+            for i, seq_record in enumerate(SeqIO.parse(fasta_file_path, "fasta")):
+                embedder = embedders[i % num_threads]  # Round-robin assignment of embedders
+                future = executor.submit(process_sequence, embedder, seq_record, stats)
+                futures.append(future)
 
-        # Upload any remaining points
-        if points:
-            qdrant_client.upload_points(
-                collection_name=db_name,
-                points=points
-            )
+                # Process completed futures and upload in batches
+                if len(futures) >= batch_size:
+                    for completed in as_completed(futures):
+                        point = completed.result()
+                        if point is not None:
+                            points_queue.put(point)
+
+                    upload_batch()
+                    futures = []
+
+            # Process remaining futures
+            for completed in as_completed(futures):
+                point = completed.result()
+                if point is not None:
+                    points_queue.put(point)
+
+            # Upload final batch
+            upload_batch()
 
         logger.info(f"Processing complete. "
                     f"Processed: {stats.processed_sequences}, "
@@ -279,7 +275,8 @@ if __name__ == '__main__':
             fasta_file_path=args.fasta_path,
             db_name=args.db_name,
             qdrant_url=args.qdrant_url,
-            batch_size=args.batch_size
+            batch_size=args.batch_size,
+            num_threads=args.num_threads
         )
 
         logger.info("Program completed successfully")
