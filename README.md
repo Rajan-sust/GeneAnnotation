@@ -29,7 +29,7 @@ docker run -d -p 6333:6333 \
 
 ### Build Protein Vector DB
 ```
- python db_build.py --fasta ~/Desktop/bacteria.fasta --db_name prot_vec
+python db_build.py --fasta ~/Desktop/bacteria.fasta --db_name prot_vec --num_threads 4
 ```
 
 ### Gene Predictions
