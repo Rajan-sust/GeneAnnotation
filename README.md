@@ -39,7 +39,7 @@ prodigal -i my.genome.fna  -g 11 -a protein.translations.faa
 
 ### Protein Annotation
 ```
- pyton3 annotate.py --input_faa protein.translations.faa --db_name prot_vec --output_file annotation.txt 
+python3 annotate.py --input_faa protein.translations.faa  --db_name prot_vec --output_file annotation.tsv
 ```
 
 

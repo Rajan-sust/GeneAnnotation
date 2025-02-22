@@ -4,3 +4,4 @@ torch
 biopython
 qdrant-client
 tqdm
+pandas

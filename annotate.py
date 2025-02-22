@@ -6,98 +6,166 @@ from qdrant_client import QdrantClient
 from Bio import SeqIO
 import argparse
 import platform
+import pandas as pd
+from concurrent.futures import ThreadPoolExecutor
+import multiprocessing
+import logging
+from typing import List, Tuple
+from tqdm import tqdm
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Annotate proteins using vector database')
     parser.add_argument('--input_faa', type=str, required=True, help='Path to input FAA file to annotate')
     parser.add_argument('--db_name', type=str, required=True, help='Name of the database to search against')
-    parser.add_argument('--output_file', type=str, required=True, help='Path to output annotation file')
+    parser.add_argument('--output_file', type=str, required=True, help='Path to output TSV file')
     parser.add_argument('--threshold', type=float, default=0.98, help='Similarity threshold for annotations')
-    parser.add_argument('--device', type=str, choices=['cuda', 'mps', 'cpu'], default='cuda',
-                        help='Device to use (cuda/cpu)')
+    parser.add_argument('--batch_size', type=int, default=5, help='Number of sequences to process in each batch')
+    parser.add_argument('--num_threads', type=int, default=1,
+                        help='Number of threads to use (default: number of CPU cores - 1)')
     return parser.parse_args()
 
 
-def get_device(device_preference='cuda'):
-    if device_preference == 'cuda' and torch.cuda.is_available():
+def get_device():
+    if torch.cuda.is_available():
         return torch.device('cuda')
-    if torch.backends.mps.is_available() and platform.system() == 'Darwin':
+    elif torch.backends.mps.is_available() and platform.system() == 'Darwin':
         return torch.device('mps')
     return torch.device('cpu')
 
 
 def normalize_l2(x):
     norm = np.linalg.norm(x)
-    if norm == 0:
-        return x
-    return x / norm
+    return x / (norm if norm > 0 else 1)
 
 
 class ProteinEmbedder:
-    def __init__(self, device=None):
-        self.device = device if device is not None else get_device()
-        print(f"Using device: {self.device}")
+    def __init__(self):
+        self.device = get_device()
+        logger.info(f"Using device: {self.device}")
 
         self.tokenizer = BertTokenizer.from_pretrained("Rostlab/prot_bert", do_lower_case=False)
         self.model = BertModel.from_pretrained("Rostlab/prot_bert")
         self.model = self.model.to(self.device)
         self.model.eval()
 
-    def get_protein_embedding(self, sequence):
-        sequence = " ".join(re.sub(r"[UZOB]", "X", sequence))
-        encoded_input = self.tokenizer(sequence, return_tensors='pt')
-        encoded_input = {k: v.to(self.device) for k, v in encoded_input.items()}
+    def get_protein_embedding(self, sequence: str) -> np.ndarray:
+        try:
+            sequence = " ".join(re.sub(r"[UZOB]", "X", sequence))
+            encoded_input = self.tokenizer(sequence, return_tensors='pt')
+            encoded_input = {k: v.to(self.device) for k, v in encoded_input.items()}
 
-        with torch.no_grad():
-            outputs = self.model(**encoded_input)
-            embeddings = outputs.last_hidden_state.mean(dim=1)
-            embeddings = embeddings.cpu()
+            with torch.no_grad():
+                outputs = self.model(**encoded_input)
+                embeddings = outputs.last_hidden_state.mean(dim=1)
+                embeddings = embeddings.cpu()
 
-        return normalize_l2(embeddings.numpy()[0])
+            return normalize_l2(embeddings.numpy()[0])
+        except Exception as e:
+            logger.error(f"Error generating embedding: {str(e)}")
+            return None
 
 
-def annotate_proteins(input_faa, db_name, output_file, threshold=0.98, device=None):
-    # Initialize Qdrant client and embedder
-    qdrant_client = QdrantClient("http://localhost:6333")
-    embedder = ProteinEmbedder(device)
+def process_sequence_batch(args: Tuple[List[str], ProteinEmbedder, QdrantClient, float]) -> List[dict]:
+    """Process a batch of sequences and return their annotations."""
+    sequences, embedder, qdrant_client, threshold, db_name = args
+    results = []
 
-    # Open output file and write header
-    with open(output_file, 'w') as out_f:
-        out_f.write("Query_ID\tTop_Match_ID\tSimilarity_Score\tAnnotation\n")
-
-        # Process sequences one by one
-        for idx, seq_record in enumerate(SeqIO.parse(input_faa, "fasta")):
-            print(f"Processing query sequence {idx + 1}: {seq_record.description}")
-
-            # Get embedding for current sequence
+    for seq_record in sequences:
+        try:
+            seq_id = seq_record.id
             embedding = embedder.get_protein_embedding(str(seq_record.seq))
 
-            # Search database
+            if embedding is None:
+                results.append({
+                    'Query_ID': seq_id,
+                    'Annotation': 'hypothetical protein',
+                    'Similarity_Score': 0.0
+                })
+                continue
+
             search_results = qdrant_client.search(
                 collection_name=db_name,
-                query_vector=embedding,
+                query_vector=embedding.tolist(),
                 limit=1
             )
 
-            # Write results to output file
-            for result in search_results:
-                if result.score >= threshold:
-                    out_f.write(f"{seq_record.description}\t{result.payload['protein_info']}\t"
-                                f"{result.score:.4f}\t{result.payload['protein_info']}\n")
-                else:
-                    out_f.write(f"{seq_record.description}\tNo match above threshold\t"
-                                f"{result.score:.4f}\tNo annotation\n")
+            if search_results and search_results[0].score >= threshold:
+                results.append({
+                    'Query_ID': seq_id,
+                    'Annotation': search_results[0].payload['protein_info'],
+                    'Similarity_Score': float(search_results[0].score)
+                })
+            else:
+                results.append({
+                    'Query_ID': seq_id,
+                    'Annotation': 'hypothetical protein',
+                    'Similarity_Score': float(search_results[0].score) if search_results else 0.0
+                })
+
+        except Exception as e:
+            logger.error(f"Error processing sequence {seq_id}: {str(e)}")
+            results.append({
+                'Query_ID': seq_id,
+                'Annotation': 'hypothetical protein',
+                'Similarity_Score': 0.0
+            })
+
+    return results
+
+
+def annotate_proteins(args):
+    # Initialize clients
+    qdrant_client = QdrantClient("http://localhost:6333")
+    embedder = ProteinEmbedder()
+
+    # Determine number of threads
+    num_threads = args.num_threads or max(1, multiprocessing.cpu_count() - 1)
+    logger.info(f"Using {num_threads} threads")
+
+    # Read all sequences
+    sequences = list(SeqIO.parse(args.input_faa, "fasta"))
+    total_sequences = len(sequences)
+    logger.info(f"Found {total_sequences} sequences to process")
+
+    # Prepare batches
+    batch_size = args.batch_size
+    sequence_batches = [
+        sequences[i:i + batch_size]
+        for i in range(0, len(sequences), batch_size)
+    ]
+
+    all_results = []
+    with ThreadPoolExecutor(max_workers=num_threads) as executor:
+        futures = [
+            executor.submit(
+                process_sequence_batch,
+                (batch, embedder, qdrant_client, args.threshold, args.db_name)
+            )
+            for batch in sequence_batches
+        ]
+
+        # Process results as they complete
+        for future in tqdm(futures, total=len(futures), desc="Processing batches"):
+            try:
+                batch_results = future.result()
+                all_results.extend(batch_results)
+            except Exception as e:
+                logger.error(f"Batch processing failed: {str(e)}")
+
+    # Convert results to DataFrame and save
+    df = pd.DataFrame(all_results)
+    df.to_csv(args.output_file, sep='\t', index=False)
+    logger.info(f"Results saved to {args.output_file}")
 
 
 if __name__ == '__main__':
     args = parse_args()
-    device = get_device(args.device)
-
-    annotate_proteins(
-        input_faa=args.input_faa,
-        db_name=args.db_name,
-        output_file=args.output_file,
-        threshold=args.threshold,
-        device=device
-    )
+    annotate_proteins(args)
