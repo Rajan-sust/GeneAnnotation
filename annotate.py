@@ -7,18 +7,8 @@ from Bio import SeqIO
 import argparse
 import platform
 import pandas as pd
-from concurrent.futures import ThreadPoolExecutor
-import multiprocessing
-import logging
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import List, Tuple
-from tqdm import tqdm
-
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
 
 
 def parse_args():
@@ -26,9 +16,9 @@ def parse_args():
     parser.add_argument('--input_faa', type=str, required=True, help='Path to input FAA file to annotate')
     parser.add_argument('--db_name', type=str, required=True, help='Name of the database to search against')
     parser.add_argument('--output_file', type=str, required=True, help='Path to output TSV file')
-    parser.add_argument('--threshold', type=float, default=0.98, help='Similarity threshold for annotations')
+    parser.add_argument('--threshold', type=float, default=0.97, help='Similarity threshold for annotations')
     parser.add_argument('--batch_size', type=int, default=5, help='Number of sequences to process in each batch')
-    parser.add_argument('--num_threads', type=int, default=1,
+    parser.add_argument('--num_threads', type=int, default=2,
                         help='Number of threads to use (default: number of CPU cores - 1)')
     return parser.parse_args()
 
@@ -49,7 +39,7 @@ def normalize_l2(x):
 class ProteinEmbedder:
     def __init__(self):
         self.device = get_device()
-        logger.info(f"Using device: {self.device}")
+        print(f"Using device: {self.device}")
 
         self.tokenizer = BertTokenizer.from_pretrained("Rostlab/prot_bert", do_lower_case=False)
         self.model = BertModel.from_pretrained("Rostlab/prot_bert")
@@ -69,7 +59,7 @@ class ProteinEmbedder:
 
             return normalize_l2(embeddings.numpy()[0])
         except Exception as e:
-            logger.error(f"Error generating embedding: {str(e)}")
+            print(f"Error generating embedding: {str(e)}")
             return None
 
 
@@ -107,11 +97,11 @@ def process_sequence_batch(args: Tuple[List[str], ProteinEmbedder, QdrantClient,
                 results.append({
                     'Query_ID': seq_id,
                     'Annotation': 'hypothetical protein',
-                    'Similarity_Score': float(search_results[0].score) if search_results else 0.0
+                    'Similarity_Score': 0.0
                 })
 
         except Exception as e:
-            logger.error(f"Error processing sequence {seq_id}: {str(e)}")
+            print(f"Error processing sequence {seq_id}: {str(e)}")
             results.append({
                 'Query_ID': seq_id,
                 'Annotation': 'hypothetical protein',
@@ -127,13 +117,13 @@ def annotate_proteins(args):
     embedder = ProteinEmbedder()
 
     # Determine number of threads
-    num_threads = args.num_threads or max(1, multiprocessing.cpu_count() - 1)
-    logger.info(f"Using {num_threads} threads")
+    num_threads = args.num_threads
+    print(f"Using {num_threads} threads")
 
     # Read all sequences
     sequences = list(SeqIO.parse(args.input_faa, "fasta"))
     total_sequences = len(sequences)
-    logger.info(f"Found {total_sequences} sequences to process")
+    print(f"Found {total_sequences} sequences to process")
 
     # Prepare batches
     batch_size = args.batch_size
@@ -153,17 +143,18 @@ def annotate_proteins(args):
         ]
 
         # Process results as they complete
-        for future in tqdm(futures, total=len(futures), desc="Processing batches"):
+        for future in as_completed(futures):
             try:
                 batch_results = future.result()
                 all_results.extend(batch_results)
+                print(f"{len(all_results)} seq completed!")
             except Exception as e:
-                logger.error(f"Batch processing failed: {str(e)}")
+                print(f"Batch processing failed: {str(e)}")
 
     # Convert results to DataFrame and save
     df = pd.DataFrame(all_results)
     df.to_csv(args.output_file, sep='\t', index=False)
-    logger.info(f"Results saved to {args.output_file}")
+    print(f"Results saved to {args.output_file}")
 
 
 if __name__ == '__main__':

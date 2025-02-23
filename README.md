@@ -27,9 +27,9 @@ docker run -d -p 6333:6333 \
     qdrant/qdrant
 ```
 
-### Build Protein Vector DB
+### Build Vector DB of Protein
 ```
-python db_build.py --fasta ~/Desktop/bacteria.fasta --db_name prot_vec --num_threads 4
+python db_build.py --fasta ~/Desktop/bacteria.fasta --db_name prot_vec --num_threads 5
 ```
 
 ### Gene Predictions
@@ -39,7 +39,11 @@ prodigal -i my.genome.fna  -g 11 -a protein.translations.faa
 
 ### Protein Annotation
 ```
-python3 annotate.py --input_faa protein.translations.faa  --db_name prot_vec --output_file annotation.tsv
+python3 annotate.py --input_faa protein.translations.faa \
+                    --db_name prot_vec \
+                    --num_threads 5 \
+                    --threshold 0.98 \
+                    --output_file annotation.tsv
 ```
 
 

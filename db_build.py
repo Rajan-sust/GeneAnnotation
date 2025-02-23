@@ -10,13 +10,12 @@ import uuid
 import logging
 from typing import List, Optional, Dict, Any, Tuple
 from pathlib import Path
-from tqdm import tqdm
 import sys
 from dataclasses import dataclass
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import queue
 from threading import Lock
-import multiprocessing
+
 
 # Configure logging
 logging.basicConfig(
@@ -72,7 +71,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--db_name', type=str, required=True, help='Name of the database to create')
     parser.add_argument('--batch_size', type=int, default=50, help='Batch size for processing sequences')
     parser.add_argument('--qdrant_url', type=str, default="http://localhost:6333", help='URL for Qdrant server')
-    parser.add_argument('--num_threads', type=int, default=max(1, multiprocessing.cpu_count() - 1), help='Number of worker threads')
+    parser.add_argument('--num_threads', type=int, default=2, help='Number of worker threads')
 
     args = parser.parse_args()
 
@@ -187,23 +186,22 @@ def build_vector_database_of_protein(
 ) -> ProcessingStats:
     """Build vector database from protein sequences in FASTA file using multiple threads."""
     stats = ProcessingStats()
-
     try:
         # Initialize Qdrant client
         qdrant_client = QdrantClient(qdrant_url)
 
         # Create or check collection
-        if not qdrant_client.collection_exists(db_name):
-            logger.info(f"Creating new collection: {db_name}")
-            qdrant_client.create_collection(
-                collection_name=db_name,
-                vectors_config=models.VectorParams(
-                    size=1024,
-                    distance=models.Distance.DOT
-                )
+        if qdrant_client.collection_exists(db_name):
+            logger.info(f"Deleting existing collection: {db_name}")
+            qdrant_client.delete_collection(collection_name=db_name)
+
+        qdrant_client.create_collection(
+            collection_name=db_name,
+            vectors_config=models.VectorParams(
+                size=1024,
+                distance=models.Distance.DOT
             )
-        else:
-            logger.info(f"Collection {db_name} already exists")
+        )
 
         # Count total sequences
         stats.total_sequences = sum(1 for _ in SeqIO.parse(fasta_file_path, "fasta"))
@@ -212,7 +210,8 @@ def build_vector_database_of_protein(
         points_queue = queue.Queue()
 
         # Initialize embedders for each thread
-        embedders = [ProteinEmbedder() for _ in range(num_threads)]
+        # embedders = [ProteinEmbedder() for _ in range(num_threads)]
+        embedder = ProteinEmbedder()
 
         def upload_batch():
             points = []
@@ -232,7 +231,7 @@ def build_vector_database_of_protein(
 
             # Submit sequences for processing
             for i, seq_record in enumerate(SeqIO.parse(fasta_file_path, "fasta")):
-                embedder = embedders[i % num_threads]  # Round-robin assignment of embedders
+                print(f"processing seq no: {i + 1}")
                 future = executor.submit(process_sequence, embedder, seq_record, stats)
                 futures.append(future)
 
