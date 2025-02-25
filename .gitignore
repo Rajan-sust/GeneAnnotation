@@ -1,0 +1,5 @@
+qdrant_storage/
+venv/
+data/
+**/*.fasta
+**/*.gz
