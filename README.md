@@ -60,13 +60,38 @@ prodigal -i my.genome.fna  -g 11 -a protein.translations.faa
 ```
 
 ### Protein Annotation
+
+
+### Command Line Arguments
+
+- `--input_faa`: Path to input FASTA file containing protein sequences (required)
+- `--db_name`: Name of the Qdrant collection to search against (required)
+- `--output_file`: Path to output TSV file for results (required)
+- `--threshold`: Similarity threshold for annotations (default: 0.98)
+- `--batch_size`: Number of sequences to process in each batch (default: 5)
+- `--num_threads`: Number of parallel threads to use (default: 2)
+- `--model_name`: Protein embedding model to use ["prot_bert", "esm2"] (default: "esm2")
+- `--qdrant_url`: URL for Qdrant server (default: "http://localhost:6333")
+
+###### Example
+
 ```
-python3 annotate.py --input_faa protein.translations.faa \
-                    --db_name prot_vec \
-                    --num_threads 5 \
-                    --threshold 0.98 \
-                    --output_file annotation.tsv
+python3 annotate.py --input_faa data/proteins.faa \
+                    --db_name my_esm2_db \
+                    --output_file results.tsv \
+                    --threshold 0.95 \
+                    --batch_size 10 \
+                    --num_threads 4 \
+                    --model_name esm2
 ```
+
+###### Output Format
+
+The tool generates a TSV file with the following columns:
+- `Query_ID`: Identifier of the input sequence
+- `Annotation`: Predicted protein annotation
+- `Similarity_Score`: Similarity score (0-1) with the matched database entry
+- `Status`: Processing status ('success', 'below_threshold', 'embedding_failed', or 'error')
 
 [comment]: <> (## Project Structure)
 
@@ -89,6 +114,3 @@ python3 annotate.py --input_faa protein.translations.faa \
 [comment]: <> (2. Add the new model to the `get_embedder` factory function)
 
 [comment]: <> (3. Update the command line choices in `config.py`)
-
-
-

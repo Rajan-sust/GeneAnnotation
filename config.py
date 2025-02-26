@@ -6,8 +6,18 @@ import argparse
 import logging
 from pathlib import Path
 from typing import Dict, Any
+import torch
+import platform
 
-logger = logging.getLogger(__name__)
+
+def get_device() -> torch.device:
+    """Determine the appropriate device for computation."""
+    if torch.cuda.is_available():
+        return torch.device('cuda')
+    elif torch.backends.mps.is_available() and platform.system() == 'Darwin':
+        return torch.device('mps')
+    return torch.device('cpu')
+
 
 class ConfigurationError(Exception):
     """Raised when there's an error in the configuration."""
@@ -24,7 +34,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--batch_size', type=int, default=50, help='Batch size for processing sequences')
     parser.add_argument('--qdrant_url', type=str, default="http://localhost:6333", help='URL for Qdrant server')
     parser.add_argument('--num_threads', type=int, default=2, help='Number of worker threads')
-    parser.add_argument('--model_name', type=str, default="prot_bert",
+    parser.add_argument('--model_name', type=str, default="esm2",
                        choices=["prot_bert", "esm2"],
                        help='Protein embedding model to use')
 

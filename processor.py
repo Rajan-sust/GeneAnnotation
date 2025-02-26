@@ -151,8 +151,8 @@ class ProteinProcessor:
                     futures.append(future)
                     batch = []
 
-                if i % 100 == 0:
-                    logger.info(f"Processing sequence {i}/{self.stats.total_sequences}")
+                # if i % 100 == 0:
+                #     logger.info(f"Processing sequence {i}/{self.stats.total_sequences}")
 
             # Process remaining sequences
             if batch:

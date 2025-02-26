@@ -8,6 +8,7 @@ import numpy as np
 import torch
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any, Optional
+from config import get_device
 
 logger = logging.getLogger(__name__)
 
@@ -16,19 +17,6 @@ class EmbeddingError(Exception):
     """Raised when there's an error during embedding generation."""
     pass
 
-
-def get_device() -> torch.device:
-    """Determine the appropriate device for computation."""
-    try:
-        if torch.cuda.is_available():
-            return torch.device('cuda')
-        elif hasattr(torch.backends, 'mps') and hasattr(torch.backends.mps, 'is_available') and torch.backends.mps.is_available():
-            return torch.device('mps')
-        else:
-            return torch.device('cpu')
-    except Exception as e:
-        logger.error(f"Error determining device: {str(e)}")
-        return torch.device('cpu')
 
 
 def normalize_l2(x: np.ndarray) -> np.ndarray:
