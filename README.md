@@ -90,7 +90,7 @@ python3 annotate.py --input_faa data/proteins.faa \
 The tool generates a TSV file with the following columns:
 - `Query_ID`: Identifier of the input sequence
 - `Annotation`: Predicted protein annotation
-- `Similarity_Score`: Similarity score (0-1) with the matched database entry
+- `Similarity_Score`: Similarity score `[-1.0, 1.0]` with the matched database entry
 - `Status`: Processing status ('success', 'below_threshold', 'embedding_failed', or 'error')
 
 [comment]: <> (## Project Structure)
