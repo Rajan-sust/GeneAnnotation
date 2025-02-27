@@ -79,7 +79,7 @@ prodigal -i my.genome.fna  -g 11 -a protein.translations.faa
 python3 annotate.py --input_faa data/proteins.faa \
                     --db_name my_esm2_db \
                     --output_file results.tsv \
-                    --threshold 0.95 \
+                    --threshold 0.98 \
                     --batch_size 10 \
                     --num_threads 4 \
                     --model_name esm2

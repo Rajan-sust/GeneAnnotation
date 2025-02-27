@@ -204,6 +204,7 @@ class ProteinAnnotator:
                     score = search_results[0].score if search_results else 0.0
                     results.append(self._create_result(
                         seq_id,
+                        annotation=search_results[0].payload['protein_info'],
                         score=score,
                         status='below_threshold'
                     ))
