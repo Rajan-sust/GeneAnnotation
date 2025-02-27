@@ -1,5 +1,6 @@
 qdrant_storage/
 venv/
 data/
-**/*.fasta
 **/*.gz
+__pycache__
+.DS_Store
