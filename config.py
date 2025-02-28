@@ -33,10 +33,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--db_name', type=str, required=True, help='Name of the database to create')
     parser.add_argument('--batch_size', type=int, default=50, help='Batch size for processing sequences')
     parser.add_argument('--qdrant_url', type=str, default="http://localhost:6333", help='URL for Qdrant server')
-    parser.add_argument('--num_threads', type=int, default=2, help='Number of worker threads')
-    parser.add_argument('--model_name', type=str, default="esm2",
-                       choices=["prot_bert", "esm2"],
-                       help='Protein embedding model to use')
+    parser.add_argument('--model_name', type=str, default="esm2", choices=["prot_bert", "esm2"], help='Protein embedding model to use')
 
     args = parser.parse_args()
 
@@ -45,7 +42,5 @@ def parse_args() -> argparse.Namespace:
         raise ConfigurationError(f"FASTA file not found: {args.fasta_path}")
     if args.batch_size < 1:
         raise ConfigurationError("Batch size must be positive")
-    if args.num_threads < 1:
-        raise ConfigurationError("Number of threads must be positive")
-
+    
     return args

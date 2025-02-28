@@ -44,9 +44,9 @@ def main():
         processor = ProteinProcessor(
             embedder=embedder,
             db=db,
-            batch_size=args.batch_size,
-            num_threads=args.num_threads
+            batch_size=args.batch_size
         )
+        print('Processor initialized done')
 
         # Process the FASTA file
         stats = processor.process_fasta_file(args.fasta_path)
