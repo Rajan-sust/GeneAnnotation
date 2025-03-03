@@ -117,7 +117,7 @@ class ProtT5Embedder(ProteinEmbedder):
             from transformers import T5EncoderModel, T5Tokenizer
             tokenizer = T5Tokenizer.from_pretrained(model_name, do_lower_case=False)
             model = T5EncoderModel.from_pretrained(model_name)
-            model = model.to(device)
+            model = model.to(self.device)
             model = model.eval()
         except Exception as e:
             logger.error(f"Failed to initialize T5 model: {str(e)}")
