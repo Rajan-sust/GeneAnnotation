@@ -106,6 +106,55 @@ class ProtBertEmbedder(ProteinEmbedder):
             raise EmbeddingError(f"Failed to generate embedding: {str(e)}")
 
 
+class ProtT5Embedder(ProteinEmbedder):
+    """Protein embedder using the ProtT5 model."""
+    def __init__(self, model_name="Rostlab/prot_t5_xl_half_uniref50-enc"):
+        # Ensure device is set before model initialization
+        self.device = get_device()
+        logger.info(f"Initializing ProtT5Embedder using device: {self.device}")
+
+        try:
+            from transformers import T5EncoderModel, T5Tokenizer
+            tokenizer = T5Tokenizer.from_pretrained(model_name, do_lower_case=False)
+            model = T5EncoderModel.from_pretrained(model_name)
+            model = model.to(device)
+            model = model.eval()
+        except Exception as e:
+            logger.error(f"Failed to initialize T5 model: {str(e)}")
+            raise EmbeddingError(f"Failed to initialize T5 model: {str(e)}")
+    @property
+    def vector_size(self) -> int:
+        return 1024
+    
+    def get_embedding(self, sequence: str) -> List[float]:
+        try:
+            # Preprocess sequence: replace rare amino acids with X and space out
+            sequence = " ".join(re.sub(r"[UZOB]", "X", sequence))
+
+            # Tokenize sequence
+            token_encoding = tokenizer.encode_plus(seq, add_special_tokens=True, return_tensors='pt')
+            input_ids = token_encoding['input_ids'].to(device)
+            attention_mask = token_encoding['attention_mask'].to(device)
+
+            # Generate embeddings
+            with torch.no_grad():
+                embedding_repr = model(input_ids, attention_mask=attention_mask)
+
+            # Extract embeddings (removing special tokens)
+            emb = embedding_repr.last_hidden_state[0, :len(protein_seq)]
+            result = emb.mean(dim=0).detach().cpu().numpy()
+
+            # Normalize and convert to list
+            normalized_embedding = normalize_l2(result)
+            embedding_list = normalized_embedding.tolist()
+
+            return self.validate_embedding(embedding_list)
+
+        except Exception as e:
+            logger.error(f"Failed to generate embedding: {str(e)}")
+            raise EmbeddingError(f"Failed to generate embedding: {str(e)}")
+
+    
 class ESM2Embedder(ProteinEmbedder):
     """Protein embedder using the ESM2 model."""
 
@@ -211,8 +260,29 @@ def get_embedder(model_name: str) -> ProteinEmbedder:
             return ProtBertEmbedder()
         elif model_name.lower() == "esm2":
             return ESM2Embedder()
+        elif model_name.lower() == "prot_t5":
+            return ProtT5Embedder()
         else:
             raise ValueError(f"Unknown model name: {model_name}")
     except Exception as e:
         logger.error(f"Error creating embedder '{model_name}': {str(e)}")
         raise
+
+
+
+if __name__ == '__main__':
+    # # Test ProtBertEmbedder
+    # embedder = ProtBertEmbedder()
+    # sequence = "MALLHSARVLSGVASAFHPGLAAAASARASSWWAHVEMGPPDPILGVTEAYKRDTNSKKL"
+    # embedding = embedder.get_embedding(sequence)
+    # print(f"ProtBert embedding: {embedding}")
+
+    # # Test ESM2Embedder
+    # embedder = ESM2Embedder()
+    # sequence = "MALLHSARVLSGVASAFHPGLAAAASARASSWWAHVEMGPPDPILGVTEAYKRDTNSKKL"
+
+    # Test T5Embedder
+    embedder = ProtT5Embedder()
+    sequence = "MALLHSARVLSGVASAFHPGLAAAASARASSWWAHVEMGPPDPILGVTEAYKRDTNSKKL"
+    embedding = embedder.get_embedding(sequence)
+    print(f"ProtT5 embedding: {embedding}")

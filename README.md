@@ -42,7 +42,7 @@ docker run -d -p 6333:6333 \
 
 - `--fasta_path`: Path to input FASTA file (required)
 - `--db_name`: Name of the database to create (required)
-- `--model_name`: Protein embedding model to use (choices: "prot_bert", "esm2", default: "prot_bert")
+- `--model_name`: Protein embedding model to use (choices: "prot_bert", "esm2", "prot_t5" default: "prot_bert")
 - `--batch_size`: Batch size for processing sequences (default: 50)
 - `--qdrant_url`: URL for Qdrant server (default: "http://localhost:6333")
 
@@ -68,7 +68,7 @@ prodigal -i my.genome.fna  -g 11 -a protein.translations.faa
 - `--db_name`: Name of the Qdrant collection to search against (required)
 - `--output_file`: Path to output TSV file for results (required)
 - `--threshold`: Similarity threshold for annotations (default: 0.98)
-- `--model_name`: Protein embedding model to use ["prot_bert", "esm2"] (default: "esm2")
+- `--model_name`: Protein embedding model to use ["prot_bert", "esm2", "prot_t5"] (default: "esm2")
 - `--qdrant_url`: URL for Qdrant server (default: "http://localhost:6333")
 
 ###### Example

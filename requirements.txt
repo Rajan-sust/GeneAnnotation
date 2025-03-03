@@ -5,3 +5,4 @@ biopython
 qdrant-client
 tqdm
 pandas
+sentencepiece
