@@ -6,3 +6,4 @@ qdrant-client
 tqdm
 pandas
 sentencepiece
+openai

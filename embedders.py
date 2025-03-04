@@ -253,6 +253,40 @@ class ESM2Embedder(ProteinEmbedder):
             raise EmbeddingError(f"Failed to generate embedding: {str(e)}")
 
 
+class OpenAIEmbedder(ProteinEmbedder):
+    """Protein embedder using the OpenAI GPT model."""
+    
+    def __init__(self, model_name="text-embedding-3-large"):
+
+        try:
+            from openai import OpenAI
+            self._vector_size = 3072
+            self.client = OpenAI()
+            self.model_name = model_name
+
+        except Exception as e:
+            logger.error(f"Failed to initialize OpenAI clinet: {str(e)}")
+            raise EmbeddingError(f"Failed to initialize OpenAI client: {str(e)}")
+
+    @property
+    def vector_size(self) -> int:
+        return self._vector_size
+
+    def get_embedding(self, sequence: str) -> List[float]:
+        try:
+            # Tokenize and encode
+            sequence = " ".join(re.sub(r"[UZOB]", "X", sequence))
+            response = self.client.embeddings.create(
+                input=sequence,
+                model=self.model_name
+            )
+            return response.data[0].embedding
+
+        except Exception as e:
+            logger.error(f"Failed to generate embedding: {str(e)}")
+            raise EmbeddingError(f"Failed to generate embedding: {str(e)}")
+
+
 def get_embedder(model_name: str) -> ProteinEmbedder:
     """Factory function to get the appropriate embedder."""
     try:
@@ -262,6 +296,8 @@ def get_embedder(model_name: str) -> ProteinEmbedder:
             return ESM2Embedder()
         elif model_name.lower() == "prot_t5":
             return ProtT5Embedder()
+        elif model_name.lower() == "openai":
+            return OpenAIEmbedder()
         else:
             raise ValueError(f"Unknown model name: {model_name}")
     except Exception as e:
@@ -282,7 +318,14 @@ if __name__ == '__main__':
     # sequence = "MALLHSARVLSGVASAFHPGLAAAASARASSWWAHVEMGPPDPILGVTEAYKRDTNSKKL"
 
     # Test T5Embedder
-    embedder = ProtT5Embedder()
+    # embedder = ProtT5Embedder()
+    # sequence = "MALLHSARVLSGVASAFHPGLAAAASARASSWWAHVEMGPPDPILGVTEAYKRDTNSKKL"
+    # embedding = embedder.get_embedding(sequence)
+    # print(f"ProtT5 embedding: {embedding}")
+
+    # OpenAIEmbedder
+    embedder = OpenAIEmbedder()
     sequence = "MALLHSARVLSGVASAFHPGLAAAASARASSWWAHVEMGPPDPILGVTEAYKRDTNSKKL"
     embedding = embedder.get_embedding(sequence)
-    print(f"ProtT5 embedding: {embedding}")
+    print(f"OpenAI embedding: {embedding}")
+    
