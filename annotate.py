@@ -30,7 +30,7 @@ def parse_args():
     parser.add_argument('--threshold', type=float, default=0.98, 
                        help='Similarity threshold for annotations')
     parser.add_argument('--model_name', type=str, default="esm2",
-                       choices=["prot_bert", "esm2"],
+                       choices=["prot_bert", "esm2", "openai"],
                        help='Protein embedding model to use')
     parser.add_argument('--qdrant_url', type=str, default="http://localhost:6333", 
                        help='URL for Qdrant server')
@@ -80,11 +80,11 @@ class ProteinAnnotator:
             embedding = self.embedder.get_embedding(seq)
             
             # Search in database
-            search_results = self.qdrant_client.search(
+            search_results = self.qdrant_client.query_points(
                 collection_name=self.args.db_name,
-                query_vector=embedding,
+                query=embedding,
                 limit=1
-            )
+            ).points
 
             if search_results and search_results[0].score >= self.args.threshold:
                 self.stats['success'] += 1
