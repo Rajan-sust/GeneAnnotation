@@ -84,33 +84,39 @@ class ProteinAnnotator:
                 collection_name=self.args.collection,
                 anns_field="vector",
                 data=[embedding],
-                limit=1,
+                limit=10,
                 search_params={"metric_type": "IP"},
                 output_fields=["protein_info"]
             )
-            search_result = None
-            if res:
-                search_result = res[0][0]
-            # for hits in res:
-            #     for hit in hits:
-            #         print(hit)
+            self.stats['success'] += 1
+            search_result = [
+                    {
+                        'Query': seq_record.description,
+                        'Annotation': hit['entity']['protein_info'],
+                        'Similarity_Score': hit['distance'],
+                        'Status': 'success'
+                    }
+                    for hits in res for hit in hits
+            ]
+            return search_result
+                    
 
-            if search_result and search_result['distance'] >= self.args.threshold:
-                self.stats['success'] += 1
-                return {
-                    'Query_ID': seq_id,
-                    'Annotation': search_result['entity']['protein_info'],
-                    'Similarity_Score': search_result['distance'],
-                    'Status': 'success'
-                }
-            else:
-                self.stats['below_threshold'] += 1
-                return {
-                    'Query_ID': seq_id,
-                    'Annotation':  search_result['entity']['protein_info'] if search_result else 'hypothetical protein',
-                    'Similarity_Score': search_result['distance'] if search_result else 0.0,
-                    'Status': 'below_threshold'
-                }
+            # if search_result and search_result['distance'] >= self.args.threshold:
+            #     self.stats['success'] += 1
+            #     return {
+            #         'Query_ID': seq_id,
+            #         'Annotation': search_result['entity']['protein_info'],
+            #         'Similarity_Score': search_result['distance'],
+            #         'Status': 'success'
+            #     }
+            # else:
+            #     self.stats['below_threshold'] += 1
+            #     return {
+            #         'Query_ID': seq_id,
+            #         'Annotation':  search_result['entity']['protein_info'] if search_result else 'hypothetical protein',
+            #         'Similarity_Score': search_result['distance'] if search_result else 0.0,
+            #         'Status': 'below_threshold'
+            #     }
 
         except Exception as e:
             self.stats['failed'] += 1
@@ -129,9 +135,13 @@ class ProteinAnnotator:
         try:
             # Process sequences one by one
             for seq_record in SeqIO.parse(self.args.input_faa, "fasta"):
-                result = self.process_sequence(seq_record)
-                self.results.append(result)
-                
+                rets = self.process_sequence(seq_record)
+                # self.results.extend(rets)
+                if isinstance(rets, list):
+                    self.results.extend(rets)
+                else:
+                    self.results.append(rets)
+                # print(self.results)            
                 # Log progress every 100 sequences
                 if len(self.results) % 100 == 0:
                     logger.info(f"Processed {len(self.results)} sequences...")

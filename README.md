@@ -77,10 +77,9 @@ prodigal -i my.genome.fna  -g 11 -a protein.translations.faa
 ###### Example
 
 ```
-python3 annotate.py --input_faa ./test.faa \
+python3 annotate.py --input_faa ./QUERY.fasta \
                     --collection esm2_tbl \
-                    --output_file results.tsv \
-                    --threshold 0.987 \
+                    --output_file results_esm2.tsv \
                     --model_name esm2
 ```
 
