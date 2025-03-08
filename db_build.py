@@ -35,8 +35,7 @@ def main():
 
         # Initialize vector database
         db = VectorDatabase(
-            db_name=args.db_name,
-            qdrant_url=args.qdrant_url,
+            collection_name=args.collection,
             vector_size=embedder.vector_size
         )
 

@@ -1,9 +1,9 @@
+pymilvus
 numpy
 transformers
 torch
 biopython
 qdrant-client
-tqdm
 pandas
 sentencepiece
 openai

@@ -41,7 +41,7 @@ docker run -d -p 6333:6333 \
 ###### Command Line Arguments
 
 - `--fasta_path`: Path to input FASTA file (required)
-- `--db_name`: Name of the database to create (required)
+- `--collection`: Name of the collection to create in the Database (required)
 - `--model_name`: Protein embedding model to use (choices: "prot_bert", "esm2", "prot_t5" default: "prot_bert")
 - `--batch_size`: Batch size for processing sequences (default: 50)
 - `--qdrant_url`: URL for Qdrant server (default: "http://localhost:6333")
@@ -49,7 +49,10 @@ docker run -d -p 6333:6333 \
 
 ###### Usage
 ```
-python3 db_build.py --fasta_path ~/Desktop/UP000000212_1234679.fasta --db_name my_esm2_db --model_name esm2
+python3 db_build.py --fasta_path ./db.faa \
+--collection esm2_tbl \
+--model_name esm2 \
+--batch_size 2
 ```
 
 
@@ -74,8 +77,8 @@ prodigal -i my.genome.fna  -g 11 -a protein.translations.faa
 ###### Example
 
 ```
-python3 annotate.py --input_faa data/proteins.faa \
-                    --db_name my_esm2_db \
+python3 annotate.py --input_faa ./test.faa \
+                    --collection esm2_tbl \
                     --output_file results.tsv \
                     --threshold 0.987 \
                     --model_name esm2

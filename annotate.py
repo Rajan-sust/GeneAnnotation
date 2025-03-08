@@ -3,7 +3,7 @@ import sys
 import argparse
 import pandas as pd
 from Bio import SeqIO
-from qdrant_client import QdrantClient
+from pymilvus import MilvusClient
 from embedders import get_embedder
 
 # Set up logging
@@ -23,8 +23,8 @@ def parse_args():
     )
     parser.add_argument('--input_faa', type=str, required=True, 
                        help='Path to input FAA file to annotate')
-    parser.add_argument('--db_name', type=str, required=True, 
-                       help='Name of the database to search against')
+    parser.add_argument('--collection', type=str, required=True, 
+                       help='Name of the collection to search against')
     parser.add_argument('--output_file', type=str, required=True, 
                        help='Path to output TSV file')
     parser.add_argument('--threshold', type=float, default=0.98, 
@@ -32,15 +32,13 @@ def parse_args():
     parser.add_argument('--model_name', type=str, default="esm2",
                        choices=["prot_bert", "esm2", "openai"],
                        help='Protein embedding model to use')
-    parser.add_argument('--qdrant_url', type=str, default="http://localhost:6333", 
-                       help='URL for Qdrant server')
     return parser.parse_args()
 
 class ProteinAnnotator:
     def __init__(self, args):
         self.args = args
         self.embedder = get_embedder(self.args.model_name)
-        self.qdrant_client = self._initialize_qdrant()
+        self.milvas_client = self._initialize_milvas()
         self.results = []
         self.stats = {
             'total': 0,
@@ -50,12 +48,13 @@ class ProteinAnnotator:
             'below_threshold': 0
         }
 
-    def _initialize_qdrant(self):
+    def _initialize_milvas(self):
         try:
-            client = QdrantClient(self.args.qdrant_url)
-            collections = client.get_collections()
-            if not any(collection.name == self.args.db_name for collection in collections.collections):
-                raise ValueError(f"Collection {self.args.db_name} not found in database")
+            client = MilvusClient('./vector.db')
+            # 7. Load the collection
+            client.load_collection(
+                collection_name=self.args.collection
+            )
             return client
         except Exception as e:
             raise ConnectionError(f"Failed to connect to Qdrant database: {str(e)}")
@@ -63,6 +62,7 @@ class ProteinAnnotator:
     def process_sequence(self, seq_record):
         """Process a single sequence and find its annotation."""
         seq_id = seq_record.id
+        logger.info(f"Processing sequence {seq_id}...")
         seq = str(seq_record.seq).strip('*')
         self.stats['total'] += 1
 
@@ -80,26 +80,35 @@ class ProteinAnnotator:
             embedding = self.embedder.get_embedding(seq)
             
             # Search in database
-            search_results = self.qdrant_client.query_points(
-                collection_name=self.args.db_name,
-                query=embedding,
-                limit=1
-            ).points
+            res = self.milvas_client.search(
+                collection_name=self.args.collection,
+                anns_field="vector",
+                data=[embedding],
+                limit=1,
+                search_params={"metric_type": "IP"},
+                output_fields=["protein_info"]
+            )
+            search_result = None
+            if res:
+                search_result = res[0][0]
+            # for hits in res:
+            #     for hit in hits:
+            #         print(hit)
 
-            if search_results and search_results[0].score >= self.args.threshold:
+            if search_result and search_result['distance'] >= self.args.threshold:
                 self.stats['success'] += 1
                 return {
                     'Query_ID': seq_id,
-                    'Annotation': search_results[0].payload['protein_info'],
-                    'Similarity_Score': float(search_results[0].score),
+                    'Annotation': search_result['entity']['protein_info'],
+                    'Similarity_Score': search_result['distance'],
                     'Status': 'success'
                 }
             else:
                 self.stats['below_threshold'] += 1
                 return {
                     'Query_ID': seq_id,
-                    'Annotation': search_results[0].payload['protein_info'] if search_results else 'hypothetical protein',
-                    'Similarity_Score': float(search_results[0].score) if search_results else 0.0,
+                    'Annotation':  search_result['entity']['protein_info'] if search_result else 'hypothetical protein',
+                    'Similarity_Score': search_result['distance'] if search_result else 0.0,
                     'Status': 'below_threshold'
                 }
 

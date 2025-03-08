@@ -159,7 +159,7 @@ class ProtT5Embedder(ProteinEmbedder):
 class ESM2Embedder(ProteinEmbedder):
     """Protein embedder using the ESM2 model."""
 
-    def __init__(self, model_name="facebook/esm2_t30_150M_UR50D"):
+    def __init__(self, model_name="facebook/esm2_t12_35M_UR50D"):
         # IMPORTANT: Set device explicitly before any other initialization
         self.device = get_device()
         logger.info(f"Initializing ESM2Embedder using device: {self.device}")

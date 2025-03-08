@@ -51,14 +51,12 @@ class ProteinProcessor:
             try:
                 v = self.embedder.get_embedding(seq)
                 self.points.append(
-                    models.PointStruct(
-                        id=i,
-                        vector=v,
-                        payload={
-                            'protein_info': seq_record.description,
-                            'sequence_length': len(seq)
-                        }
-                    )
+                    {
+                        "id": i,
+                        "vector": v,
+                        "protein_info": seq_record.description,
+                        "sequence_length": len(seq)
+                    }
                 )
                 self.stats.increment_processed()
 
