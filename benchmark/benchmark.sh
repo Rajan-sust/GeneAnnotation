@@ -53,6 +53,8 @@ makeblastdb -in DB.fasta -dbtype prot -out my_blast_db
 blastp -query QUERY.fasta -db my_blast_db -out blastp_results.txt -num_threads 4 -evalue 1e-10 -outfmt "6 qseqid sseqid stitle evalue" -max_target_seqs 1
 blastp -query QUERY.fasta -db my_blast_db -out blastp_results_10.txt -num_threads 4 -evalue 1e-10 -outfmt "6 qseqid sseqid stitle evalue" -max_target_seqs 10
 
+blastp -query ATP-dependent_DNA_helicase_RecG_only.fasta.gz -db my_blast_db -out blastp_results_ATP.txt -num_threads 4 -evalue 1e-10 -outfmt "6 qseqid sseqid stitle evalue" -max_target_seqs 1
+
 
 awk '!seen[$1]++' blastp_results.txt >blastp_results_remdupli.txt
 
