@@ -1,0 +1,487 @@
+tr|A7TBS3|A7TBS3_NEMVE	tr|A7TBS3|A7TBS3_NEMVE	tr|A7TBS3|A7TBS3_NEMVE Predicted protein (Fragment) OS=Nematostella vectensis GN=v1g153959 PE=4 SV=1 Split=0 	1.97e-38
+tr|Q8WWJ3|Q8WWJ3_HUMAN	tr|G7PPY8|G7PPY8_MACFA	tr|G7PPY8|G7PPY8_MACFA T12 OS=Macaca fascicularis GN=EGM_05537 PE=4 SV=1 Split=0 	0.0
+tr|H6QJ35|H6QJ35_RICMA	tr|A0A0B7J5R9|A0A0B7J5R9_9RICK	tr|A0A0B7J5R9|A0A0B7J5R9_9RICK Peptide chain release factor 1 OS=Rickettsia monacensis GN=prfA PE=3 SV=1 Split=0 	0.0
+tr|A0A0S2ES34|A0A0S2ES34_9RHIZ	tr|A0A073J626|A0A073J626_9RHOB	tr|A0A073J626|A0A073J626_9RHOB Ribonuclease HII OS=Sulfitobacter pseudonitzschiae GN=rnhB PE=3 SV=1 Split=0 	7.06e-66
+tr|A0A0W7XYV8|A0A0W7XYV8_9BACI	sp|B9IVX2|SYI_BACCQ	sp|B9IVX2|SYI_BACCQ Isoleucine--tRNA ligase OS=Bacillus cereus (strain Q1) GN=ileS PE=3 SV=1 Split=0 	0.0
+tr|A0A0C6CEA5|A0A0C6CEA5_YEASX	tr|A0A0C6CEA5|A0A0C6CEA5_YEASX	tr|A0A0C6CEA5|A0A0C6CEA5_YEASX Ino80p OS=Saccharomyces cerevisiae YJM1199 GN=INO80 PE=4 SV=1 Split=0 	0.0
+sp|O51528|RECG_BORBU	tr|A0A109NWT2|A0A109NWT2_9SPIR	tr|A0A109NWT2|A0A109NWT2_9SPIR DNA recombinase (Fragment) OS=Candidatus Borrelia mayonii GN=recG PE=4 SV=1 Split=0 	3.46e-166
+tr|V4L6R8|V4L6R8_9DELT	tr|K1Z6W2|K1Z6W2_9ZZZZ	tr|K1Z6W2|K1Z6W2_9ZZZZ NADH-quinone oxidoreductase, chain I OS=groundwater metagenome GN=ACD_75C00152G0004 PE=3 SV=1 Split=0 	4.85e-74
+tr|Q6FIE1|Q6FIE1_HUMAN	sp|Q9H0W7|THAP2_HUMAN	sp|Q9H0W7|THAP2_HUMAN THAP domain-containing protein 2 OS=Homo sapiens GN=THAP2 PE=1 SV=1 Split=0 	9.03e-170
+tr|A0A0W1BG93|A0A0W1BG93_9GAMM	tr|F3BFA6|F3BFA6_PSEHA	tr|F3BFA6|F3BFA6_PSEHA Uridylate kinase OS=Pseudoalteromonas haloplanktis ANT/505 GN=pyrH PE=3 SV=1 Split=0 	0.0
+tr|E3LIQ8|E3LIQ8_CAERE	tr|A0A0R3PDL9|A0A0R3PDL9_ANGCS	tr|A0A0R3PDL9|A0A0R3PDL9_ANGCS Uncharacterized protein OS=Angiostrongylus costaricensis PE=4 SV=2 Split=0 	0.0
+tr|A0A139T391|A0A139T391_9BACE	tr|A0A015U297|A0A015U297_BACFG	tr|A0A015U297|A0A015U297_BACFG Lysine--tRNA ligase OS=Bacteroides fragilis str. 3998T(B)3 GN=lysS PE=3 SV=1 Split=0 	0.0
+sp|P0CB63|GET2_CANAL	tr|A0A0A6KFT5|A0A0A6KFT5_CANAX	tr|A0A0A6KFT5|A0A0A6KFT5_CANAX Golgi to ER traffic protein 2 OS=Candida albicans P37039 GN=GET2 PE=3 SV=1 Split=0 	0.0
+tr|L0A719|L0A719_DEIPD	tr|L0A719|L0A719_DEIPD	tr|L0A719|L0A719_DEIPD Aspartyl-tRNA synthetase, archaeal type OS=Deinococcus peraridilitoris (strain DSM 19664 / LMG 22246 / CIP 109416 / KR-200) GN=Deipe_3557 PE=4 SV=1 Split=0 	0.0
+tr|P97020|P97020_RHIRD	tr|Q7DKB7|Q7DKB7_RHIRD	tr|Q7DKB7|Q7DKB7_RHIRD Tiorf186 protein OS=Rhizobium radiobacter GN=tiorf186 PE=4 SV=1 Split=0 	7.14e-104
+tr|M1IM54|M1IM54_9CREN	sp|P39468|RS9_SULAC	sp|P39468|RS9_SULAC 30S ribosomal protein S9 OS=Sulfolobus acidocaldarius (strain ATCC 33909 / DSM 639 / JCM 8929 / NBRC 15157 / NCIMB 11770) GN=rps9 PE=3 SV=2 Split=0 	6.65e-101
+sp|B8G711|EFP_CHLAD	tr|D6TKQ6|D6TKQ6_9CHLR	tr|D6TKQ6|D6TKQ6_9CHLR Elongation factor P OS=Ktedonobacter racemifer DSM 44963 GN=efp PE=3 SV=1 Split=0 	2.29e-80
+tr|F7I569|F7I569_CALJA	tr|G3QV42|G3QV42_GORGO	tr|G3QV42|G3QV42_GORGO Uncharacterized protein OS=Gorilla gorilla gorilla GN=IFI27 PE=4 SV=1 Split=0 	1.91e-34
+tr|B1ER33|B1ER33_ESCAT	tr|Q5IQZ5|Q5IQZ5_SHIBO	tr|Q5IQZ5|Q5IQZ5_SHIBO Cytolethal distending toxin subunit A OS=Shigella boydii GN=cdtA PE=4 SV=1 Split=0 	0.0
+tr|N0BDY6|N0BDY6_9EURY	tr|F2KP10|F2KP10_ARCVS	tr|F2KP10|F2KP10_ARCVS ATP phosphoribosyltransferase OS=Archaeoglobus veneficus (strain DSM 11195 / SNP6) GN=Arcve_0283 PE=4 SV=1 Split=0 	1.73e-174
+tr|A0A0B8N890|A0A0B8N890_9NOCA	tr|A0A0F4EU34|A0A0F4EU34_9MYCO	tr|A0A0F4EU34|A0A0F4EU34_9MYCO Lysyl-tRNA synthetase OS=Mycobacterium lepromatosis GN=lysX PE=3 SV=1 Split=0 	0.0
+tr|A0A071M8F5|A0A071M8F5_9BURK	tr|A0A095E445|A0A095E445_BURCE	tr|A0A095E445|A0A095E445_BURCE Threonine--tRNA ligase OS=Burkholderia cepacia GN=thrS PE=3 SV=1 Split=0 	0.0
+tr|E1CC35|E1CC35_PLAFA	tr|W7JKJ5|W7JKJ5_PLAFA	tr|W7JKJ5|W7JKJ5_PLAFA Calcium-transporting ATPase OS=Plasmodium falciparum UGT5.1 GN=C923_00055 PE=3 SV=1 Split=0 	0.0
+tr|A9SKD4|A9SKD4_PHYPA	sp|Q2U5A2|DHH1_ASPOR	sp|Q2U5A2|DHH1_ASPOR ATP-dependent RNA helicase dhh1 OS=Aspergillus oryzae (strain ATCC 42149 / RIB 40) GN=dhh1 PE=3 SV=1 Split=0 	0.0
+tr|S9P6K9|S9P6K9_9DELT	tr|A0A0H4WUF4|A0A0H4WUF4_9DELT	tr|A0A0H4WUF4|A0A0H4WUF4_9DELT Phosphate acyltransferase OS=Myxococcus hansupus GN=plsX PE=3 SV=1 Split=0 	8.18e-162
+sp|Q2LKV5|NL1B3_MOUSE	tr|D9I2G4|D9I2G4_RAT	tr|D9I2G4|D9I2G4_RAT NLR family protein 1 OS=Rattus norvegicus GN=Nlrp1 PE=2 SV=1 Split=0 	0.0
+tr|A0A0D5N988|A0A0D5N988_GEOSN	tr|S9AW41|S9AW41_STRAG	tr|S9AW41|S9AW41_STRAG Putative pyruvate, phosphate dikinase regulatory protein OS=Streptococcus agalactiae FSL C1-487 GN=SAG0007_06475 PE=3 SV=1 Split=0 	3.05e-60
+sp|Q9WZ45|RUVC_THEMA	sp|B7ICN6|RUVC_THEAB	sp|B7ICN6|RUVC_THEAB Crossover junction endodeoxyribonuclease RuvC OS=Thermosipho africanus (strain TCF52B) GN=ruvC PE=3 SV=1 Split=0 	3.60e-62
+tr|F8AM08|F8AM08_METOI	tr|Q6M187|Q6M187_METMP	tr|Q6M187|Q6M187_METMP DNA replication protein MCM family putative OS=Methanococcus maripaludis (strain S2 / LL) GN=MMP0030 PE=3 SV=1 Split=0 	0.0
+tr|D0A7K2|D0A7K2_TRYB9	tr|D0A7K2|D0A7K2_TRYB9	tr|D0A7K2|D0A7K2_TRYB9 Ribosome biogenesis protein BOP1 homolog OS=Trypanosoma brucei gambiense (strain MHOM/CI/86/DAL972) GN=TbgDal_XI7720 PE=3 SV=1 Split=0 	0.0
+tr|D6SNN9|D6SNN9_9DELT	tr|D6SNN9|D6SNN9_9DELT	tr|D6SNN9|D6SNN9_9DELT CoB--CoM heterodisulfide reductase OS=Desulfonatronospira thiodismutans ASO3-1 GN=Dthio_PD1716 PE=4 SV=1 Split=0 	0.0
+tr|E3NI39|E3NI39_CAERE	tr|U6P0U3|U6P0U3_HAECO	tr|U6P0U3|U6P0U3_HAECO Nitroreductase domain containing protein OS=Haemonchus contortus GN=HCOI_00861400 PE=4 SV=1 Split=0 	3.90e-103
+sp|B2S328|COAX_TREPS	sp|B2S328|COAX_TREPS	sp|B2S328|COAX_TREPS Type III pantothenate kinase OS=Treponema pallidum subsp. pallidum (strain SS14) GN=coaX PE=3 SV=1 Split=0 	0.0
+tr|A0A091DCV0|A0A091DCV0_FUKDA	tr|F1LUG2|F1LUG2_RAT	tr|F1LUG2|F1LUG2_RAT RCG60989 OS=Rattus norvegicus GN=rCG_60989 PE=4 SV=2 Split=0 	1.63e-18
+tr|Q4U0G5|Q4U0G5_9VIRU	tr|Q70WL7|Q70WL7_LSV	tr|Q70WL7|Q70WL7_LSV RNA-dependent RNA polymerase OS=Lily symptomless virus PE=4 SV=1 Split=0 	0.0
+tr|A0A078C908|A0A078C908_BRANA	tr|A0A0D3B5T6|A0A0D3B5T6_BRAOL	tr|A0A0D3B5T6|A0A0D3B5T6_BRAOL Bidirectional sugar transporter SWEET OS=Brassica oleracea var. oleracea GN=SWEET9 PE=3 SV=1 Split=0 	0.0
+sp|Q8ZZW3|Y049_PYRAE	tr|C5A4E9|C5A4E9_THEGJ	tr|C5A4E9|C5A4E9_THEGJ Serine protease inhibitor, serpin OS=Thermococcus gammatolerans (strain DSM 15229 / JCM 11827 / EJ3) GN=TGAM_0609 PE=3 SV=1 Split=0 	1.92e-52
+sp|Q0HXU4|SYL_SHESR	tr|A0A153XX16|A0A153XX16_VIBPH	tr|A0A153XX16|A0A153XX16_VIBPH Leucine--tRNA ligase OS=Vibrio parahaemolyticus GN=leuS PE=4 SV=1 Split=0 	0.0
+tr|A0A0A6KGC2|A0A0A6KGC2_CANAX	tr|A0A0A3E4J2|A0A0A3E4J2_CANAX	tr|A0A0A3E4J2|A0A0A3E4J2_CANAX Plasma membrane fusion protein PRM1 OS=Candida albicans P78048 GN=MG3_01149 PE=4 SV=1 Split=0 	0.0
+sp|B4UEM2|ACPS_ANASK	tr|A0A0D6QMV6|A0A0D6QMV6_9DELT	tr|A0A0D6QMV6|A0A0D6QMV6_9DELT Holo-[acyl-carrier-protein] synthase OS=Anaeromyxobacter sp. PSR-1 GN=acpS PE=3 SV=1 Split=0 	1.29e-73
+tr|A0A0A6J7B4|A0A0A6J7B4_CANAX	tr|A0A0A6NQT6|A0A0A6NQT6_CANAL	tr|A0A0A6NQT6|A0A0A6NQT6_CANAL rRNA biogenesis protein RRP36 OS=Candida albicans (strain SC5314 / ATCC MYA-2876) GN=I503_06109 PE=3 SV=1 Split=0 	0.0
+tr|A0A0L9U609|A0A0L9U609_PHAAN	tr|A0A0L9U609|A0A0L9U609_PHAAN	tr|A0A0L9U609|A0A0L9U609_PHAAN CASP-like protein OS=Phaseolus angularis GN=LR48_Vigan03g158800 PE=3 SV=1 Split=0 	2.97e-122
+sp|Q5XDK5|NRDI_STRP6	sp|B5XK14|NRDI_STRPZ	sp|B5XK14|NRDI_STRPZ Protein NrdI OS=Streptococcus pyogenes serotype M49 (strain NZ131) GN=nrdI PE=3 SV=1 Split=0 	1.18e-120
+tr|A0A067K1V2|A0A067K1V2_JATCU	tr|A0A0B4KE90|A0A0B4KE90_9ROSI	tr|A0A0B4KE90|A0A0B4KE90_9ROSI Casbene synthase OS=Euphorbia fischeriana PE=2 SV=1 Split=0 	0.0
+tr|A0A0W7V0M3|A0A0W7V0M3_9STRE	tr|D7PTS8|D7PTS8_9BACT	tr|D7PTS8|D7PTS8_9BACT Tetracycline resistant ribosomal protection protein OS=uncultured bacterium MID12 GN=tet(M) PE=4 SV=1 Split=0 	0.0
+tr|A0A154BWY9|A0A154BWY9_9GAMM	tr|A0A0B4XLD7|A0A0B4XLD7_9GAMM	tr|A0A0B4XLD7|A0A0B4XLD7_9GAMM UPF0102 protein S7S_04755 OS=Alcanivorax pacificus W11-5 GN=S7S_04755 PE=3 SV=1 Split=0 	3.69e-40
+tr|A0A0B5SEL2|A0A0B5SEL2_BACMY	tr|R8CJJ1|R8CJJ1_BACCE	tr|R8CJJ1|R8CJJ1_BACCE DNA-directed RNA polymerase subunit beta OS=Bacillus cereus HuA2-9 GN=rpoB PE=3 SV=1 Split=0 	0.0
+tr|A0A078GHK1|A0A078GHK1_BRANA	sp|Q5XEZ8|PUB2_ARATH	sp|Q5XEZ8|PUB2_ARATH U-box domain-containing protein 2 OS=Arabidopsis thaliana GN=PUB2 PE=2 SV=1 Split=0 	3.50e-26
+tr|A0A078ID82|A0A078ID82_BRANA	tr|A0A0D3AAV1|A0A0D3AAV1_BRAOL	tr|A0A0D3AAV1|A0A0D3AAV1_BRAOL Uncharacterized protein OS=Brassica oleracea var. oleracea GN=BGLU45 PE=3 SV=1 Split=0 	0.0
+tr|A0A0F2I0C5|A0A0F2I0C5_VIBPH	tr|A0A153VYU0|A0A153VYU0_VIBPH	tr|A0A153VYU0|A0A153VYU0_VIBPH Leucine--tRNA ligase OS=Vibrio parahaemolyticus GN=leuS PE=4 SV=1 Split=0 	0.0
+tr|B4IJS6|B4IJS6_DROSE	tr|B4PZW1|B4PZW1_DROYA	tr|B4PZW1|B4PZW1_DROYA Uncharacterized protein OS=Drosophila yakuba GN=Dyak\GE15830 PE=3 SV=1 Split=0 	4.10e-163
+sp|B9LBJ3|RBFA_CHLSY	sp|B9LBJ3|RBFA_CHLSY	sp|B9LBJ3|RBFA_CHLSY Ribosome-binding factor A OS=Chloroflexus aurantiacus (strain ATCC 29364 / DSM 637 / Y-400-fl) GN=rbfA PE=3 SV=1 Split=0 	2.90e-91
+tr|A0A0A3CRT6|A0A0A3CRT6_CANAX	tr|A0A0A4CDX9|A0A0A4CDX9_CANAX	tr|A0A0A4CDX9|A0A0A4CDX9_CANAX Pre-mRNA-splicing factor CWC22 OS=Candida albicans P75063 GN=MGM_02441 PE=4 SV=1 Split=0 	0.0
+sp|Q9N4B8|NHR41_CAEEL	tr|G0NAC6|G0NAC6_CAEBE	tr|G0NAC6|G0NAC6_CAEBE CBN-NHR-41 protein OS=Caenorhabditis brenneri GN=Cbn-nhr-41 PE=3 SV=1 Split=0 	0.0
+sp|Q2SSF2|TRUB_MYCCT	tr|A0A0L1II87|A0A0L1II87_9MOLU	tr|A0A0L1II87|A0A0L1II87_9MOLU tRNA pseudouridine synthase B OS=Mycoplasma sp. HU2014 GN=truB PE=3 SV=1 Split=0 	1.85e-131
+tr|J3IZ86|J3IZ86_9VIRU	tr|V5L3H4|V5L3H4_9VIRU	tr|V5L3H4|V5L3H4_9VIRU Robin OS=Hirudovirus strain Sangsue GN=HIRU_S537 PE=4 SV=1 Split=0 	9.70e-178
+tr|A0A022Q6T8|A0A022Q6T8_ERYGU	tr|A0A022Q6T8|A0A022Q6T8_ERYGU	tr|A0A022Q6T8|A0A022Q6T8_ERYGU Uncharacterized protein OS=Erythranthe guttata GN=MIMGU_mgv1a020160mg PE=4 SV=1 Split=0 	0.0
+tr|A0A136A4H9|A0A136A4H9_9ALTE	tr|A0A0H0XTI6|A0A0H0XTI6_VIBVL	tr|A0A0H0XTI6|A0A0H0XTI6_VIBVL UPF0234 protein VVYB158_21075 OS=Vibrio vulnificus CladeA-yb158 GN=VVYB158_21075 PE=3 SV=1 Split=0 	7.23e-73
+tr|A0A0Q2X9M7|A0A0Q2X9M7_MYCGO	tr|I6XD00|I6XD00_MYCTU	tr|I6XD00|I6XD00_MYCTU Transporter OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) GN=LH57_10775 PE=4 SV=1 Split=0 	0.0
+tr|M2NG30|M2NG30_9FIRM	tr|R6TPE1|R6TPE1_9STAP	tr|R6TPE1|R6TPE1_9STAP 50S ribosomal protein L16 OS=Staphylococcus sp. CAG:324 GN=rplP PE=3 SV=1 Split=0 	7.89e-74
+sp|Q1D766|RS17_MYXXD	tr|H8N1M9|H8N1M9_CORCM	tr|H8N1M9|H8N1M9_CORCM 30S ribosomal protein S17 OS=Corallococcus coralloides (strain ATCC 25202 / DSM 2259 / NBRC 100086 / M2) GN=rpsQ PE=3 SV=1 Split=0 	9.79e-71
+tr|G7ZR34|G7ZR34_9STAP	tr|Q2G188|Q2G188_STAA8	tr|Q2G188|Q2G188_STAA8 Uncharacterized protein OS=Staphylococcus aureus (strain NCTC 8325) GN=SAOUHSC_00258 PE=4 SV=1 Split=0 	0.0
+tr|E3LCT8|E3LCT8_CAERE	tr|E3NAT2|E3NAT2_CAERE	tr|E3NAT2|E3NAT2_CAERE CRE-TTX-3 protein OS=Caenorhabditis remanei GN=Cre-ttx-3 PE=4 SV=1 Split=0 	4.30e-25
+tr|M0JNX5|M0JNX5_9EURY	tr|M0C942|M0C942_9EURY	tr|M0C942|M0C942_9EURY PTS system fructose-specific transporter subunit IIB OS=Haloterrigena salina JCM 13891 GN=C477_10188 PE=4 SV=1 Split=0 	2.80e-39
+tr|A0A0K8VRH7|A0A0K8VRH7_BACLA	tr|A0A0L0C8P3|A0A0L0C8P3_LUCCU	tr|A0A0L0C8P3|A0A0L0C8P3_LUCCU Uncharacterized protein OS=Lucilia cuprina GN=FF38_05750 PE=4 SV=1 Split=0 	0.0
+sp|Q9Z6L3|AAAH_CHLPN	tr|A0A0F7WKE4|A0A0F7WKE4_CHLPN	tr|A0A0F7WKE4|A0A0F7WKE4_CHLPN Probable aromatic amino acid hydroxylase OS=Chlamydia pneumoniae GN=BN1224_CV15_C_05420 PE=4 SV=1 Split=0 	0.0
+tr|A0A080M9M3|A0A080M9M3_9PROT	tr|A0A0D0PUM3|A0A0D0PUM3_9GAMM	tr|A0A0D0PUM3|A0A0D0PUM3_9GAMM UPF0102 protein RW26_12415 OS=Aeromonas sp. L_1B5_3 GN=RW26_12415 PE=3 SV=1 Split=0 	3.33e-37
+tr|A0A0L7KZZ9|A0A0L7KZZ9_9NEOP	tr|A0A0L7KZZ9|A0A0L7KZZ9_9NEOP	tr|A0A0L7KZZ9|A0A0L7KZZ9_9NEOP Alpha-tubulin OS=Operophtera brumata GN=OBRU01_17761 PE=3 SV=1 Split=0 	0.0
+tr|H2RFB4|H2RFB4_PANTR	tr|A0A0D9RP97|A0A0D9RP97_CHLSB	tr|A0A0D9RP97|A0A0D9RP97_CHLSB Uncharacterized protein OS=Chlorocebus sabaeus GN=MAGEB6 PE=4 SV=1 Split=0 	0.0
+tr|D7LJ45|D7LJ45_ARALL	tr|A0A078H8H4|A0A078H8H4_BRANA	tr|A0A078H8H4|A0A078H8H4_BRANA BnaC04g08810D protein OS=Brassica napus GN=BnaC04g08810D PE=4 SV=1 Split=0 	0.0
+tr|A0A0U1MIC2|A0A0U1MIC2_STAAU	tr|A0A131JWK9|A0A131JWK9_STAAU	tr|A0A131JWK9|A0A131JWK9_STAAU Phenylalanine--tRNA ligase beta subunit OS=Staphylococcus aureus GN=pheT_1 PE=3 SV=1 Split=0 	0.0
+tr|A0A089QMI5|A0A089QMI5_9PROC	tr|A0A0A2A6G4|A0A0A2A6G4_PROMR	tr|A0A0A2A6G4|A0A0A2A6G4_PROMR Ribosomal RNA small subunit methyltransferase G OS=Prochlorococcus marinus str. MIT 9302 GN=rsmG PE=3 SV=1 Split=0 	5.61e-151
+tr|M4DPZ7|M4DPZ7_BRARP	tr|A0A151TVX5|A0A151TVX5_CAJCA	tr|A0A151TVX5|A0A151TVX5_CAJCA Mitogen-activated protein kinase kinase kinase ANP1 OS=Cajanus cajan GN=KK1_010478 PE=4 SV=1 Split=0 	0.0
+tr|A0A0K1ZC86|A0A0K1ZC86_9ASTR	tr|A0A0K1ZC86|A0A0K1ZC86_9ASTR	tr|A0A0K1ZC86|A0A0K1ZC86_9ASTR Ribosomal protein L22 OS=Silphium integrifolium GN=rpl22 PE=3 SV=1 Split=0 	1.24e-115
+tr|Q98142|Q98142_HHV8	tr|A0A0N9SEI0|A0A0N9SEI0_HHV8	tr|A0A0N9SEI0|A0A0N9SEI0_HHV8 ORF22 OS=Human herpesvirus 8 GN=ORF22 PE=4 SV=1 Split=0 	0.0
+tr|I1PSH4|I1PSH4_ORYGL	tr|A0A0E0KYJ1|A0A0E0KYJ1_ORYPU	tr|A0A0E0KYJ1|A0A0E0KYJ1_ORYPU Uncharacterized protein OS=Oryza punctata PE=4 SV=1 Split=0 	8.88e-74
+sp|A7X1T8|MUTL_STAA1	tr|K6Q0F1|K6Q0F1_LACCA	tr|K6Q0F1|K6Q0F1_LACCA DNA mismatch repair protein MutL OS=Lactobacillus casei 32G GN=mutL PE=3 SV=1 Split=0 	0.0
+tr|A8WUJ9|A8WUJ9_CAEBR	tr|A8WUJ9|A8WUJ9_CAEBR	tr|A8WUJ9|A8WUJ9_CAEBR Protein CBR-SRB-13 OS=Caenorhabditis briggsae GN=srb-13 PE=4 SV=2 Split=0 	0.0
+tr|A0A095ALB6|A0A095ALB6_LEUME	tr|A0A0G2UVC6|A0A0G2UVC6_STRPY	tr|A0A0G2UVC6|A0A0G2UVC6_STRPY Methionine import ATP-binding protein MetN OS=Streptococcus pyogenes GN=metN PE=3 SV=1 Split=0 	1.99e-158
+tr|U6ENU4|U6ENU4_LACLL	tr|A0A0V8AMJ8|A0A0V8AMJ8_LACLL	tr|A0A0V8AMJ8|A0A0V8AMJ8_LACLL Asparagine--tRNA ligase OS=Lactococcus lactis subsp. lactis GN=asnS PE=3 SV=1 Split=0 	0.0
+tr|G3SKK8|G3SKK8_GORGO	tr|G1S618|G1S618_NOMLE	tr|G1S618|G1S618_NOMLE Uncharacterized protein OS=Nomascus leucogenys GN=SLC26A10 PE=3 SV=1 Split=0 	0.0
+tr|A0A0C5ZNV7|A0A0C5ZNV7_YEASX	tr|A0A0C5ZF65|A0A0C5ZF65_YEASX	tr|A0A0C5ZF65|A0A0C5ZF65_YEASX Ics3p OS=Saccharomyces cerevisiae YJM978 GN=ICS3 PE=4 SV=1 Split=0 	4.21e-92
+tr|A0A126G4A8|A0A126G4A8_9RHOD	tr|A0A059XFQ9|A0A059XFQ9_PYRPE	tr|A0A059XFQ9|A0A059XFQ9_PYRPE Phenylalanine--tRNA ligase beta subunit OS=Pyropia perforata GN=syfB PE=3 SV=1 Split=0 	0.0
+tr|E6ZII9|E6ZII9_DICLA	tr|E6ZII9|E6ZII9_DICLA	tr|E6ZII9|E6ZII9_DICLA Forkhead box protein H1 OS=Dicentrarchus labrax GN=FOXH1 PE=4 SV=1 Split=0 	0.0
+sp|P22261|GLYC_BRSVC	sp|O09495|GLYC_BRSVL	sp|O09495|GLYC_BRSVL Major surface glycoprotein G OS=Bovine respiratory syncytial virus (strain Lelystad) GN=G PE=2 SV=1 Split=0 	6.12e-159
+tr|M4DXA8|M4DXA8_BRARP	tr|M4DXA8|M4DXA8_BRARP	tr|M4DXA8|M4DXA8_BRARP Uncharacterized protein OS=Brassica rapa subsp. pekinensis PE=4 SV=1 Split=0 	0.0
+sp|P75428|PLSY_MYCPN	tr|Q0YTF4|Q0YTF4_9CHLB	tr|Q0YTF4|Q0YTF4_9CHLB Glycerol-3-phosphate acyltransferase OS=Chlorobium ferrooxidans DSM 13031 GN=plsY PE=3 SV=1 Split=0 	1.95e-31
+tr|G9KN19|G9KN19_MUSPF	tr|A0A096NMQ8|A0A096NMQ8_PAPAN	tr|A0A096NMQ8|A0A096NMQ8_PAPAN Uncharacterized protein OS=Papio anubis GN=SEMA7A PE=4 SV=1 Split=0 	0.0
+tr|G7PBD3|G7PBD3_MACFA	tr|A0A0D9RF05|A0A0D9RF05_CHLSB	tr|A0A0D9RF05|A0A0D9RF05_CHLSB Uncharacterized protein OS=Chlorocebus sabaeus PE=4 SV=1 Split=0 	1.43e-72
+tr|V4LKB1|V4LKB1_EUTSA	tr|V4LKB1|V4LKB1_EUTSA	tr|V4LKB1|V4LKB1_EUTSA Uncharacterized protein (Fragment) OS=Eutrema salsugineum GN=EUTSA_v10006443mg PE=4 SV=1 Split=0 	0.0
+tr|S5VPX2|S5VPX2_PLAVI	sp|O99256|CYB_PLACH	sp|O99256|CYB_PLACH Cytochrome b OS=Plasmodium chabaudi GN=MT-CYB PE=3 SV=1 Split=0 	0.0
+tr|W1TUQ2|W1TUQ2_STRAP	tr|X8HDI6|X8HDI6_9STRE	tr|X8HDI6|X8HDI6_9STRE Spermidine/putrescine import ATP-binding protein PotA OS=Streptococcus sp. AS20 GN=potA PE=3 SV=1 Split=0 	0.0
+tr|A0A017PM95|A0A017PM95_BACFG	tr|A0A017PM95|A0A017PM95_BACFG	tr|A0A017PM95|A0A017PM95_BACFG Uridylate kinase OS=Bacteroides fragilis str. S6L5 GN=pyrH PE=3 SV=1 Split=0 	0.0
+tr|A0A074TEH9|A0A074TEH9_9RHOB	tr|A0A074TEH9|A0A074TEH9_9RHOB	tr|A0A074TEH9|A0A074TEH9_9RHOB DNA-directed DNA polymerase (Fragment) OS=Thioclava dalianensis GN=DL1_09975 PE=4 SV=1 Split=0 	0.0
+tr|A0A0K0F9R3|A0A0K0F9R3_9BILA	tr|A0A0K0EDI0|A0A0K0EDI0_STRER	tr|A0A0K0EDI0|A0A0K0EDI0_STRER Uncharacterized protein OS=Strongyloides stercoralis PE=3 SV=1 Split=0 	0.0
+sp|Q54R31|Y8498_DICDI	tr|Q54R32|Q54R32_DICDI	tr|Q54R32|Q54R32_DICDI Uncharacterized protein OS=Dictyostelium discoideum GN=DDB0218494 PE=4 SV=1 Split=0 	6.69e-12
+sp|Q4UKM7|EFP_RICFE	tr|H8KCP7|H8KCP7_RICMS	tr|H8KCP7|H8KCP7_RICMS Elongation factor P OS=Rickettsia montanensis (strain OSU 85-930) GN=efp PE=3 SV=1 Split=0 	1.87e-133
+tr|Q2ERY2|Q2ERY2_PECCA	tr|Q2ERY1|Q2ERY1_PECCA	tr|Q2ERY1|Q2ERY1_PECCA Harpin OS=Pectobacterium carotovorum GN=hrpN PE=4 SV=1 Split=0 	0.0
+tr|B3NDZ7|B3NDZ7_DROER	tr|B4IXP4|B4IXP4_DROGR	tr|B4IXP4|B4IXP4_DROGR GH14662 OS=Drosophila grimshawi GN=Dgri\GH14662 PE=4 SV=1 Split=0 	0.0
+tr|A0A142FCW2|A0A142FCW2_BACAM	tr|A7Z3C5|A7Z3C5_BACMF	tr|A7Z3C5|A7Z3C5_BACMF AppF OS=Bacillus methylotrophicus (strain DSM 23117 / BGSC 10A6 / FZB42) GN=appF PE=3 SV=1 Split=0 	0.0
+tr|T2QLU2|T2QLU2_CHLPS	tr|T5JYJ0|T5JYJ0_9CHLA	tr|T5JYJ0|T5JYJ0_9CHLA 3-oxoacyl-[acyl-carrier-protein] synthase 3 OS=Chlamydia ibidis 10-1398/6 GN=fabH PE=3 SV=1 Split=0 	0.0
+tr|W4EHQ7|W4EHQ7_9BACL	tr|I2CB75|I2CB75_BACAM	tr|I2CB75|I2CB75_BACAM ATP synthase subunit beta OS=Bacillus amyloliquefaciens Y2 GN=atpD PE=3 SV=1 Split=0 	0.0
+tr|A0A0F2L546|A0A0F2L546_9CREN	tr|A0A0F2L4L4|A0A0F2L4L4_9CREN	tr|A0A0F2L4L4|A0A0F2L4L4_9CREN 50S ribosomal protein L31 (Fragment) OS=Vulcanisaeta sp. AZ3 GN=TU36_08090 PE=3 SV=1 Split=0 	5.89e-54
+tr|A0A0A3CW43|A0A0A3CW43_CANAX	tr|A0A0A4C5G9|A0A0A4C5G9_CANAX	tr|A0A0A4C5G9|A0A0A4C5G9_CANAX Golgi to ER traffic protein 1 OS=Candida albicans P34048 GN=GET1 PE=3 SV=1 Split=0 	2.86e-146
+tr|A0A0U0VDX1|A0A0U0VDX1_STAHA	tr|Q7X0E5|Q7X0E5_STAAU	tr|Q7X0E5|Q7X0E5_STAAU Enterotoxin type G OS=Staphylococcus aureus GN=seg PE=4 SV=2 Split=0 	0.0
+sp|P26733|BXB1_BOMMO	tr|H9JY78|H9JY78_BOMMO	tr|H9JY78|H9JY78_BOMMO Uncharacterized protein OS=Bombyx mori GN=Bbx-b1 PE=3 SV=1 Split=0 	3.82e-63
+tr|A0A0K2S3B3|A0A0K2S3B3_COTJA	sp|Q04594|PRLR_CHICK	sp|Q04594|PRLR_CHICK Prolactin receptor OS=Gallus gallus GN=PRLR PE=2 SV=1 Split=0 	0.0
+tr|M1RRZ2|M1RRZ2_9AQUI	tr|D3DIM0|D3DIM0_HYDTT	tr|D3DIM0|D3DIM0_HYDTT 50S ribosomal protein L35 OS=Hydrogenobacter thermophilus (strain DSM 6534 / IAM 12695 / TK-6) GN=rpmI PE=3 SV=1 Split=0 	3.33e-20
+tr|A0A0F0DJ04|A0A0F0DJ04_9BURK	tr|A0A0S4U986|A0A0S4U986_RALSL	tr|A0A0S4U986|A0A0S4U986_RALSL RNA pyrophosphohydrolase OS=Ralstonia solanacearum GN=rppH PE=3 SV=1 Split=0 	2.44e-146
+tr|Q252K9|Q252K9_CHLFF	tr|Q821C7|Q821C7_CHLCV	tr|Q821C7|Q821C7_CHLCV Virulence plasmid integrase pGP8-D OS=Chlamydophila caviae (strain GPIC) GN=CCAA00003 PE=4 SV=1 Split=0 	0.0
+tr|C5A7G2|C5A7G2_THEGJ	tr|Q5JF19|Q5JF19_THEKO	tr|Q5JF19|Q5JF19_THEKO Putative uncharacterized protein OS=Thermococcus kodakarensis (strain ATCC BAA-918 / JCM 12380 / KOD1) GN=TK0515 PE=4 SV=1 Split=0 	8.59e-81
+tr|A0A0B7J0J3|A0A0B7J0J3_9RICK	sp|A8GRW0|GCH1_RICRS	sp|A8GRW0|GCH1_RICRS GTP cyclohydrolase 1 OS=Rickettsia rickettsii (strain Sheila Smith) GN=folE PE=3 SV=1 Split=0 	6.78e-129
+tr|R5J8N4|R5J8N4_9CLOT	tr|G6J8V9|G6J8V9_STREE	tr|G6J8V9|G6J8V9_STREE Translation initiation factor IF-2 OS=Streptococcus pneumoniae GA47502 GN=infB PE=3 SV=1 Split=0 	0.0
+tr|W9RYS9|W9RYS9_9ROSA	tr|B9IQI5|B9IQI5_POPTR	tr|B9IQI5|B9IQI5_POPTR ABC transporter family protein OS=Populus trichocarpa GN=POPTR_0019s11270g PE=3 SV=2 Split=0 	0.0
+tr|H3AS32|H3AS32_LATCH	tr|A0A087QZL4|A0A087QZL4_APTFO	tr|A0A087QZL4|A0A087QZL4_APTFO Pleckstrin homology domain-containing family A member 1 OS=Aptenodytes forsteri GN=AS27_02824 PE=4 SV=1 Split=0 	0.0
+sp|Q7MTF5|RECO_PORGI	tr|W1R7P6|W1R7P6_PORGN	tr|W1R7P6|W1R7P6_PORGN DNA repair protein RecO OS=Porphyromonas gingivalis SJD2 GN=SJDPG2_06715 PE=3 SV=1 Split=0 	2.06e-155
+sp|P47295|DEOD_MYCGE	tr|G2LM25|G2LM25_9ENTR	tr|G2LM25|G2LM25_9ENTR Purine nucleoside phosphorylase DeoD-type OS=Buchnera aphidicola str. Ak (Acyrthosiphon kondoi) GN=deoD PE=3 SV=1 Split=0 	9.23e-58
+tr|S8QQG0|S8QQG0_STRAG	sp|P0A3K6|IF2_STRA3	sp|P0A3K6|IF2_STRA3 Translation initiation factor IF-2 OS=Streptococcus agalactiae serotype III (strain NEM316) GN=infB PE=3 SV=1 Split=0 	0.0
+tr|A0A0M3GZ92|A0A0M3GZ92_NEIGO	tr|A0A0C1Q4S4|A0A0C1Q4S4_NEIME	tr|A0A0C1Q4S4|A0A0C1Q4S4_NEIME Fe(3+) ions import ATP-binding protein FbpC OS=Neisseria meningitidis LNP27256 GN=fbpC PE=3 SV=1 Split=0 	0.0
+tr|M4E0S7|M4E0S7_BRARP	tr|M4E0S7|M4E0S7_BRARP	tr|M4E0S7|M4E0S7_BRARP Uncharacterized protein OS=Brassica rapa subsp. pekinensis PE=4 SV=1 Split=0 	3.44e-161
+tr|M4D3L4|M4D3L4_BRARP	tr|V4MGD5|V4MGD5_EUTSA	tr|V4MGD5|V4MGD5_EUTSA Uncharacterized protein OS=Eutrema salsugineum GN=EUTSA_v10025235mg PE=4 SV=1 Split=0 	0.0
+tr|Q2Y0I6|Q2Y0I6_ADE03	tr|Q2KS79|Q2KS79_9ADEN	tr|Q2KS79|Q2KS79_9ADEN 19 kDa protein OS=Human adenovirus 21 GN=E2B PE=4 SV=1 Split=0 	2.08e-116
+tr|I2NGK0|I2NGK0_9PAST	sp|Q8KAQ4|CRCB_CHLTE	sp|Q8KAQ4|CRCB_CHLTE Putative fluoride ion transporter CrcB OS=Chlorobium tepidum (strain ATCC 49652 / DSM 12025 / NBRC 103806 / TLS) GN=crcB PE=3 SV=1 Split=0 	8.40e-13
+tr|H2QKI6|H2QKI6_PANTR	tr|V8NWE0|V8NWE0_OPHHA	tr|V8NWE0|V8NWE0_OPHHA Solute carrier family 13 member 3 (Fragment) OS=Ophiophagus hannah GN=SLC13A3 PE=4 SV=1 Split=0 	0.0
+tr|B1AA68|B1AA68_FDV	tr|B1AA63|B1AA63_FDV	tr|B1AA63|B1AA63_FDV Putative uncharacterized protein (Fragment) OS=Fiji disease virus PE=4 SV=1 Split=0 	4.02e-141
+tr|M4EG09|M4EG09_BRARP	tr|M4EG09|M4EG09_BRARP	tr|M4EG09|M4EG09_BRARP Uncharacterized protein OS=Brassica rapa subsp. pekinensis PE=4 SV=1 Split=0 	0.0
+tr|D0F0C7|D0F0C7_FELCA	tr|L8I117|L8I117_9CETA	tr|L8I117|L8I117_9CETA Coagulation factor XII (Fragment) OS=Bos mutus GN=M91_05841 PE=3 SV=1 Split=0 	0.0
+tr|A0A0R3S4W6|A0A0R3S4W6_9BILA	sp|Q9TXA7|API_ACAVI	sp|Q9TXA7|API_ACAVI Filarial antigen Av33 OS=Acanthocheilonema viteae PE=3 SV=2 Split=0 	1.60e-131
+tr|A0A0Q7NXB8|A0A0Q7NXB8_9RHIZ	tr|W8F4Q9|W8F4Q9_RHIRD	tr|W8F4Q9|W8F4Q9_RHIRD N-(5'-phosphoribosyl)anthranilate isomerase OS=Agrobacterium tumefaciens LBA4213 (Ach5) GN=trpF PE=3 SV=1 Split=0 	4.36e-157
+tr|A0A0A1MWY8|A0A0A1MWY8_9FUNG	tr|I1BGU3|I1BGU3_RHIO9	tr|I1BGU3|I1BGU3_RHIO9 Uncharacterized protein OS=Rhizopus delemar (strain RA 99-880 / ATCC MYA-4621 / FGSC 9543 / NRRL 43880) GN=RO3G_00127 PE=4 SV=1 Split=0 	0.0
+tr|L7RC62|L7RC62_9VIRU	sp|Q5UPX7|RPO5_MIMIV	sp|Q5UPX7|RPO5_MIMIV DNA-directed RNA polymerase subunit 5 OS=Acanthamoeba polyphaga mimivirus GN=MIMI_L235 PE=1 SV=1 Split=0 	7.34e-78
+sp|Q3ZZU0|ATPD_DEHMC	sp|Q3ZZU0|ATPD_DEHMC	sp|Q3ZZU0|ATPD_DEHMC ATP synthase subunit delta OS=Dehalococcoides mccartyi (strain CBDB1) GN=atpH PE=3 SV=1 Split=0 	2.84e-129
+tr|A8XF16|A8XF16_CAEBR	sp|Q9N4V4|SCPL3_CAEEL	sp|Q9N4V4|SCPL3_CAEEL CTD small phosphatase-like protein 3 OS=Caenorhabditis elegans GN=scpl-3 PE=3 SV=1 Split=0 	1.01e-161
+tr|Q4QTL3|Q4QTL3_WOLPI	tr|X5H1W1|X5H1W1_9RICK	tr|X5H1W1|X5H1W1_9RICK DNA ligase OS=Ehrlichia sp. HF GN=ligA PE=3 SV=1 Split=0 	0.0
+tr|W2T9N6|W2T9N6_NECAM	sp|Q9NAE2|HUTU_CAEEL	sp|Q9NAE2|HUTU_CAEEL Probable urocanate hydratase OS=Caenorhabditis elegans GN=Y51H4A.7 PE=3 SV=2 Split=0 	0.0
+sp|A8F1N7|MIAA_RICM5	tr|G4KN55|G4KN55_RICJY	tr|G4KN55|G4KN55_RICJY tRNA dimethylallyltransferase OS=Rickettsia japonica (strain ATCC VR-1363 / YH) GN=miaA PE=3 SV=1 Split=0 	0.0
+sp|P0A383|CT1AA_BACTM	tr|F6ME05|F6ME05_BACTU	tr|F6ME05|F6ME05_BACTU Cyt2 OS=Bacillus thuringiensis PE=4 SV=1 Split=0 	8.11e-48
+tr|M4CT87|M4CT87_BRARP	tr|R0ID12|R0ID12_9BRAS	tr|R0ID12|R0ID12_9BRAS Uncharacterized protein OS=Capsella rubella GN=CARUB_v10008815mg PE=4 SV=1 Split=0 	1.08e-29
+tr|B2I443|B2I443_9CAUD	tr|A0A0U2DA61|A0A0U2DA61_9CAUD	tr|A0A0U2DA61|A0A0U2DA61_9CAUD DNA-binding protein OS=Escherichia phage APCEc03 GN=APCEc03_061 PE=4 SV=1 Split=0 	2.89e-83
+tr|H6KT70|H6KT70_TREPD	tr|R9UUM9|R9UUM9_TREPA	tr|R9UUM9|R9UUM9_TREPA Isoleucine--tRNA ligase OS=Treponema pallidum (strain Nichols) GN=ileS PE=3 SV=1 Split=0 	0.0
+tr|Q5CB92|Q5CB92_THESQ	tr|D2C7D7|D2C7D7_THENR	tr|D2C7D7|D2C7D7_THENR Phosphate acyltransferase OS=Thermotoga naphthophila (strain ATCC BAA-489 / DSM 13996 / JCM 10882 / RKU-10) GN=plsX PE=3 SV=1 Split=0 	0.0
+sp|B4SG54|HRCA_PELPB	sp|B4SG54|HRCA_PELPB	sp|B4SG54|HRCA_PELPB Heat-inducible transcription repressor HrcA OS=Pelodictyon phaeoclathratiforme (strain DSM 5477 / BU-1) GN=hrcA PE=3 SV=1 Split=0 	0.0
+tr|Q5VIY3|Q5VIY3_BRARC	tr|A0A0A7RI94|A0A0A7RI94_BRAOC	tr|A0A0A7RI94|A0A0A7RI94_BRAOC WRKY84 protein OS=Brassica oleracea var. capitata GN=WRKY84 PE=2 SV=1 Split=0 	1.06e-166
+tr|A0A064B1R8|A0A064B1R8_ASPOZ	tr|I8IMM4|I8IMM4_ASPO3	tr|I8IMM4|I8IMM4_ASPO3 Promoter region-related protein OS=Aspergillus oryzae (strain 3.042) GN=Ao3042_02766 PE=4 SV=1 Split=0 	0.0
+tr|A0A0V0I5P3|A0A0V0I5P3_SOLCH	tr|A0A068U968|A0A068U968_COFCA	tr|A0A068U968|A0A068U968_COFCA Uncharacterized protein OS=Coffea canephora GN=GSCOC_T00018773001 PE=4 SV=1 Split=0 	2.72e-151
+tr|A0A0D2M3T6|A0A0D2M3T6_GOSRA	tr|I1MLI4|I1MLI4_SOYBN	tr|I1MLI4|I1MLI4_SOYBN Uncharacterized protein OS=Glycine max GN=GLYMA_16G057300 PE=4 SV=1 Split=0 	5.26e-143
+tr|E2P5V9|E2P5V9_MANHA	tr|S9ZI04|S9ZI04_MANHA	tr|S9ZI04|S9ZI04_MANHA DNA circularization protein OS=Mannheimia haemolytica D35 GN=L278_00915 PE=4 SV=1 Split=0 	0.0
+tr|E1WZ27|E1WZ27_HALMS	tr|E1WZ27|E1WZ27_HALMS	tr|E1WZ27|E1WZ27_HALMS Arginine--tRNA ligase OS=Halobacteriovorax marinus (strain ATCC BAA-682 / DSM 15412 / SJ) GN=argS PE=3 SV=1 Split=0 	0.0
+tr|U2EZK2|U2EZK2_9PROT	tr|A0A0M4SAK5|A0A0M4SAK5_9PROT	tr|A0A0M4SAK5|A0A0M4SAK5_9PROT Succinyl-diaminopimelate desuccinylase OS=Campylobacter concisus GN=dapE PE=3 SV=1 Split=0 	0.0
+tr|A0A067XP71|A0A067XP71_9CRYP	tr|A8KCY2|A8KCY2_GUITH	tr|A8KCY2|A8KCY2_GUITH Phycoerythrin alpha subunit 9 OS=Guillardia theta GN=cpeA9 PE=2 SV=1 Split=0 	6.92e-23
+tr|A0A0S8J6R4|A0A0S8J6R4_9BACT	tr|A0A0S8DYJ8|A0A0S8DYJ8_9BACT	tr|A0A0S8DYJ8|A0A0S8DYJ8_9BACT UDP-3-O-acylglucosamine N-acyltransferase OS=Omnitrophica WOR_2 bacterium SM23_29 GN=lpxD PE=3 SV=1 Split=0 	8.45e-134
+tr|H2W634|H2W634_CAEJA	tr|E3LSP8|E3LSP8_CAERE	tr|E3LSP8|E3LSP8_CAERE Putative uncharacterized protein OS=Caenorhabditis remanei GN=CRE_25065 PE=4 SV=1 Split=0 	0.0
+tr|C7P6Z6|C7P6Z6_METFA	tr|C9RI38|C9RI38_METVM	tr|C9RI38|C9RI38_METVM Type-2 serine--tRNA ligase OS=Methanocaldococcus vulcanius (strain ATCC 700851 / DSM 12094 / M7) GN=serS PE=3 SV=1 Split=0 	0.0
+tr|M1E470|M1E470_9CAUD	sp|Q7Y5N4|EXLYS_BPSP6	sp|Q7Y5N4|EXLYS_BPSP6 Peptidoglycan hydrolase gp36 OS=Enterobacteria phage SP6 GN=36 PE=4 SV=1 Split=0 	0.0
+tr|Q5KSV2|Q5KSV2_BMV	tr|A0A0D5NRZ9|A0A0D5NRZ9_BMV	tr|A0A0D5NRZ9|A0A0D5NRZ9_BMV Movement protein 3a (Fragment) OS=Brome mosaic virus PE=4 SV=1 Split=0 	0.0
+tr|H2NB04|H2NB04_PONAB	tr|A0A0P6JHM9|A0A0P6JHM9_HETGA	tr|A0A0P6JHM9|A0A0P6JHM9_HETGA TATA-binding protein-associated factor 172 OS=Heterocephalus glaber GN=BTAF1 PE=4 SV=1 Split=0 	0.0
+tr|H1Q7Z5|H1Q7Z5_9ACTN	tr|B0B0V7|B0B0V7_STRGA	tr|B0B0V7|B0B0V7_STRGA Alpha-amylase GacZ1 OS=Streptomyces glaucescens GN=gacZ1 PE=4 SV=2 Split=0 	0.0
+tr|B7R2K3|B7R2K3_9EURY	tr|H3ZLT2|H3ZLT2_THELN	tr|H3ZLT2|H3ZLT2_THELN Proteasome subunit beta OS=Thermococcus litoralis (strain ATCC 51850 / DSM 5473 / JCM 8560 / NS-C) GN=psmB PE=3 SV=1 Split=0 	5.82e-130
+tr|A0A0X1KPH9|A0A0X1KPH9_9THEM	tr|A0A117L470|A0A117L470_9THEM	tr|A0A117L470|A0A117L470_9THEM 4-diphosphocytidyl-2-C-methyl-D-erythritol kinase OS=Thermotoga sp. 50_1627 GN=ispE PE=3 SV=1 Split=0 	1.31e-165
+tr|Q06EN7|Q06EN7_BPR32	tr|G1FH19|G1FH19_9CAUD	tr|G1FH19|G1FH19_9CAUD Putative uncharacterized protein nrdC.6 OS=Enterobacteria phage ime09 GN=nrdC.6 PE=4 SV=1 Split=0 	0.0
+sp|P9WLF8|Y2269_MYCTO	tr|A0A093MY16|A0A093MY16_MYCBI	tr|A0A093MY16|A0A093MY16_MYCBI Uncharacterized protein OS=Mycobacterium bovis GN=BOVR_11760 PE=4 SV=1 Split=0 	1.34e-76
+sp|P23085|HVC2_HETFR	sp|P23085|HVC2_HETFR	sp|P23085|HVC2_HETFR Ig heavy chain C region (Fragment) OS=Heterodontus francisci PE=2 SV=1 Split=0 	0.0
+tr|X7FCM4|X7FCM4_9RHOB	tr|A6FRH2|A6FRH2_9RHOB	tr|A6FRH2|A6FRH2_9RHOB N-acetyl-gamma-glutamyl-phosphate reductase OS=Roseobacter sp. AzwK-3b GN=argC PE=3 SV=1 Split=0 	0.0
+tr|A0A0A3CLX5|A0A0A3CLX5_CANAX	tr|A0A0A3CLX5|A0A0A3CLX5_CANAX	tr|A0A0A3CLX5|A0A0A3CLX5_CANAX Uncharacterized protein OS=Candida albicans P37005 GN=MEU_00976 PE=4 SV=1 Split=0 	0.0
+tr|A0A0D3ASZ0|A0A0D3ASZ0_BRAOL	tr|A0A0D3ECJ2|A0A0D3ECJ2_BRAOL	tr|A0A0D3ECJ2|A0A0D3ECJ2_BRAOL Alkyl transferase OS=Brassica oleracea var. oleracea PE=3 SV=1 Split=0 	5.84e-158
+tr|A0A0M1T666|A0A0M1T666_KLEPN	tr|C8T1I4|C8T1I4_KLEPR	tr|C8T1I4|C8T1I4_KLEPR PTS system, N-acetylglucosamine-specific IIBC component OS=Klebsiella pneumoniae subsp. rhinoscleromatis ATCC 13884 GN=nagE PE=4 SV=1 Split=0 	0.0
+tr|A0A067FHJ0|A0A067FHJ0_CITSI	tr|A0A067FHJ0|A0A067FHJ0_CITSI	tr|A0A067FHJ0|A0A067FHJ0_CITSI Uncharacterized protein OS=Citrus sinensis GN=CISIN_1g004567mg PE=3 SV=1 Split=0 	0.0
+tr|C5X5G1|C5X5G1_SORBI	tr|B6SPE7|B6SPE7_MAIZE	tr|B6SPE7|B6SPE7_MAIZE Formin-like protein OS=Zea mays PE=2 SV=1 Split=0 	0.0
+sp|B3P773|CAV_DROER	sp|B4QT24|CAV_DROSI	sp|B4QT24|CAV_DROSI Telomere-binding protein cav OS=Drosophila simulans GN=cav PE=3 SV=1 Split=0 	0.0
+tr|V4LVB2|V4LVB2_EUTSA	tr|D7LT62|D7LT62_ARALL	tr|D7LT62|D7LT62_ARALL Putative uncharacterized protein OS=Arabidopsis lyrata subsp. lyrata GN=ARALYDRAFT_486743 PE=4 SV=1 Split=0 	0.0
+tr|A0A0U0JIQ6|A0A0U0JIQ6_STREE	tr|A5LNS5|A5LNS5_STREE	tr|A5LNS5|A5LNS5_STREE Uncharacterized protein OS=Streptococcus pneumoniae SP6-BS73 GN=CGSSp6BS73_00335 PE=4 SV=1 Split=0 	1.38e-109
+tr|F7H2C1|F7H2C1_MACMU	sp|Q9H0W7|THAP2_HUMAN	sp|Q9H0W7|THAP2_HUMAN THAP domain-containing protein 2 OS=Homo sapiens GN=THAP2 PE=1 SV=1 Split=0 	6.12e-169
+tr|A0A0A8EP93|A0A0A8EP93_9ACTN	sp|Q8GED8|ALBB_STRNR	sp|Q8GED8|ALBB_STRNR Protein AlbB OS=Streptomyces noursei GN=albB PE=4 SV=1 Split=0 	1.93e-66
+sp|P0CK13|MVP_ZYMVC	sp|P0CK07|MVP_SBMVG	sp|P0CK07|MVP_SBMVG P3N-PIPO polyprotein OS=Soybean mosaic virus (strain G2) PE=3 SV=2 Split=0 	0.0
+sp|B8FC91|SURE_DESAA	tr|A0A0F2R461|A0A0F2R461_9DELT	tr|A0A0F2R461|A0A0F2R461_9DELT 5'-nucleotidase SurE OS=Desulfatitalea sp. BRH_c12 GN=surE PE=3 SV=1 Split=0 	1.33e-84
+tr|B5DVF7|B5DVF7_DROPS	sp|B3LWS4|KIBRA_DROAN	sp|B3LWS4|KIBRA_DROAN Protein kibra OS=Drosophila ananassae GN=Kibra PE=3 SV=1 Split=0 	0.0
+tr|A9NTH9|A9NTH9_PICSI	tr|K3ZWT3|K3ZWT3_SETIT	tr|K3ZWT3|K3ZWT3_SETIT Uncharacterized protein OS=Setaria italica GN=Si031065m.g PE=3 SV=1 Split=0 	5.47e-75
+tr|K4C955|K4C955_SOLLC	tr|A0A068V8W9|A0A068V8W9_COFCA	tr|A0A068V8W9|A0A068V8W9_COFCA Uncharacterized protein OS=Coffea canephora GN=GSCOC_T00011375001 PE=4 SV=1 Split=0 	1.13e-52
+tr|A0A0C5WNR1|A0A0C5WNR1_LEPIR	tr|A0A0M4NX40|A0A0M4NX40_LEPIR	tr|A0A0M4NX40|A0A0M4NX40_LEPIR Ferrous iron transport protein B OS=Leptospira interrogans serovar Hardjo str. Norma GN=feoB PE=3 SV=1 Split=0 	0.0
+tr|T0NI29|T0NI29_CAMFR	tr|M3XCQ3|M3XCQ3_FELCA	tr|M3XCQ3|M3XCQ3_FELCA Uncharacterized protein OS=Felis catus GN=FAM71B PE=4 SV=1 Split=0 	0.0
+tr|A0A0G2K4F4|A0A0G2K4F4_RAT	tr|D3ZMY3|D3ZMY3_RAT	tr|D3ZMY3|D3ZMY3_RAT Protein LOC103690910 OS=Rattus norvegicus GN=LOC103694517 PE=4 SV=1 Split=0 	1.50e-120
+tr|V4TTK3|V4TTK3_9ROSI	tr|A0A0D2ND35|A0A0D2ND35_GOSRA	tr|A0A0D2ND35|A0A0D2ND35_GOSRA Uncharacterized protein OS=Gossypium raimondii GN=B456_001G230900 PE=4 SV=1 Split=0 	0.0
+sp|B2S4E2|RS16_TREPS	tr|Q1NJ46|Q1NJ46_9DELT	tr|Q1NJ46|Q1NJ46_9DELT 30S ribosomal protein S16 OS=delta proteobacterium MLMS-1 GN=rpsP PE=3 SV=1 Split=0 	1.34e-21
+tr|W4HZ20|W4HZ20_MYCGS	tr|W4HZ20|W4HZ20_MYCGS	tr|W4HZ20|W4HZ20_MYCGS Uncharacterized protein OS=Mycobacterium gastri 'Wayne' GN=MGAST_11250 PE=4 SV=1 Split=0 	4.22e-105
+tr|Q9AQ30|Q9AQ30_BRASW	sp|P50330|NOLA_BRASN	sp|P50330|NOLA_BRASN Nodulation protein NolA OS=Bradyrhizobium sp. (strain NC92) GN=nolA PE=3 SV=1 Split=0 	4.42e-120
+tr|A0A016W2A2|A0A016W2A2_9BILA	tr|B4QRQ6|B4QRQ6_DROSI	tr|B4QRQ6|B4QRQ6_DROSI GD14398 OS=Drosophila simulans GN=Dsim\GD14398 PE=4 SV=1 Split=0 	3.68e-106
+sp|A8G1Q8|RLMF_SHESH	tr|E3LRY8|E3LRY8_CAERE	tr|E3LRY8|E3LRY8_CAERE Methyltransferase-like protein OS=Caenorhabditis remanei GN=Cre-mett-10 PE=3 SV=1 Split=0 	2.20e-22
+tr|G3RFS9|G3RFS9_GORGO	tr|K6ZPI0|K6ZPI0_PANTR	tr|K6ZPI0|K6ZPI0_PANTR Protein tyrosine phosphatase, receptor type, J OS=Pan troglodytes GN=PTPRJ PE=2 SV=1 Split=0 	0.0
+tr|A0A0D3E0J9|A0A0D3E0J9_BRAOL	tr|V4LJY6|V4LJY6_EUTSA	tr|V4LJY6|V4LJY6_EUTSA Uncharacterized protein (Fragment) OS=Eutrema salsugineum GN=EUTSA_v10023056mg PE=3 SV=1 Split=0 	0.0
+tr|X5H397|X5H397_9RICK	tr|V9R716|V9R716_9RICK	tr|V9R716|V9R716_9RICK Dephospho-CoA kinase OS=Ehrlichia muris AS145 GN=coaE PE=3 SV=1 Split=0 	1.60e-140
+sp|Q98Q98|TRMD_MYCPU	tr|A0A143CVJ5|A0A143CVJ5_MYCBV	tr|A0A143CVJ5|A0A143CVJ5_MYCBV tRNA (Guanine-N(1)-)-methyltransferase OS=Mycoplasma bovis GN=BC85_0637 PE=4 SV=1 Split=0 	1.31e-105
+tr|R9RW64|R9RW64_SFV1	tr|K7YN92|K7YN92_9RETR	tr|K7YN92|K7YN92_9RETR Pol protein OS=Simian foamy virus GN=pol PE=4 SV=1 Split=0 	0.0
+tr|A4F7N8|A4F7N8_SACEN	sp|Q03131|ERYA1_SACER	sp|Q03131|ERYA1_SACER 6-deoxyerythronolide-B synthase EryA1, modules 1 and 2 OS=Saccharopolyspora erythraea GN=eryA PE=1 SV=1 Split=0 	0.0
+tr|A4F7N8|A4F7N8_SACEN	sp|Q03131|ERYA1_SACER	sp|Q03131|ERYA1_SACER 6-deoxyerythronolide-B synthase EryA1, modules 1 and 2 OS=Saccharopolyspora erythraea GN=eryA PE=1 SV=1 Split=0 	7.85e-71
+tr|A4F7N8|A4F7N8_SACEN	sp|Q03131|ERYA1_SACER	sp|Q03131|ERYA1_SACER 6-deoxyerythronolide-B synthase EryA1, modules 1 and 2 OS=Saccharopolyspora erythraea GN=eryA PE=1 SV=1 Split=0 	3.67e-69
+tr|A0A0K0LCH2|A0A0K0LCH2_9SCOR	tr|A0A0K0LCH2|A0A0K0LCH2_9SCOR	tr|A0A0K0LCH2|A0A0K0LCH2_9SCOR Kunitz-type carboxypeptidase inhibitor Kci-5 OS=Androctonus bicolor PE=2 SV=1 Split=0 	1.10e-54
+tr|G7WN60|G7WN60_METH6	tr|G7WN60|G7WN60_METH6	tr|G7WN60|G7WN60_METH6 7-cyano-7-deazaguanine synthase OS=Methanosaeta harundinacea (strain 6Ac) GN=queC PE=3 SV=1 Split=0 	4.24e-169
+tr|A0A0A4DU54|A0A0A4DU54_CANAX	tr|A0A0A6LX37|A0A0A6LX37_CANAX	tr|A0A0A6LX37|A0A0A6LX37_CANAX Histone acetyltransferase type B catalytic subunit OS=Candida albicans Ca6 GN=W5O_00461 PE=4 SV=1 Split=0 	0.0
+tr|A0A0K1L9R0|A0A0K1L9R0_9REOV	tr|A0A0B5CSU5|A0A0B5CSU5_9REOV	tr|A0A0B5CSU5|A0A0B5CSU5_9REOV MuNS OS=Mammalian orthoreovirus 3 PE=4 SV=1 Split=0 	0.0
+tr|G2H2V2|G2H2V2_9DELT	sp|A1VE86|TIG_DESVV	sp|A1VE86|TIG_DESVV Trigger factor OS=Desulfovibrio vulgaris subsp. vulgaris (strain DP4) GN=tig PE=3 SV=1 Split=0 	0.0
+tr|M3XSD7|M3XSD7_MUSPF	tr|H0WTS0|H0WTS0_OTOGA	tr|H0WTS0|H0WTS0_OTOGA Uncharacterized protein OS=Otolemur garnettii GN=RBMX2 PE=4 SV=1 Split=0 	8.09e-159
+tr|H3DXW2|H3DXW2_PRIPA	tr|H3DXW2|H3DXW2_PRIPA	tr|H3DXW2|H3DXW2_PRIPA Uncharacterized protein OS=Pristionchus pacificus PE=4 SV=1 Split=0 	2.34e-129
+tr|A0A0D8DLJ9|A0A0D8DLJ9_9EURY	tr|D2HUC3|D2HUC3_AILME	tr|D2HUC3|D2HUC3_AILME Putative uncharacterized protein (Fragment) OS=Ailuropoda melanoleuca GN=PANDA_015861 PE=4 SV=1 Split=0 	9.31e-39
+tr|A0A0D0KBR9|A0A0D0KBR9_9PSED	tr|A0A109PVS8|A0A109PVS8_9PSED	tr|A0A109PVS8|A0A109PVS8_9PSED Erythronate-4-phosphate dehydrogenase OS=Pseudomonas monteilii GN=pdxB PE=3 SV=1 Split=0 	2.46e-174
+tr|A0A073KR37|A0A073KR37_9GAMM	sp|A4Y1H2|MTNC_SHEPC	sp|A4Y1H2|MTNC_SHEPC Enolase-phosphatase E1 OS=Shewanella putrefaciens (strain CN-32 / ATCC BAA-453) GN=mtnC PE=3 SV=1 Split=0 	1.17e-163
+tr|R5PT16|R5PT16_9BURK	tr|R5PT16|R5PT16_9BURK	tr|R5PT16|R5PT16_9BURK Ribonucleoside-diphosphate reductase OS=Sutterella wadsworthensis CAG:135 GN=BN489_00448 PE=3 SV=1 Split=0 	0.0
+tr|A0A0L8ADY7|A0A0L8ADY7_9GAMM	tr|A0A0K2IV82|A0A0K2IV82_STEMA	tr|A0A0K2IV82|A0A0K2IV82_STEMA Enolase OS=Stenotrophomonas maltophilia GN=eno PE=3 SV=1 Split=0 	0.0
+tr|I3X943|I3X943_RHIFR	tr|G6YM40|G6YM40_9RHIZ	tr|G6YM40|G6YM40_9RHIZ Na(+)/H(+) antiporter NhaA OS=Mesorhizobium amorphae CCNWGS0123 GN=nhaA PE=3 SV=1 Split=0 	3.83e-136
+tr|A0A0V8M4L9|A0A0V8M4L9_9CHLR	tr|A0A0C6EUG5|A0A0C6EUG5_9CHLR	tr|A0A0C6EUG5|A0A0C6EUG5_9CHLR 3-phosphoshikimate 1-carboxyvinyltransferase OS=Dehalococcoides sp. UCH007 GN=aroA PE=3 SV=1 Split=0 	0.0
+tr|W7V0Q8|W7V0Q8_RUMFL	tr|A0A090AQ94|A0A090AQ94_9ENTR	tr|A0A090AQ94|A0A090AQ94_9ENTR 50S ribosomal protein L35 OS=Candidatus Tachikawaea gelatinosa GN=rpmI PE=3 SV=1 Split=0 	2.15e-13
+tr|B3DQ79|B3DQ79_BIFLD	tr|T2I3V4|T2I3V4_BIFLN	tr|T2I3V4|T2I3V4_BIFLN Phosphomethylpyrimidine synthase OS=Bifidobacterium longum subsp. longum CECT 7347 GN=thiC PE=3 SV=1 Split=0 	0.0
+tr|V5R462|V5R462_9CAUD	tr|V5R6I3|V5R6I3_9CAUD	tr|V5R6I3|V5R6I3_9CAUD Uncharacterized protein OS=Mycobacterium phage Artemis2UCLA GN=66 PE=4 SV=1 Split=0 	6.26e-33
+tr|A0A126NBF4|A0A126NBF4_HCMV	tr|C8CPE3|C8CPE3_HCMV	tr|C8CPE3|C8CPE3_HCMV Tegument protein UL43 OS=Human cytomegalovirus GN=UL43 PE=4 SV=1 Split=0 	0.0
+tr|A0A0Q8D4J7|A0A0Q8D4J7_9PSED	tr|E2XV05|E2XV05_PSEFL	tr|E2XV05|E2XV05_PSEFL Threonine--tRNA ligase OS=Pseudomonas fluorescens WH6 GN=thrS PE=3 SV=1 Split=0 	0.0
+tr|A0A0D2KX42|A0A0D2KX42_CRYGA	tr|A0A0D0WDD0|A0A0D0WDD0_CRYGA	tr|A0A0D0WDD0|A0A0D0WDD0_CRYGA Mitochondrial distribution and morphology protein 34 OS=Cryptococcus gattii Ru294 GN=MDM34 PE=3 SV=1 Split=0 	0.0
+tr|A0A024QC74|A0A024QC74_9BACI	tr|A0A0L0QP78|A0A0L0QP78_VIRPA	tr|A0A0L0QP78|A0A0L0QP78_VIRPA Histidinol-phosphate aminotransferase OS=Virgibacillus pantothenticus GN=hisC PE=3 SV=1 Split=0 	0.0
+tr|F1NP62|F1NP62_CHICK	tr|M7BDE1|M7BDE1_CHEMY	tr|M7BDE1|M7BDE1_CHEMY Transmembrane protease serine 9 OS=Chelonia mydas GN=UY3_06876 PE=3 SV=1 Split=0 	0.0
+tr|A0A0C5Y3Y0|A0A0C5Y3Y0_YEASX	tr|A0A0C5Y3Y0|A0A0C5Y3Y0_YEASX	tr|A0A0C5Y3Y0|A0A0C5Y3Y0_YEASX Nit1p OS=Saccharomyces cerevisiae YJM683 GN=NIT1 PE=4 SV=1 Split=0 	9.14e-147
+tr|F4ZL11|F4ZL11_JUNIN	tr|Q5PY79|Q5PY79_JUNIN	tr|Q5PY79|Q5PY79_JUNIN RNA-directed RNA polymerase L OS=Junin mammarenavirus PE=3 SV=2 Split=0 	0.0
+tr|A0A0H3X118|A0A0H3X118_ECOLX	tr|A0A0H3X118|A0A0H3X118_ECOLX	tr|A0A0H3X118|A0A0H3X118_ECOLX Multidrug resistance, ATP-binding protein mdlA OS=Escherichia coli PCN061 GN=mdlA PE=4 SV=1 Split=0 	0.0
+tr|A0A076J976|A0A076J976_AVIRE	tr|N0BP51|N0BP51_AVIRE	tr|N0BP51|N0BP51_AVIRE Envelope glycoprotein OS=Avian reticuloendotheliosis virus GN=env PE=4 SV=1 Split=0 	0.0
+tr|Q53QP6|Q53QP6_HUMAN	sp|Q8N0X2|SPG16_HUMAN	sp|Q8N0X2|SPG16_HUMAN Sperm-associated antigen 16 protein OS=Homo sapiens GN=SPAG16 PE=2 SV=2 Split=0 	1.21e-33
+sp|Q9SW33|TL1Y_ARATH	tr|A0A022Q764|A0A022Q764_ERYGU	tr|A0A022Q764|A0A022Q764_ERYGU Uncharacterized protein OS=Erythranthe guttata GN=MIMGU_mgv1a012523mg PE=4 SV=1 Split=0 	2.22e-73
+tr|A0A133HG30|A0A133HG30_9BURK	tr|A0A132C5A1|A0A132C5A1_9BURK	tr|A0A132C5A1|A0A132C5A1_9BURK Peptide chain release factor 1 OS=Burkholderia sp. ABCPW 14 GN=prfA PE=3 SV=1 Split=0 	0.0
+tr|A0A0M0J4D4|A0A0M0J4D4_9EUKA	tr|C5LZ22|C5LZ22_PERM5	tr|C5LZ22|C5LZ22_PERM5 Delta-5/delta-6 fatty acid desaturase, putative OS=Perkinsus marinus (strain ATCC 50983 / TXsc) GN=Pmar_PMAR016108 PE=4 SV=1 Split=0 	6.36e-116
+tr|A0A097J303|A0A097J303_BPR06	tr|A0A097J631|A0A097J631_BPR27	tr|A0A097J631|A0A097J631_BPR27 Uncharacterized protein OS=Enterobacteria phage RB27 GN=RB27_258 PE=4 SV=1 Split=0 	1.08e-25
+tr|Q8N0P3|Q8N0P3_9BIVA	tr|A0A023JCY2|A0A023JCY2_9TREM	tr|A0A023JCY2|A0A023JCY2_9TREM Taurocyamine kinase OS=Fasciola sp. TA-2014 PE=2 SV=1 Split=0 	0.0
+tr|Q8N0P3|Q8N0P3_9BIVA	tr|A0A023JCY2|A0A023JCY2_9TREM	tr|A0A023JCY2|A0A023JCY2_9TREM Taurocyamine kinase OS=Fasciola sp. TA-2014 PE=2 SV=1 Split=0 	2.34e-110
+tr|Q8N0P3|Q8N0P3_9BIVA	tr|A0A023JCY2|A0A023JCY2_9TREM	tr|A0A023JCY2|A0A023JCY2_9TREM Taurocyamine kinase OS=Fasciola sp. TA-2014 PE=2 SV=1 Split=0 	1.20e-98
+tr|Q9LH59|Q9LH59_ARATH	tr|A0A078D5D2|A0A078D5D2_BRANA	tr|A0A078D5D2|A0A078D5D2_BRANA BnaA03g33430D protein OS=Brassica napus GN=BnaA03g33430D PE=3 SV=1 Split=0 	0.0
+tr|A0A0R3NLR1|A0A0R3NLR1_DROPS	tr|A0A0R3NLR1|A0A0R3NLR1_DROPS	tr|A0A0R3NLR1|A0A0R3NLR1_DROPS Uncharacterized protein, isoform B OS=Drosophila pseudoobscura pseudoobscura GN=Dpse\GA17491 PE=3 SV=1 Split=0 	0.0
+tr|A0A0D2SQE7|A0A0D2SQE7_GOSRA	tr|A0A0D2RNP2|A0A0D2RNP2_GOSRA	tr|A0A0D2RNP2|A0A0D2RNP2_GOSRA Alpha-1,4 glucan phosphorylase OS=Gossypium raimondii GN=B456_006G011500 PE=3 SV=1 Split=0 	0.0
+tr|A0A087HLP8|A0A087HLP8_ARAAL	tr|A0A0D3C8A3|A0A0D3C8A3_BRAOL	tr|A0A0D3C8A3|A0A0D3C8A3_BRAOL Uncharacterized protein OS=Brassica oleracea var. oleracea PE=3 SV=1 Split=0 	0.0
+tr|A0A089PH44|A0A089PH44_9ALPH	tr|K4P3N0|K4P3N0_9ALPH	tr|K4P3N0|K4P3N0_9ALPH Virion protein OS=Bovine herpesvirus type 1.1 GN=UL49 PE=4 SV=1 Split=0 	5.26e-180
+tr|B8AV11|B8AV11_ORYSI	tr|X2G6A7|X2G6A7_BRANA	tr|X2G6A7|X2G6A7_BRANA HAI3.1 OS=Brassica napus GN=HAI3.1 PE=2 SV=1 Split=0 	2.64e-99
+tr|I1LVT6|I1LVT6_SOYBN	tr|V7CBY0|V7CBY0_PHAVU	tr|V7CBY0|V7CBY0_PHAVU Uncharacterized protein OS=Phaseolus vulgaris GN=PHAVU_003G148200g PE=4 SV=1 Split=0 	0.0
+tr|A0A0F6QP67|A0A0F6QP67_ECOLX	tr|A5HMQ8|A5HMQ8_KLEPN	tr|A5HMQ8|A5HMQ8_KLEPN AAC(6')-Ib-cr (Fragment) OS=Klebsiella pneumoniae GN=aac(6')-Ib-cr PE=4 SV=1 Split=0 	3.14e-73
+sp|Q600K7|ENGB_MYCH2	sp|A5IMB8|ENGB_THEP1	sp|A5IMB8|ENGB_THEP1 Probable GTP-binding protein EngB OS=Thermotoga petrophila (strain RKU-1 / ATCC BAA-488 / DSM 13995) GN=engB PE=3 SV=1 Split=0 	3.61e-34
+tr|G7PWX4|G7PWX4_MACFA	tr|G1RBV1|G1RBV1_NOMLE	tr|G1RBV1|G1RBV1_NOMLE Uncharacterized protein OS=Nomascus leucogenys GN=SERPINB12 PE=3 SV=1 Split=0 	0.0
+tr|B3MK75|B3MK75_DROAN	tr|B4MZ09|B4MZ09_DROWI	tr|B4MZ09|B4MZ09_DROWI Uncharacterized protein OS=Drosophila willistoni GN=Dwil\GK18251 PE=4 SV=1 Split=0 	0.0
+sp|C0QQX0|RL9_PERMH	tr|M1QHV9|M1QHV9_9AQUI	tr|M1QHV9|M1QHV9_9AQUI 50S ribosomal protein L9 OS=Hydrogenobaculum sp. HO GN=rplI PE=3 SV=1 Split=0 	8.71e-59
+tr|D4A548|D4A548_RAT	tr|G3S8L1|G3S8L1_GORGO	tr|G3S8L1|G3S8L1_GORGO Uncharacterized protein OS=Gorilla gorilla gorilla GN=ARMCX2 PE=4 SV=1 Split=0 	3.71e-27
+tr|A1T8T0|A1T8T0_MYCVP	tr|A1T8T0|A1T8T0_MYCVP	tr|A1T8T0|A1T8T0_MYCVP Lipoprotein signal peptidase OS=Mycobacterium vanbaalenii (strain DSM 7251 / PYR-1) GN=lspA PE=3 SV=1 Split=0 	5.45e-163
+tr|I0JKD0|I0JKD0_HALH3	tr|A0A0A5HJV6|A0A0A5HJV6_9BACI	tr|A0A0A5HJV6|A0A0A5HJV6_9BACI ATP-dependent helicase/nuclease subunit A OS=Pontibacillus marinus BH030004 = DSM 16465 GN=addA PE=3 SV=1 Split=0 	0.0
+tr|I1K9J0|I1K9J0_SOYBN	tr|C6TJQ4|C6TJQ4_SOYBN	tr|C6TJQ4|C6TJQ4_SOYBN Putative uncharacterized protein OS=Glycine max PE=2 SV=1 Split=0 	3.27e-63
+tr|M1HC43|M1HC43_9PHYC	tr|M1HW42|M1HW42_9PHYC	tr|M1HW42|M1HW42_9PHYC DNA polymerase OS=Acanthocystis turfacea Chlorella virus MO0605SPH GN=MO0605SPH_888L PE=3 SV=1 Split=0 	0.0
+tr|A0A0U0U8T3|A0A0U0U8T3_MYCTX	tr|A0A109SLV7|A0A109SLV7_9MYCO	tr|A0A109SLV7|A0A109SLV7_9MYCO Antitoxin MazE3 OS=Mycobacterium microti GN=RN08_1239 PE=4 SV=1 Split=0 	2.57e-25
+tr|A0A0E0P7B9|A0A0E0P7B9_ORYRU	tr|A0A0E0KP30|A0A0E0KP30_ORYPU	tr|A0A0E0KP30|A0A0E0KP30_ORYPU Uncharacterized protein OS=Oryza punctata PE=4 SV=1 Split=0 	0.0
+tr|A0A0D3A771|A0A0D3A771_BRAOL	tr|R0GJN7|R0GJN7_9BRAS	tr|R0GJN7|R0GJN7_9BRAS Uncharacterized protein OS=Capsella rubella GN=CARUB_v10005339mg PE=4 SV=1 Split=0 	1.09e-175
+tr|G3MZR1|G3MZR1_BOVIN	tr|B6UM02|B6UM02_BOVIN	tr|B6UM02|B6UM02_BOVIN WC1 OS=Bos taurus GN=WC1 PE=2 SV=1 Split=0 	0.0
+tr|G3MZR1|G3MZR1_BOVIN	tr|B6UM02|B6UM02_BOVIN	tr|B6UM02|B6UM02_BOVIN WC1 OS=Bos taurus GN=WC1 PE=2 SV=1 Split=0 	0.0
+tr|G3MZR1|G3MZR1_BOVIN	tr|B6UM02|B6UM02_BOVIN	tr|B6UM02|B6UM02_BOVIN WC1 OS=Bos taurus GN=WC1 PE=2 SV=1 Split=0 	0.0
+tr|G3MZR1|G3MZR1_BOVIN	tr|B6UM02|B6UM02_BOVIN	tr|B6UM02|B6UM02_BOVIN WC1 OS=Bos taurus GN=WC1 PE=2 SV=1 Split=0 	0.0
+tr|G3MZR1|G3MZR1_BOVIN	tr|B6UM02|B6UM02_BOVIN	tr|B6UM02|B6UM02_BOVIN WC1 OS=Bos taurus GN=WC1 PE=2 SV=1 Split=0 	0.0
+tr|G3MZR1|G3MZR1_BOVIN	tr|B6UM02|B6UM02_BOVIN	tr|B6UM02|B6UM02_BOVIN WC1 OS=Bos taurus GN=WC1 PE=2 SV=1 Split=0 	1.78e-161
+tr|G3MZR1|G3MZR1_BOVIN	tr|B6UM02|B6UM02_BOVIN	tr|B6UM02|B6UM02_BOVIN WC1 OS=Bos taurus GN=WC1 PE=2 SV=1 Split=0 	8.77e-115
+tr|G3MZR1|G3MZR1_BOVIN	tr|B6UM02|B6UM02_BOVIN	tr|B6UM02|B6UM02_BOVIN WC1 OS=Bos taurus GN=WC1 PE=2 SV=1 Split=0 	1.13e-22
+tr|G3MZR1|G3MZR1_BOVIN	tr|B6UM02|B6UM02_BOVIN	tr|B6UM02|B6UM02_BOVIN WC1 OS=Bos taurus GN=WC1 PE=2 SV=1 Split=0 	1.59e-19
+sp|Q96QB1|RHG07_HUMAN	sp|Q96QB1|RHG07_HUMAN	sp|Q96QB1|RHG07_HUMAN Rho GTPase-activating protein 7 OS=Homo sapiens GN=DLC1 PE=1 SV=4 Split=0 	0.0
+tr|M4A2K8|M4A2K8_XIPMA	tr|W5NIE1|W5NIE1_LEPOC	tr|W5NIE1|W5NIE1_LEPOC Uncharacterized protein OS=Lepisosteus oculatus PE=4 SV=1 Split=0 	2.09e-126
+tr|A0A0D3E108|A0A0D3E108_BRAOL	tr|M4FFS8|M4FFS8_BRARP	tr|M4FFS8|M4FFS8_BRARP Uncharacterized protein OS=Brassica rapa subsp. pekinensis PE=4 SV=1 Split=0 	0.0
+tr|H9C6T4|H9C6T4_CYRRA	tr|H9C6U3|H9C6U3_PTEAN	tr|H9C6U3|H9C6U3_PTEAN Phytochrome A (Fragment) OS=Pterospora andromedea GN=phyA PE=4 SV=1 Split=0 	0.0
+sp|Q9KH25|FTSZ_MYCKA	tr|M3V0U9|M3V0U9_9ACTN	tr|M3V0U9|M3V0U9_9ACTN Cell division protein FtsZ OS=Gordonia paraffinivorans NBRC 108238 GN=ftsZ PE=3 SV=1 Split=0 	0.0
+tr|A0A067FZ49|A0A067FZ49_CITSI	tr|A0A067FZ49|A0A067FZ49_CITSI	tr|A0A067FZ49|A0A067FZ49_CITSI Uncharacterized protein OS=Citrus sinensis GN=CISIN_1g010208mg PE=3 SV=1 Split=0 	0.0
+tr|Q4T7V1|Q4T7V1_TETNG	tr|Q4T7V1|Q4T7V1_TETNG	tr|Q4T7V1|Q4T7V1_TETNG Chromosome undetermined SCAF7977, whole genome shotgun sequence (Fragment) OS=Tetraodon nigroviridis GN=GSTENG00005544001 PE=3 SV=1 Split=0 	0.0
+tr|A0A0A1XYM2|A0A0A1XYM2_ANAPH	tr|A0A0F3PXG8|A0A0F3PXG8_ANAPH	tr|A0A0F3PXG8|A0A0F3PXG8_ANAPH Type III pantothenate kinase OS=Anaplasma phagocytophilum str. ApWI1 GN=coaX PE=3 SV=1 Split=0 	0.0
+tr|Q683P4|Q683P4_CVB	tr|Q70DU9|Q70DU9_CVB	tr|Q70DU9|Q70DU9_CVB Coat protein OS=Chrysanthemum virus B PE=4 SV=1 Split=0 	0.0
+sp|P57351|PUR8_BUCAI	tr|A0A094SXY9|A0A094SXY9_PECCA	tr|A0A094SXY9|A0A094SXY9_PECCA Adenylosuccinate lyase OS=Pectobacterium carotovorum subsp. odoriferum GN=KU75_00130 PE=3 SV=1 Split=0 	0.0
+tr|C3MJP8|C3MJP8_SULIL	sp|Q96YW1|RL18E_SULTO	sp|Q96YW1|RL18E_SULTO 50S ribosomal protein L18e OS=Sulfolobus tokodaii (strain DSM 16993 / JCM 10545 / NBRC 100140 / 7) GN=rpl18e PE=3 SV=1 Split=0 	7.63e-58
+tr|H0Z296|H0Z296_TAEGU	tr|M3W390|M3W390_FELCA	tr|M3W390|M3W390_FELCA Uncharacterized protein OS=Felis catus GN=PKD1L2 PE=4 SV=1 Split=0 	0.0
+tr|G8BCQ5|G8BCQ5_CANPC	tr|M3HEA5|M3HEA5_CANMX	tr|M3HEA5|M3HEA5_CANMX Protein RAI1 OS=Candida maltosa (strain Xu316) GN=G210_4274 PE=4 SV=1 Split=0 	0.0
+sp|B2BNE3|VP5_AQRVG	sp|B2BNE3|VP5_AQRVG	sp|B2BNE3|VP5_AQRVG Microtubule-associated protein VP5 OS=Aquareovirus G (isolate American grass carp/USA/PB01-155/-) GN=S5 PE=3 SV=1 Split=0 	0.0
+tr|A0A089WNU5|A0A089WNU5_9ENTR	tr|A0A0B2TWJ0|A0A0B2TWJ0_9ENTR	tr|A0A0B2TWJ0|A0A0B2TWJ0_9ENTR UDP-3-O-(3-hydroxymyristoyl)glucosamine N-acyltransferase OS=Dickeya solani GN=lpxD PE=3 SV=1 Split=0 	0.0
+tr|Q6SJ87|Q6SJ87_9PRIM	tr|Q6SJ86|Q6SJ86_9PRIM	tr|Q6SJ86|Q6SJ86_9PRIM SPANX A/D member 2 OS=Gorilla gorilla PE=4 SV=1 Split=0 	3.67e-67
+tr|W5MWA3|W5MWA3_LEPOC	tr|B0BLW9|B0BLW9_DANRE	tr|B0BLW9|B0BLW9_DANRE Si:ch211-246k22.2 protein OS=Danio rerio GN=plpp6 PE=2 SV=1 Split=0 	8.43e-156
+tr|A0A0F3RAJ1|A0A0F3RAJ1_9RICK	tr|G4KN55|G4KN55_RICJY	tr|G4KN55|G4KN55_RICJY tRNA dimethylallyltransferase OS=Rickettsia japonica (strain ATCC VR-1363 / YH) GN=miaA PE=3 SV=1 Split=0 	0.0
+tr|B2DAX0|B2DAX0_UREUR	tr|B1RY03|B1RY03_UREUR	tr|B1RY03|B1RY03_UREUR tRNA (guanine-N(7)-)-methyltransferase OS=Ureaplasma urealyticum serovar 13 str. ATCC 33698 GN=trmB PE=3 SV=1 Split=0 	3.78e-164
+tr|A0A078IH03|A0A078IH03_BRANA	tr|A0A078EAI1|A0A078EAI1_BRANA	tr|A0A078EAI1|A0A078EAI1_BRANA BnaA06g17960D protein OS=Brassica napus GN=BnaA06g17960D PE=4 SV=1 Split=0 	5.99e-129
+tr|V2J0S2|V2J0S2_SALDZ	tr|A0A0M9FCB9|A0A0M9FCB9_PHOLD	tr|A0A0M9FCB9|A0A0M9FCB9_PHOLD Modification methylase OS=Photobacterium leiognathi subsp. mandapamensis GN=VT25_03770 PE=4 SV=1 Split=0 	7.52e-169
+tr|H2NWH9|H2NWH9_PONAB	tr|G1RBV1|G1RBV1_NOMLE	tr|G1RBV1|G1RBV1_NOMLE Uncharacterized protein OS=Nomascus leucogenys GN=SERPINB12 PE=3 SV=1 Split=0 	0.0
+tr|K4P7H0|K4P7H0_9REOV	tr|A0A0B5CSU5|A0A0B5CSU5_9REOV	tr|A0A0B5CSU5|A0A0B5CSU5_9REOV MuNS OS=Mammalian orthoreovirus 3 PE=4 SV=1 Split=0 	0.0
+tr|A0A076H6B3|A0A076H6B3_9SYNE	tr|A0A0H5QB91|A0A0H5QB91_SYNPZ	tr|A0A0H5QB91|A0A0H5QB91_SYNPZ Dephospho-CoA kinase OS=Synechococcus sp. (strain WH8103) GN=coaE PE=3 SV=1 Split=0 	6.75e-78
+tr|A0A0P9FH68|A0A0P9FH68_9GAMM	tr|A0A0P9FH68|A0A0P9FH68_9GAMM	tr|A0A0P9FH68|A0A0P9FH68_9GAMM Enolase-phosphatase E1 OS=Pseudoalteromonas sp. P1-9 GN=mtnC PE=3 SV=1 Split=0 	4.53e-169
+tr|A0A0K2W8B5|A0A0K2W8B5_9NEOP	tr|A0A0K2W8M1|A0A0K2W8M1_9NEOP	tr|A0A0K2W8M1|A0A0K2W8M1_9NEOP Allergenic protein Tha p 2 (Fragment) OS=Thaumetopoea bonjeani GN=Tha p 2 PE=4 SV=1 Split=0 	6.69e-70
+tr|A0A0B0N589|A0A0B0N589_GOSAR	tr|I1L7N2|I1L7N2_SOYBN	tr|I1L7N2|I1L7N2_SOYBN Uncharacterized protein OS=Glycine max GN=GLYMA_10G011300 PE=4 SV=1 Split=0 	9.13e-91
+tr|F7YYT9|F7YYT9_9THEM	tr|G4FDU3|G4FDU3_THEMA	tr|G4FDU3|G4FDU3_THEMA Methionyl-tRNA formyltransferase OS=Thermotoga maritima (strain ATCC 43589 / MSB8 / DSM 3109 / JCM 10099) GN=fmt PE=3 SV=1 Split=0 	6.91e-100
+tr|B6SR22|B6SR22_MAIZE	tr|C5XFW9|C5XFW9_SORBI	tr|C5XFW9|C5XFW9_SORBI Putative uncharacterized protein Sb03g030270 OS=Sorghum bicolor GN=Sb03g030270 PE=3 SV=1 Split=0 	4.59e-80
+tr|A0A146V1G4|A0A146V1G4_FUNHE	tr|G3P6K6|G3P6K6_GASAC	tr|G3P6K6|G3P6K6_GASAC Uncharacterized protein OS=Gasterosteus aculeatus PE=4 SV=1 Split=0 	0.0
+tr|A0A0F6RPU4|A0A0F6RPU4_PSEAI	tr|A0A069Q5Y8|A0A069Q5Y8_PSEAI	tr|A0A069Q5Y8|A0A069Q5Y8_PSEAI DNA-directed RNA polymerase subunit beta' OS=Pseudomonas aeruginosa GN=rpoC PE=3 SV=1 Split=0 	0.0
+tr|A0A0E9EC92|A0A0E9EC92_CHLTH	sp|Q9PK32|AK_CHLMU	sp|Q9PK32|AK_CHLMU Aspartokinase OS=Chlamydia muridarum (strain MoPn / Nigg) GN=lysC PE=3 SV=1 Split=0 	0.0
+tr|M0RAC3|M0RAC3_RAT	tr|U3C9U8|U3C9U8_CALJA	tr|U3C9U8|U3C9U8_CALJA Protein NYNRIN OS=Callithrix jacchus GN=NYNRIN PE=2 SV=1 Split=0 	0.0
+tr|K0KW59|K0KW59_WICCF	tr|A0A0A3E922|A0A0A3E922_CANAX	tr|A0A0A3E922|A0A0A3E922_CANAX Pre-mRNA-splicing factor CWC22 OS=Candida albicans P37037 GN=MG9_02412 PE=4 SV=1 Split=0 	7.28e-130
+tr|Q9W672|Q9W672_XENLA	tr|Q9W672|Q9W672_XENLA	tr|Q9W672|Q9W672_XENLA C3H-2 protein OS=Xenopus laevis GN=zfp36l1 PE=2 SV=1 Split=0 	0.0
+tr|A0A0R4J071|A0A0R4J071_MOUSE	tr|G3RYN4|G3RYN4_GORGO	tr|G3RYN4|G3RYN4_GORGO Uncharacterized protein OS=Gorilla gorilla gorilla GN=TGM4 PE=4 SV=1 Split=0 	0.0
+tr|Q6KEA5|Q6KEA5_HUMAN	tr|G7P2J1|G7P2J1_MACFA	tr|G7P2J1|G7P2J1_MACFA Cystic fibrosis transmembrane conductance regulator OS=Macaca fascicularis GN=EGM_12898 PE=3 SV=1 Split=0 	8.29e-36
+tr|A0A0M8RQK1|A0A0M8RQK1_STRRM	tr|L8EV71|L8EV71_STRRM	tr|L8EV71|L8EV71_STRRM TrmH family RNA methyltransferase OS=Streptomyces rimosus subsp. rimosus ATCC 10970 GN=SRIM_12156 PE=3 SV=1 Split=0 	0.0
+sp|Q4UKC8|SECE_RICFE	sp|Q92J92|SECE_RICCN	sp|Q92J92|SECE_RICCN Protein translocase subunit SecE OS=Rickettsia conorii (strain ATCC VR-613 / Malish 7) GN=secE PE=3 SV=2 Split=0 	3.28e-43
+tr|C5J9U9|C5J9U9_PASMD	tr|Q70LP2|Q70LP2_PASMD	tr|Q70LP2|Q70LP2_PASMD Mitogenic toxin OS=Pasteurella multocida GN=toxA PE=4 SV=1 Split=0 	0.0
+tr|A0A0P6IH09|A0A0P6IH09_9CRUS	tr|W5JA52|W5JA52_ANODA	tr|W5JA52|W5JA52_ANODA Lethal(2)neighbor of tid protein OS=Anopheles darlingi GN=AND_008772 PE=4 SV=1 Split=0 	2.33e-85
+tr|A0A0P6IH09|A0A0P6IH09_9CRUS	tr|W5JA52|W5JA52_ANODA	tr|W5JA52|W5JA52_ANODA Lethal(2)neighbor of tid protein OS=Anopheles darlingi GN=AND_008772 PE=4 SV=1 Split=0 	5.05e-24
+tr|G3IDW0|G3IDW0_CRIGR	tr|G3IDW0|G3IDW0_CRIGR	tr|G3IDW0|G3IDW0_CRIGR Olfactory receptor 7E24 OS=Cricetulus griseus GN=I79_021898 PE=3 SV=1 Split=0 	0.0
+tr|G1TKU4|G1TKU4_RABIT	tr|G1TKU4|G1TKU4_RABIT	tr|G1TKU4|G1TKU4_RABIT Uncharacterized protein OS=Oryctolagus cuniculus PE=4 SV=1 Split=0 	0.0
+tr|A0A0B7J5R9|A0A0B7J5R9_9RICK	tr|A0A0B7J5R9|A0A0B7J5R9_9RICK	tr|A0A0B7J5R9|A0A0B7J5R9_9RICK Peptide chain release factor 1 OS=Rickettsia monacensis GN=prfA PE=3 SV=1 Split=0 	0.0
+tr|A0A0E9C8D0|A0A0E9C8D0_CHLTH	tr|A0A061JAW5|A0A061JAW5_9CHLA	tr|A0A061JAW5|A0A061JAW5_9CHLA PqqC-like protein OS=Chlamydia suis MD56 GN=Q499_0656 PE=4 SV=1 Split=0 	5.87e-151
+tr|C2CQ02|C2CQ02_CORST	tr|C6R974|C6R974_9CORY	tr|C6R974|C6R974_9CORY 50S ribosomal protein L22 OS=Corynebacterium tuberculostearicum SK141 GN=rplV PE=3 SV=1 Split=0 	1.12e-82
+tr|D5HSX2|D5HSX2_9POTY	tr|D5HSX2|D5HSX2_9POTY	tr|D5HSX2|D5HSX2_9POTY Polyprotein OS=Sugarcane streak mosaic virus PE=4 SV=1 Split=0 	0.0
+tr|A0A0R2KC52|A0A0R2KC52_LACAM	tr|C4L7V0|C4L7V0_TOLAT	tr|C4L7V0|C4L7V0_TOLAT Protein translocase subunit SecY OS=Tolumonas auensis (strain DSM 9187 / TA4) GN=secY PE=3 SV=1 Split=0 	2.39e-14
+tr|H1KZM7|H1KZM7_9EURY	tr|D3S4F4|D3S4F4_METSF	tr|D3S4F4|D3S4F4_METSF IMP cyclohydrolase OS=Methanocaldococcus sp. (strain FS406-22) GN=purO PE=3 SV=1 Split=0 	7.06e-105
+tr|A0A0F8P052|A0A0F8P052_METMZ	sp|C1FNT9|MUTS_CLOBJ	sp|C1FNT9|MUTS_CLOBJ DNA mismatch repair protein MutS OS=Clostridium botulinum (strain Kyoto / Type A2) GN=mutS PE=3 SV=1 Split=0 	0.0
+tr|A0A0B4VG62|A0A0B4VG62_9MAGN	tr|Q5C9L7|Q5C9L7_THLFG	tr|Q5C9L7|Q5C9L7_THLFG (S)-norcoclaurine 6-O-methyltransferase OS=Thalictrum flavum subsp. glaucum PE=2 SV=1 Split=0 	0.0
+tr|A0A0K9RD80|A0A0K9RD80_SPIOL	tr|A0A0J8B957|A0A0J8B957_BETVU	tr|A0A0J8B957|A0A0J8B957_BETVU Uncharacterized protein OS=Beta vulgaris subsp. vulgaris GN=BVRB_5g122790 PE=4 SV=1 Split=0 	2.45e-60
+sp|Q9P2F6|RHG20_HUMAN	sp|Q9P2F6|RHG20_HUMAN	sp|Q9P2F6|RHG20_HUMAN Rho GTPase-activating protein 20 OS=Homo sapiens GN=ARHGAP20 PE=1 SV=2 Split=0 	0.0
+tr|A0A0N5CXT3|A0A0N5CXT3_THECL	tr|A0A0R3RJZ9|A0A0R3RJZ9_9BILA	tr|A0A0R3RJZ9|A0A0R3RJZ9_9BILA Uncharacterized protein OS=Elaeophora elaphi PE=3 SV=1 Split=0 	9.47e-119
+tr|H9GZT6|H9GZT6_HORSE	tr|H0XXE9|H0XXE9_OTOGA	tr|H0XXE9|H0XXE9_OTOGA Uncharacterized protein OS=Otolemur garnettii PE=4 SV=1 Split=0 	1.66e-68
+tr|A0A0A1M5L6|A0A0A1M5L6_9BACI	tr|A0A024P3F3|A0A024P3F3_9BACI	tr|A0A024P3F3|A0A024P3F3_9BACI Alanine racemase OS=Halobacillus karajensis GN=alr_1 PE=3 SV=1 Split=0 	6.34e-143
+tr|R4S2A1|R4S2A1_PHYAS	tr|A0A124FFW4|A0A124FFW4_9THEM	tr|A0A124FFW4|A0A124FFW4_9THEM Cytidylate kinase OS=Thermotoga naphthophila GN=cmk PE=3 SV=1 Split=0 	6.30e-52
+sp|A5F385|LEP4_VIBC3	tr|A0A085TKN9|A0A085TKN9_VIBCL	tr|A0A085TKN9|A0A085TKN9_VIBCL Type 4 prepilin-like proteins leader peptide-processing enzyme OS=Vibrio cholerae GN=DN31_2054 PE=3 SV=1 Split=0 	6.64e-176
+tr|Q38L33|Q38L33_STREQ	tr|Q38L38|Q38L38_STRPY	tr|Q38L38|Q38L38_STRPY Lantibiotic OS=Streptococcus pyogenes GN=salA1 PE=3 SV=1 Split=0 	1.46e-30
+tr|A0A0C3SGE9|A0A0C3SGE9_GUITH	tr|L8AR71|L8AR71_BACIU	tr|L8AR71|L8AR71_BACIU ATP-dependent zinc metalloprotease FtsH OS=Bacillus subtilis BEST7613 GN=ftsH PE=3 SV=1 Split=0 	0.0
+tr|A0A0R2TW81|A0A0R2TW81_9CYAN	sp|Q3AKE4|RLMH_SYNSC	sp|Q3AKE4|RLMH_SYNSC Ribosomal RNA large subunit methyltransferase H OS=Synechococcus sp. (strain CC9605) GN=rlmH PE=3 SV=1 Split=0 	5.12e-65
+tr|B6VBS9|B6VBS9_9PELO	tr|E3MCY5|E3MCY5_CAERE	tr|E3MCY5|E3MCY5_CAERE CRE-CDH-4 protein OS=Caenorhabditis remanei GN=Cre-cdh-4 PE=4 SV=1 Split=0 	0.0
+tr|A0A0D3CPH4|A0A0D3CPH4_BRAOL	tr|A0A0D3CPH4|A0A0D3CPH4_BRAOL	tr|A0A0D3CPH4|A0A0D3CPH4_BRAOL Uncharacterized protein OS=Brassica oleracea var. oleracea PE=4 SV=1 Split=0 	0.0
+tr|F4HJU7|F4HJU7_PYRSN	tr|D3S0P4|D3S0P4_FERPA	tr|D3S0P4|D3S0P4_FERPA Ferric uptake regulator, Fur family OS=Ferroglobus placidus (strain DSM 10642 / AEDII12DO) GN=Ferp_2154 PE=4 SV=1 Split=0 	1.37e-40
+tr|C1FY42|C1FY42_DASNO	tr|F6VV33|F6VV33_HORSE	tr|F6VV33|F6VV33_HORSE Uncharacterized protein OS=Equus caballus GN=MAP1A PE=4 SV=1 Split=0 	0.0
+tr|I8TT76|I8TT76_ASPO3	tr|Q2U299|Q2U299_ASPOR	tr|Q2U299|Q2U299_ASPOR Uncharacterized protein OS=Aspergillus oryzae (strain ATCC 42149 / RIB 40) GN=AO090038000545 PE=4 SV=1 Split=0 	0.0
+sp|B4RQP4|OBG_NEIG2	sp|B4RQP4|OBG_NEIG2	sp|B4RQP4|OBG_NEIG2 GTPase Obg OS=Neisseria gonorrhoeae (strain NCCP11945) GN=obg PE=3 SV=1 Split=0 	0.0
+tr|A0A0E2WBP6|A0A0E2WBP6_MYCAV	tr|T2GMB5|T2GMB5_MYCHT	tr|T2GMB5|T2GMB5_MYCHT Pantothenate synthetase OS=Mycobacterium avium subsp. hominissuis (strain TH135) GN=panC PE=3 SV=1 Split=0 	0.0
+tr|A0A0V1PW40|A0A0V1PW40_9ASCO	tr|G8YBB3|G8YBB3_PICSO	tr|G8YBB3|G8YBB3_PICSO Signal recognition particle subunit SRP68 OS=Pichia sorbitophila (strain ATCC MYA-4447 / BCRC 22081 / CBS 7064 / NBRC 10061 / NRRL Y-12695) GN=Piso0_001960 PE=3 SV=1 Split=0 	0.0
+sp|A1YGK7|HXA7_PANPA	tr|N6U7I9|N6U7I9_DENPD	tr|N6U7I9|N6U7I9_DENPD Uncharacterized protein (Fragment) OS=Dendroctonus ponderosae GN=D910_10398 PE=4 SV=1 Split=0 	1.22e-35
+tr|A0A0H4BFV4|A0A0H4BFV4_ECOLX	tr|A3QNS7|A3QNS7_ECOLX	tr|A3QNS7|A3QNS7_ECOLX Dr adhesin (Fragment) OS=Escherichia coli PE=4 SV=1 Split=0 	6.36e-111
+tr|A0A078I1A1|A0A078I1A1_BRANA	tr|A0A0D3AYV5|A0A0D3AYV5_BRAOL	tr|A0A0D3AYV5|A0A0D3AYV5_BRAOL Uncharacterized protein (Fragment) OS=Brassica oleracea var. oleracea PE=4 SV=1 Split=0 	0.0
+tr|W8SIW1|W8SIW1_9PARA	tr|W8SIW1|W8SIW1_9PARA	tr|W8SIW1|W8SIW1_9PARA Nucleocapsid OS=Mojiang virus GN=N PE=3 SV=1 Split=0 	0.0
+tr|F1K021|F1K021_9ALPH	tr|F1K003|F1K003_9ALPH	tr|F1K003|F1K003_9ALPH DNA cleaving/packaging protein (Fragment) OS=Psittacid herpesvirus 1 GN=UL17 PE=4 SV=1 Split=0 	3.49e-64
+tr|A0A120IHC7|A0A120IHC7_9BURK	sp|C4ZJM0|RLMM_THASP	sp|C4ZJM0|RLMM_THASP Ribosomal RNA large subunit methyltransferase M OS=Thauera sp. (strain MZ1T) GN=rlmM PE=3 SV=2 Split=0 	1.55e-87
+tr|M3YLY1|M3YLY1_MUSPF	tr|I3LH46|I3LH46_PIG	tr|I3LH46|I3LH46_PIG Uncharacterized protein OS=Sus scrofa GN=SPN PE=4 SV=1 Split=0 	1.06e-79
+sp|B4XSZ7|SLA7_MACLB	sp|B4XSZ7|SLA7_MACLB	sp|B4XSZ7|SLA7_MACLB Snaclec A7 OS=Macrovipera lebetina PE=2 SV=1 Split=0 	9.90e-99
+tr|A0A0K1SB77|A0A0K1SB77_REHGL	tr|M1AGN4|M1AGN4_SOLTU	tr|M1AGN4|M1AGN4_SOLTU Uncharacterized protein OS=Solanum tuberosum GN=PGSC0003DMG400008687 PE=4 SV=1 Split=0 	3.05e-156
+tr|A0A0D0XLF8|A0A0D0XLF8_CRYGA	tr|A0A0D0ZVQ0|A0A0D0ZVQ0_CRYGA	tr|A0A0D0ZVQ0|A0A0D0ZVQ0_CRYGA Unplaced genomic scaffold supercont1.7, whole genome shotgun sequence OS=Cryptococcus gattii 2001/935-1 GN=L804_04038 PE=4 SV=1 Split=0 	0.0
+tr|A0A0E3N9U1|A0A0E3N9U1_MYCSY	tr|A0A060Q1S4|A0A060Q1S4_9MOLU	tr|A0A060Q1S4|A0A060Q1S4_9MOLU Asparagine--tRNA ligase OS=Mycoplasma californicum HAZ160_1 GN=asnS PE=3 SV=1 Split=0 	0.0
+tr|L8I3L5|L8I3L5_9CETA	tr|A0A024RB24|A0A024RB24_HUMAN	tr|A0A024RB24|A0A024RB24_HUMAN Solute carrier family 39 (Metal ion transporter), member 5, isoform CRA_a OS=Homo sapiens GN=SLC39A5 PE=4 SV=1 Split=0 	0.0
+tr|B5YL42|B5YL42_THEYD	tr|A0A0F3GQM7|A0A0F3GQM7_9BACT	tr|A0A0F3GQM7|A0A0F3GQM7_9BACT Diaminopimelate decarboxylase OS=Candidatus Magnetobacterium bavaricum GN=lysA PE=3 SV=1 Split=0 	0.0
+sp|Q6GBJ0|TAGX_STAAS	tr|A0A143KDB7|A0A143KDB7_STAAU	tr|A0A143KDB7|A0A143KDB7_STAAU Glycosyltransferase OS=Staphylococcus aureus GN=A5J11_06660 PE=4 SV=1 Split=0 	0.0
+tr|W8JGV5|W8JGV5_9CHLA	tr|W8JGV5|W8JGV5_9CHLA	tr|W8JGV5|W8JGV5_9CHLA 30S ribosomal protein S17 OS=Chlamydia avium 10DC88 GN=rpsQ PE=3 SV=1 Split=0 	4.01e-61
+tr|K8G181|K8G181_9XANT	tr|G2LXJ0|G2LXJ0_9XANT	tr|G2LXJ0|G2LXJ0_9XANT Translation initiation factor IF-2 OS=Xanthomonas axonopodis pv. citrumelo F1 GN=infB PE=3 SV=1 Split=0 	0.0
+tr|A0A0C6CSM8|A0A0C6CSM8_YEASX	tr|A0A0C6CEA5|A0A0C6CEA5_YEASX	tr|A0A0C6CEA5|A0A0C6CEA5_YEASX Ino80p OS=Saccharomyces cerevisiae YJM1199 GN=INO80 PE=4 SV=1 Split=0 	0.0
+tr|A0A0T7CSE4|A0A0T7CSE4_BORP1	sp|Q7VV72|METN_BORPE	sp|Q7VV72|METN_BORPE Methionine import ATP-binding protein MetN OS=Bordetella pertussis (strain Tohama I / ATCC BAA-589 / NCTC 13251) GN=metN PE=3 SV=1 Split=0 	0.0
+sp|P59726|PQQA_KLUIN	sp|P27503|PQQA_KLEPN	sp|P27503|PQQA_KLEPN Coenzyme PQQ synthesis protein A OS=Klebsiella pneumoniae GN=pqqA PE=3 SV=1 Split=0 	1.20e-11
+sp|Q8ZVM8|RRP4_PYRAE	tr|A1RST1|A1RST1_PYRIL	tr|A1RST1|A1RST1_PYRIL Exosome complex component Rrp4 OS=Pyrobaculum islandicum (strain DSM 4184 / JCM 9189 / GEO3) GN=rrp4 PE=3 SV=1 Split=0 	7.80e-151
+tr|B0BCY9|B0BCY9_HUMAN	sp|Q07075|AMPE_HUMAN	sp|Q07075|AMPE_HUMAN Glutamyl aminopeptidase OS=Homo sapiens GN=ENPEP PE=1 SV=3 Split=0 	0.0
+tr|A0A0E3SGQ7|A0A0E3SGQ7_9EURY	sp|Q8PZN6|PGP_METMA	sp|Q8PZN6|PGP_METMA Phosphoglycolate phosphatase OS=Methanosarcina mazei (strain ATCC BAA-159 / DSM 3647 / Goe1 / Go1 / JCM 11833 / OCM 88) GN=MM_0456 PE=3 SV=1 Split=0 	6.34e-156
+tr|A0A0K9QX16|A0A0K9QX16_SPIOL	tr|C5X400|C5X400_SORBI	tr|C5X400|C5X400_SORBI Putative uncharacterized protein Sb02g041140 OS=Sorghum bicolor GN=Sb02g041140 PE=4 SV=1 Split=0 	0.0
+tr|U3F6T5|U3F6T5_CALJA	tr|H0XKX2|H0XKX2_OTOGA	tr|H0XKX2|H0XKX2_OTOGA Uncharacterized protein OS=Otolemur garnettii GN=SOX12 PE=4 SV=1 Split=0 	0.0
+tr|A0A072UMU0|A0A072UMU0_MEDTR	tr|A0A0A0K5T0|A0A0A0K5T0_CUCSA	tr|A0A0A0K5T0|A0A0A0K5T0_CUCSA Uncharacterized protein OS=Cucumis sativus GN=Csa_7G050780 PE=4 SV=1 Split=0 	0.0
+sp|P56645|PER3_HUMAN	tr|H2R1W8|H2R1W8_PANTR	tr|H2R1W8|H2R1W8_PANTR Uncharacterized protein OS=Pan troglodytes GN=PER3 PE=4 SV=1 Split=0 	0.0
+sp|Q7TN88|PK1L2_MOUSE	tr|A0A087X120|A0A087X120_HUMAN	tr|A0A087X120|A0A087X120_HUMAN Polycystic kidney disease protein 1-like 2 OS=Homo sapiens GN=PKD1L2 PE=4 SV=1 Split=0 	0.0
+tr|A0A0A4B0A8|A0A0A4B0A8_CANAX	tr|A0A0A4C5G9|A0A0A4C5G9_CANAX	tr|A0A0A4C5G9|A0A0A4C5G9_CANAX Golgi to ER traffic protein 1 OS=Candida albicans P34048 GN=GET1 PE=3 SV=1 Split=0 	2.86e-146
+tr|E7A488|E7A488_HAEIF	tr|A5UEI4|A5UEI4_HAEIG	tr|A5UEI4|A5UEI4_HAEIG Spermidine/putrescine import ATP-binding protein PotA OS=Haemophilus influenzae (strain PittGG) GN=potA PE=3 SV=1 Split=0 	0.0
+tr|E5XXL2|E5XXL2_9BIFI	sp|Q0SFW6|METN2_RHOJR	sp|Q0SFW6|METN2_RHOJR Methionine import ATP-binding protein MetN 2 OS=Rhodococcus jostii (strain RHA1) GN=metN2 PE=3 SV=1 Split=0 	3.92e-127
+tr|A0A118K5T9|A0A118K5T9_CYNCS	tr|F6HVQ1|F6HVQ1_VITVI	tr|F6HVQ1|F6HVQ1_VITVI Putative uncharacterized protein OS=Vitis vinifera GN=VIT_13s0106g00620 PE=4 SV=1 Split=0 	6.63e-145
+tr|A0A078DXS9|A0A078DXS9_BRANA	tr|A0A078DXS9|A0A078DXS9_BRANA	tr|A0A078DXS9|A0A078DXS9_BRANA BnaA09g23120D protein OS=Brassica napus GN=BnaA09g23120D PE=4 SV=1 Split=0 	0.0
+tr|E2RG46|E2RG46_CANLF	tr|F7IE71|F7IE71_CALJA	tr|F7IE71|F7IE71_CALJA Cyclin-dependent kinase 14 OS=Callithrix jacchus GN=CDK14 PE=3 SV=1 Split=0 	0.0
+sp|Q9JKA9|HCN2_RAT	sp|Q9JKA9|HCN2_RAT	sp|Q9JKA9|HCN2_RAT Potassium/sodium hyperpolarization-activated cyclic nucleotide-gated channel 2 OS=Rattus norvegicus GN=Hcn2 PE=1 SV=3 Split=0 	0.0
+tr|A0A0E0P5B2|A0A0E0P5B2_ORYRU	tr|B2BXK4|B2BXK4_ARALL	tr|B2BXK4|B2BXK4_ARALL Protein-phosphatase-2C OS=Arabidopsis lyrata subsp. lyrata GN=PPh2C PE=3 SV=1 Split=0 	2.05e-99
+tr|U1YPY9|U1YPY9_9BACI	tr|U1YPY9|U1YPY9_9BACI	tr|U1YPY9|U1YPY9_9BACI Chemotaxis protein OS=Bacillus sp. EGD-AK10 GN=N880_09530 PE=4 SV=1 Split=0 	0.0
+tr|A0A0A6IGI8|A0A0A6IGI8_CANAX	tr|A0A0A3DMJ3|A0A0A3DMJ3_CANAX	tr|A0A0A3DMJ3|A0A0A3DMJ3_CANAX Uncharacterized protein OS=Candida albicans P57072 GN=MG5_03259 PE=4 SV=1 Split=0 	0.0
+tr|A0A097J730|A0A097J730_BPT4	tr|A0A097J730|A0A097J730_BPT4	tr|A0A097J730|A0A097J730_BPT4 Homing endonuclease OS=Enterobacteria phage RB55 GN=I-TevII PE=4 SV=1 Split=0 	0.0
+tr|S7KNL8|S7KNL8_CHLPS	tr|A0A0E2IYD8|A0A0E2IYD8_CHLPS	tr|A0A0E2IYD8|A0A0E2IYD8_CHLPS 4-hydroxy-tetrahydrodipicolinate synthase OS=Chlamydia psittaci 01DC11 GN=dapA PE=3 SV=1 Split=0 	1.51e-129
+tr|A0A097J330|A0A097J330_BPR06	tr|A0A097J3R8|A0A097J3R8_BPR03	tr|A0A097J3R8|A0A097J3R8_BPR03 Putative outer membrane protein OS=Enterobacteria phage RB7 GN=RB7_268 PE=4 SV=1 Split=0 	2.46e-13
+tr|L7PCM3|L7PCM3_9ACAR	tr|A0A0U1X5B1|A0A0U1X5B1_9ACAR	tr|A0A0U1X5B1|A0A0U1X5B1_9ACAR ATP synthase subunit a OS=Rhipicephalus simus GN=ATP6 PE=4 SV=1 Split=0 	1.47e-97
+tr|K4FXT5|K4FXT5_CALMI	tr|Q8JIB3|Q8JIB3_COTCO	tr|Q8JIB3|Q8JIB3_COTCO C-fos proto-oncogene OS=Coturnix coturnix PE=2 SV=1 Split=0 	5.90e-101
+tr|M5XS75|M5XS75_PRUPE	tr|A0A061EJ37|A0A061EJ37_THECC	tr|A0A061EJ37|A0A061EJ37_THECC Calcium-binding EF-hand family protein OS=Theobroma cacao GN=TCM_020039 PE=4 SV=1 Split=0 	4.19e-110
+tr|A0A0D2SLZ4|A0A0D2SLZ4_GOSRA	tr|M4F305|M4F305_BRARP	tr|M4F305|M4F305_BRARP Uncharacterized protein OS=Brassica rapa subsp. pekinensis PE=4 SV=1 Split=0 	0.0
+sp|P04660|HEMA_I78AE	sp|P04659|HEMA_I60A1	sp|P04659|HEMA_I60A1 Hemagglutinin (Fragment) OS=Influenza A virus (strain A/Duck/Ukraine/1/1960 H11N9) GN=HA PE=3 SV=1 Split=0 	2.18e-64
+tr|A5HIT1|A5HIT1_HCMV	sp|P06725|PP65_HCMVA	sp|P06725|PP65_HCMVA 65 kDa phosphoprotein OS=Human cytomegalovirus (strain AD169) GN=UL83 PE=1 SV=2 Split=0 	0.0
+tr|R0HSC1|R0HSC1_9BRAS	tr|A0A0D3C4R8|A0A0D3C4R8_BRAOL	tr|A0A0D3C4R8|A0A0D3C4R8_BRAOL Uncharacterized protein OS=Brassica oleracea var. oleracea PE=4 SV=1 Split=0 	0.0
+sp|A7NBH0|AROB_FRATF	tr|A0A0E2ZH16|A0A0E2ZH16_FRATU	tr|A0A0E2ZH16|A0A0E2ZH16_FRATU 3-dehydroquinate synthase OS=Francisella tularensis GN=aroB PE=3 SV=1 Split=0 	0.0
+tr|B9ZXH1|B9ZXH1_UREUR	tr|B1RX79|B1RX79_UREUR	tr|B1RX79|B1RX79_UREUR Cysteine--tRNA ligase OS=Ureaplasma urealyticum serovar 13 str. ATCC 33698 GN=cysS PE=3 SV=1 Split=0 	0.0
+tr|B9FM43|B9FM43_ORYSJ	tr|A0A0D9YWP7|A0A0D9YWP7_9ORYZ	tr|A0A0D9YWP7|A0A0D9YWP7_9ORYZ Uncharacterized protein OS=Oryza glumipatula PE=4 SV=1 Split=0 	1.36e-109
+tr|A0A0K2BKE9|A0A0K2BKE9_9GAMM	tr|A0A0K2BKE9|A0A0K2BKE9_9GAMM	tr|A0A0K2BKE9|A0A0K2BKE9_9GAMM Signal recognition particle receptor FtsY OS=Candidatus Baumannia cicadellinicola GN=ftsY PE=3 SV=1 Split=0 	0.0
+tr|C5Y009|C5Y009_SORBI	tr|M0TRX9|M0TRX9_MUSAM	tr|M0TRX9|M0TRX9_MUSAM Uncharacterized protein OS=Musa acuminata subsp. malaccensis PE=3 SV=1 Split=0 	0.0
+tr|U5G6K1|U5G6K1_POPTR	tr|U5G6K1|U5G6K1_POPTR	tr|U5G6K1|U5G6K1_POPTR Uncharacterized protein OS=Populus trichocarpa GN=POPTR_0009s12230g PE=4 SV=1 Split=0 	0.0
+tr|F2VXC3|F2VXC3_9CAUD	tr|Q06EM4|Q06EM4_BPR32	tr|Q06EM4|Q06EM4_BPR32 Putative uncharacterized protein mobD.4 OS=Enterobacteria phage RB32 GN=mobD.4 PE=4 SV=1 Split=0 	3.53e-40
+tr|Q0H3F9|Q0H3F9_PEDAC	tr|I0AYT4|I0AYT4_ENTFC	tr|I0AYT4|I0AYT4_ENTFC rRNA methylase leader peptide OS=Enterococcus faecium PE=4 SV=1 Split=0 	7.28e-17
+tr|A0A098CUZ3|A0A098CUZ3_9LACT	tr|T0V9F5|T0V9F5_LACLC	tr|T0V9F5|T0V9F5_LACLC Ferredoxin--NADP reductase OS=Lactococcus lactis subsp. cremoris TIFN3 GN=LLT3_09185 PE=3 SV=1 Split=0 	1.23e-140
+tr|A0A0V1PZ77|A0A0V1PZ77_9ASCO	tr|A0A0A6MEP5|A0A0A6MEP5_CANAX	tr|A0A0A6MEP5|A0A0A6MEP5_CANAX Alpha 1,2-mannosyltransferase OS=Candida albicans P78042 GN=MGS_01035 PE=4 SV=1 Split=0 	0.0
+sp|B4J1U5|SG112_DROGR	sp|Q7PXG4|SGF11_ANOGA	sp|Q7PXG4|SGF11_ANOGA SAGA-associated factor 11 homolog OS=Anopheles gambiae GN=Sgf11 PE=3 SV=5 Split=0 	2.67e-49
+tr|C0B0Z0|C0B0Z0_9ENTR	tr|A0A077PEJ3|A0A077PEJ3_XENBV	tr|A0A077PEJ3|A0A077PEJ3_XENBV Penicillin-binding protein activator LpoB OS=Xenorhabdus bovienii str. kraussei Quebec GN=lpoB PE=3 SV=1 Split=0 	4.70e-64
+tr|A0A0A3DB79|A0A0A3DB79_CANAX	tr|A0A0A3CPZ8|A0A0A3CPZ8_CANAX	tr|A0A0A3CPZ8|A0A0A3CPZ8_CANAX Protein RAI1 OS=Candida albicans P37005 GN=MEU_00657 PE=4 SV=1 Split=0 	0.0
+sp|B9WK07|MDM12_CANDC	tr|A0A0A4AZH2|A0A0A4AZH2_CANAX	tr|A0A0A4AZH2|A0A0A4AZH2_CANAX Mitochondrial distribution and morphology protein 12 OS=Candida albicans P87 GN=MDM12 PE=3 SV=1 Split=0 	0.0
+tr|H0WUR0|H0WUR0_OTOGA	tr|I3N653|I3N653_ICTTR	tr|I3N653|I3N653_ICTTR Uncharacterized protein OS=Ictidomys tridecemlineatus GN=KL PE=4 SV=1 Split=0 	0.0
+sp|Q0RD23|Y6027_FRAAA	tr|A0A0S4QTJ5|A0A0S4QTJ5_9ACTN	tr|A0A0S4QTJ5|A0A0S4QTJ5_9ACTN UPF0182 protein Ga0074812_12289 OS=Frankia sp. DSM 45899 GN=Ga0074812_12289 PE=3 SV=1 Split=0 	0.0
+tr|G8Y6H6|G8Y6H6_PICSO	tr|G3BAI1|G3BAI1_CANTC	tr|G3BAI1|G3BAI1_CANTC PAB-dependent poly(A)-specific ribonuclease subunit PAN3 OS=Candida tenuis (strain ATCC 10573 / BCRC 21748 / CBS 615 / JCM 9827 / NBRC 10315 / NRRL Y-1498 / VKM Y-70) GN=PAN3 PE=3 SV=1 Split=0 	1.24e-165
+tr|B3GS92|B3GS92_RAT	tr|I3K0R3|I3K0R3_ORENI	tr|I3K0R3|I3K0R3_ORENI Uncharacterized protein OS=Oreochromis niloticus GN=LOC100697995 PE=4 SV=1 Split=0 	0.0
+tr|B3GS92|B3GS92_RAT	tr|I3K0R3|I3K0R3_ORENI	tr|I3K0R3|I3K0R3_ORENI Uncharacterized protein OS=Oreochromis niloticus GN=LOC100697995 PE=4 SV=1 Split=0 	1.28e-98
+tr|E6N4D5|E6N4D5_9ARCH	tr|H5SJ14|H5SJ14_9CREN	tr|H5SJ14|H5SJ14_9CREN Threonyl-tRNA synthetase OS=uncultured crenarchaeote GN=HGMM_F34F09C05 PE=4 SV=1 Split=0 	0.0
+tr|A0A0A6JXJ0|A0A0A6JXJ0_CANAX	tr|A0A0A4CLI2|A0A0A4CLI2_CANAX	tr|A0A0A4CLI2|A0A0A4CLI2_CANAX Uncharacterized protein OS=Candida albicans P57055 GN=MGK_01760 PE=4 SV=1 Split=0 	0.0
+tr|A0A087LVT5|A0A087LVT5_9RHIZ	tr|A0A0V0PYF2|A0A0V0PYF2_9RHOB	tr|A0A0V0PYF2|A0A0V0PYF2_9RHOB Alanine--tRNA ligase OS=Paracoccus sp. MKU1 GN=alaS PE=3 SV=1 Split=0 	0.0
+tr|I3QD32|I3QD32_GFLV	tr|I6LL57|I6LL57_ARMV	tr|I6LL57|I6LL57_ARMV Polyprotein P1-III OS=Arabis mosaic virus PE=4 SV=1 Split=0 	0.0
+tr|J6PSR2|J6PSR2_ENTFL	tr|J6B942|J6B942_ENTFL	tr|J6B942|J6B942_ENTFL ABC transporter, ATP-binding protein OS=Enterococcus faecalis ERV103 GN=HMPREF1328_02264 PE=4 SV=1 Split=0 	0.0
+tr|A0A068GNM3|A0A068GNM3_CAMSA	tr|C5WMT4|C5WMT4_SORBI	tr|C5WMT4|C5WMT4_SORBI Putative uncharacterized protein Sb01g050310 OS=Sorghum bicolor GN=Sb01g050310 PE=3 SV=1 Split=0 	0.0
+tr|F2CXL6|F2CXL6_HORVD	tr|I1PRT8|I1PRT8_ORYGL	tr|I1PRT8|I1PRT8_ORYGL Uncharacterized protein OS=Oryza glaberrima PE=4 SV=1 Split=0 	0.0
+sp|Q74CM2|F16PA_GEOSL	sp|A5G439|F16PA_GEOUR	sp|A5G439|F16PA_GEOUR Fructose-1,6-bisphosphatase class 1 OS=Geobacter uraniireducens (strain Rf4) GN=fbp PE=3 SV=1 Split=0 	0.0
+tr|A0A014M0I6|A0A014M0I6_MYCMC	tr|A0A014M0I6|A0A014M0I6_MYCMC	tr|A0A014M0I6|A0A014M0I6_MYCMC L-lactate dehydrogenase OS=Mycoplasma mycoides subsp. capri PG3 GN=ldh PE=3 SV=1 Split=0 	0.0
+tr|A0A097J6P7|A0A097J6P7_BPR32	tr|A0A0A0PXI8|A0A0A0PXI8_9CAUD	tr|A0A0A0PXI8|A0A0A0PXI8_9CAUD Uncharacterized protein OS=Escherichia phage HY01 GN=HY01_0197 PE=4 SV=1 Split=0 	1.22e-46
+tr|A0A0F3R7W1|A0A0F3R7W1_9RICK	tr|A0A0F3MRV0|A0A0F3MRV0_RICFI	tr|A0A0F3MRV0|A0A0F3MRV0_RICFI Thioredoxin family protein OS=Rickettsia felis str. Pedreira GN=RFEPED_0903 PE=4 SV=1 Split=0 	0.0
+tr|A0A0U3ICN5|A0A0U3ICN5_9EURY	tr|A0A0P8X860|A0A0P8X860_9EURY	tr|A0A0P8X860|A0A0P8X860_9EURY Leucine--tRNA ligase OS=Thermococcus sp. EP1 GN=leuS PE=3 SV=1 Split=0 	0.0
+tr|Q541C3|Q541C3_DROME	tr|B4HWV5|B4HWV5_DROSE	tr|B4HWV5|B4HWV5_DROSE GM11457 OS=Drosophila sechellia GN=Dsec\GM11457 PE=3 SV=1 Split=0 	4.85e-168
+tr|Q1EN11|Q1EN11_PHYSA	tr|A0A0U1U1Y3|A0A0U1U1Y3_HYPPN	tr|A0A0U1U1Y3|A0A0U1U1Y3_HYPPN Phenylseptin prepropeptide OS=Hypsiboas punctatus PE=2 SV=1 Split=0 	3.89e-11
+tr|M3CT41|M3CT41_LEPIR	tr|A0A098MSW2|A0A098MSW2_LEPIR	tr|A0A098MSW2|A0A098MSW2_LEPIR Adenylosuccinate synthetase OS=Leptospira interrogans serovar Lai GN=purA PE=3 SV=1 Split=0 	0.0
+tr|A0A062IFC1|A0A062IFC1_ACIBA	tr|X2FEN4|X2FEN4_ACIBA	tr|X2FEN4|X2FEN4_ACIBA Glucose-6-phosphate isomerase OS=Acinetobacter baumannii GN=gpi PE=3 SV=1 Split=0 	0.0
+tr|A0A0E0M911|A0A0E0M911_ORYPU	tr|A0A0D3HEY3|A0A0D3HEY3_9ORYZ	tr|A0A0D3HEY3|A0A0D3HEY3_9ORYZ Uncharacterized protein OS=Oryza barthii PE=4 SV=1 Split=0 	0.0
+sp|B1AJP4|RNPA_UREP2	tr|B2NG21|B2NG21_UREUR	tr|B2NG21|B2NG21_UREUR Ribonuclease P protein component OS=Ureaplasma urealyticum serovar 11 str. ATCC 33695 GN=rnpA PE=3 SV=1 Split=0 	3.98e-62
+tr|C6XKQ8|C6XKQ8_HIRBI	tr|A0A062UAU5|A0A062UAU5_9RHOB	tr|A0A062UAU5|A0A062UAU5_9RHOB 30S ribosomal protein S6 OS=Hyphomonas beringensis GN=rpsF PE=3 SV=1 Split=0 	1.23e-52
+tr|A0A098MZT9|A0A098MZT9_LEPIR	tr|N1URH6|N1URH6_LEPIR	tr|N1URH6|N1URH6_LEPIR Queuine tRNA-ribosyltransferase OS=Leptospira interrogans serovar Australis str. 200703203 GN=tgt PE=3 SV=1 Split=0 	0.0
+tr|I1H1V8|I1H1V8_BRADI	tr|Q9LHZ4|Q9LHZ4_ORYSJ	tr|Q9LHZ4|Q9LHZ4_ORYSJ Os06g0112000 protein OS=Oryza sativa subsp. japonica GN=Os06g0112000 PE=2 SV=1 Split=0 	0.0
+tr|E9PZM8|E9PZM8_MOUSE	tr|F1LSY2|F1LSY2_RAT	tr|F1LSY2|F1LSY2_RAT Neuronal pentraxin receptor OS=Rattus norvegicus GN=Nptxr PE=4 SV=1 Split=0 	0.0
+tr|A0A0K0LBQ9|A0A0K0LBQ9_9SCOR	tr|A0A0K0LBQ9|A0A0K0LBQ9_9SCOR	tr|A0A0K0LBQ9|A0A0K0LBQ9_9SCOR Pradykinin-potentiating peptide-like peptide Bpp-2 OS=Androctonus bicolor PE=2 SV=1 Split=0 	9.37e-49
+tr|A0A0F3QEX3|A0A0F3QEX3_RICAM	sp|C3PP76|GRPE_RICAE	sp|C3PP76|GRPE_RICAE Protein GrpE OS=Rickettsia africae (strain ESF-5) GN=grpE PE=3 SV=1 Split=0 	1.38e-128
+tr|Q2C832|Q2C832_9GAMM	tr|A0A0K9U7G6|A0A0K9U7G6_VIBCL	tr|A0A0K9U7G6|A0A0K9U7G6_VIBCL Probable potassium transport system protein kup OS=Vibrio cholerae V51 GN=kup PE=3 SV=1 Split=0 	0.0
+tr|A0A078DJP8|A0A078DJP8_BRANA	tr|A0A0D3A699|A0A0D3A699_BRAOL	tr|A0A0D3A699|A0A0D3A699_BRAOL Uncharacterized protein OS=Brassica oleracea var. oleracea PE=4 SV=1 Split=0 	0.0
+tr|U3TCV1|U3TCV1_9CREN	tr|A0A0Q2XN71|A0A0Q2XN71_9EURY	tr|A0A0Q2XN71|A0A0Q2XN71_9EURY CRISPR-associated protein OS=Thermococcus thioreducens GN=AMR53_03800 PE=4 SV=1 Split=0 	2.10e-42
+tr|A0A0D0ZM14|A0A0D0ZM14_CRYGA	tr|A0A0D2LTY5|A0A0D2LTY5_CRYGA	tr|A0A0D2LTY5|A0A0D2LTY5_CRYGA Maintenance of mitochondrial morphology protein 1 OS=Cryptococcus gattii 99/473 GN=MMM1 PE=3 SV=1 Split=0 	0.0
+tr|B6Y6H9|B6Y6H9_9RICK	sp|Q1RJY6|FPG_RICBR	sp|Q1RJY6|FPG_RICBR Formamidopyrimidine-DNA glycosylase OS=Rickettsia bellii (strain RML369-C) GN=mutM PE=3 SV=1 Split=0 	4.00e-74
+tr|A0A0K2QW23|A0A0K2QW23_9MICC	tr|X1D7D6|X1D7D6_9ZZZZ	tr|X1D7D6|X1D7D6_9ZZZZ Uncharacterized protein (Fragment) OS=marine sediment metagenome GN=S01H4_51625 PE=4 SV=1 Split=0 	1.22e-11
+tr|F7DRM4|F7DRM4_XENTR	tr|H2UJD3|H2UJD3_TAKRU	tr|H2UJD3|H2UJD3_TAKRU Uncharacterized protein OS=Takifugu rubripes GN=taf5 PE=4 SV=1 Split=0 	0.0
+tr|L7Y436|L7Y436_9VIRU	tr|L7Y436|L7Y436_9VIRU	tr|L7Y436|L7Y436_9VIRU Putative endonuclease 4 OS=Megavirus lba GN=LBA_00631 PE=4 SV=1 Split=0 	6.43e-169
+sp|O64847|FAX7_ARATH	tr|A0A087GRL9|A0A087GRL9_ARAAL	tr|A0A087GRL9|A0A087GRL9_ARAAL Uncharacterized protein OS=Arabis alpina GN=AALP_AA6G253700 PE=4 SV=1 Split=0 	1.32e-65
+tr|A0A0A6JX86|A0A0A6JX86_CANAX	tr|A0A0A3E922|A0A0A3E922_CANAX	tr|A0A0A3E922|A0A0A3E922_CANAX Pre-mRNA-splicing factor CWC22 OS=Candida albicans P37037 GN=MG9_02412 PE=4 SV=1 Split=0 	0.0
+tr|A0A0H4WH32|A0A0H4WH32_9BORD	sp|Q0BT18|SYC_GRABC	sp|Q0BT18|SYC_GRABC Cysteine--tRNA ligase OS=Granulibacter bethesdensis (strain ATCC BAA-1260 / CGDNIH1) GN=cysS PE=3 SV=1 Split=0 	3.57e-110
+tr|F1NLP8|F1NLP8_CHICK	tr|F7D8U7|F7D8U7_HORSE	tr|F7D8U7|F7D8U7_HORSE Uncharacterized protein OS=Equus caballus GN=ENGASE PE=4 SV=1 Split=0 	0.0
+tr|W9EIJ4|W9EIJ4_9FIRM	tr|I3VRK0|I3VRK0_THESW	tr|I3VRK0|I3VRK0_THESW Transcriptional regulator, RpiR family OS=Thermoanaerobacterium saccharolyticum (strain DSM 8691 / JW/SL-YS485) GN=Tsac_0109 PE=4 SV=1 Split=0 	0.0
+tr|I3N673|I3N673_ICTTR	tr|I3N673|I3N673_ICTTR	tr|I3N673|I3N673_ICTTR Uncharacterized protein OS=Ictidomys tridecemlineatus GN=NSMCE3 PE=4 SV=1 Split=0 	0.0
+tr|A0A101WX02|A0A101WX02_9CREN	tr|A0A101X5Z0|A0A101X5Z0_9CREN	tr|A0A101X5Z0|A0A101X5Z0_9CREN Elongation factor 1-beta OS=Caldivirga sp. MG_3 GN=ef1b PE=3 SV=1 Split=0 	2.88e-39
+tr|A0A0A6KIP4|A0A0A6KIP4_CANAX	tr|A0A0A3DCZ8|A0A0A3DCZ8_CANAX	tr|A0A0A3DCZ8|A0A0A3DCZ8_CANAX Phosphatidylethanolamine N-methyltransferase OS=Candida albicans P78048 GN=MG3_05624 PE=3 SV=1 Split=0 	0.0
+tr|G7NGM3|G7NGM3_MACMU	tr|H2QDT1|H2QDT1_PANTR	tr|H2QDT1|H2QDT1_PANTR Uncharacterized protein OS=Pan troglodytes GN=CD300LF PE=4 SV=1 Split=0 	2.91e-152
+tr|A0A0A6L293|A0A0A6L293_CANAX	tr|Q5A783|Q5A783_CANAL	tr|Q5A783|Q5A783_CANAL Potential ABC transporter OS=Candida albicans (strain SC5314 / ATCC MYA-2876) GN=CDR4 PE=3 SV=1 Split=0 	0.0
+sp|Q86QV4|KGX48_CENEL	sp|P0C892|KGX17_CENEL	sp|P0C892|KGX17_CENEL Potassium channel toxin gamma-KTx 1.7 OS=Centruroides elegans PE=1 SV=1 Split=0 	1.73e-15
+tr|A0A0G2V175|A0A0G2V175_STRPY	sp|Q5HPI5|PARC_STAEQ	sp|Q5HPI5|PARC_STAEQ DNA topoisomerase 4 subunit A OS=Staphylococcus epidermidis (strain ATCC 35984 / RP62A) GN=parC PE=3 SV=1 Split=0 	0.0
+tr|H0X909|H0X909_OTOGA	tr|H0X909|H0X909_OTOGA	tr|H0X909|H0X909_OTOGA Uncharacterized protein OS=Otolemur garnettii GN=SDF4 PE=4 SV=1 Split=0 	0.0
+tr|R9UP09|R9UP09_9TOMB	sp|P17460|RDRP_TCV	sp|P17460|RDRP_TCV RNA-directed RNA polymerase OS=Turnip crinkle virus GN=ORF1 PE=3 SV=3 Split=0 	0.0
+tr|F7HDN9|F7HDN9_CALJA	tr|U3B7L9|U3B7L9_CALJA	tr|U3B7L9|U3B7L9_CALJA Transmembrane and coiled-coil domain-containing protein 4 OS=Callithrix jacchus GN=TMCO4 PE=2 SV=1 Split=0 	0.0
+sp|P40148|OSTCN_SPAAU	tr|B7ZK44|B7ZK44_PAGAU	tr|B7ZK44|B7ZK44_PAGAU Osteocalcin OS=Pagrus auriga PE=2 SV=1 Split=0 	3.78e-64
+sp|C5A7L8|MVK_THEGJ	tr|W8PP67|W8PP67_9EURY	tr|W8PP67|W8PP67_9EURY Mevalonate kinase OS=Thermococcus nautili GN=mvk PE=3 SV=1 Split=0 	0.0
+tr|F6Y724|F6Y724_CANLF	sp|P57786|TAU_MACMU	sp|P57786|TAU_MACMU Microtubule-associated protein tau OS=Macaca mulatta GN=MAPT PE=2 SV=2 Split=0 	0.0
+tr|E3LR76|E3LR76_CAERE	tr|E3LR76|E3LR76_CAERE	tr|E3LR76|E3LR76_CAERE CRE-SET-4 protein OS=Caenorhabditis remanei GN=Cre-set-4 PE=4 SV=1 Split=0 	0.0
+tr|A0A0A1DXZ3|A0A0A1DXZ3_ASF	tr|A0A0C5BC21|A0A0C5BC21_ASF	tr|A0A0C5BC21|A0A0C5BC21_ASF MGF 110-2L OS=African swine fever virus GN=MGF 110-2L PE=4 SV=1 Split=0 	5.14e-11
+sp|P10736|VA52_DOLMA	sp|P10736|VA52_DOLMA	sp|P10736|VA52_DOLMA Venom allergen 5.01 OS=Dolichovespula maculata PE=1 SV=1 Split=0 	6.81e-174
+tr|W8C675|W8C675_CERCA	tr|B4NKU2|B4NKU2_DROWI	tr|B4NKU2|B4NKU2_DROWI Uncharacterized protein OS=Drosophila willistoni GN=Dwil\GK13985 PE=4 SV=1 Split=0 	0.0
+tr|A8XSZ8|A8XSZ8_CAEBR	tr|G0ME40|G0ME40_CAEBE	tr|G0ME40|G0ME40_CAEBE CBN-CKB-3 protein OS=Caenorhabditis brenneri GN=Cbn-ckb-3 PE=4 SV=1 Split=0 	5.67e-167
+tr|M9WTY5|M9WTY5_9RICK	sp|B3CNH2|RRF_WOLPP	sp|B3CNH2|RRF_WOLPP Ribosome-recycling factor OS=Wolbachia pipientis subsp. Culex pipiens (strain wPip) GN=frr PE=3 SV=1 Split=0 	5.88e-132
+tr|A0A083XXL8|A0A083XXL8_BIFLN	sp|B7GNH2|PNP_BIFLS	sp|B7GNH2|PNP_BIFLS Polyribonucleotide nucleotidyltransferase OS=Bifidobacterium longum subsp. infantis (strain ATCC 15697 / DSM 20088 / JCM 1222 / NCTC 11817 / S12) GN=pnp PE=3 SV=1 Split=0 	0.0
+tr|Q6DKB2|Q6DKB2_XENLA	tr|Q6DKB2|Q6DKB2_XENLA	tr|Q6DKB2|Q6DKB2_XENLA MGC84695 protein OS=Xenopus laevis GN=ptgds PE=2 SV=1 Split=0 	3.64e-141
+tr|A0A125UPB5|A0A125UPB5_9BACI	sp|P42305|DBPA_BACSU	sp|P42305|DBPA_BACSU ATP-dependent RNA helicase DbpA OS=Bacillus subtilis (strain 168) GN=dbpA PE=1 SV=2 Split=0 	0.0
+tr|G6J8V9|G6J8V9_STREE	tr|G6J8V9|G6J8V9_STREE	tr|G6J8V9|G6J8V9_STREE Translation initiation factor IF-2 OS=Streptococcus pneumoniae GA47502 GN=infB PE=3 SV=1 Split=0 	0.0
+tr|A0A0A1WNY5|A0A0A1WNY5_BACCU	tr|F4YXJ1|F4YXJ1_MUSDO	tr|F4YXJ1|F4YXJ1_MUSDO Nuclear receptor HR96 OS=Musca domestica GN=HR96 PE=2 SV=1 Split=0 	8.32e-114
+tr|Q3HUU2|Q3HUU2_GOCV	sp|Q91EK2|ORFC2_GOCV	sp|Q91EK2|ORFC2_GOCV Uncharacterized protein ORFC2 OS=Goose circovirus GN=ORFC2 PE=4 SV=1 Split=0 	3.22e-53
+tr|A0A0E0MJP2|A0A0E0MJP2_ORYPU	tr|A0A0E0BP08|A0A0E0BP08_9ORYZ	tr|A0A0E0BP08|A0A0E0BP08_9ORYZ Uncharacterized protein OS=Oryza glumipatula PE=3 SV=1 Split=0 	0.0
+tr|D7L191|D7L191_ARALL	tr|D7L191|D7L191_ARALL	tr|D7L191|D7L191_ARALL F-box family protein OS=Arabidopsis lyrata subsp. lyrata GN=ARALYDRAFT_896388 PE=4 SV=1 Split=0 	0.0
+tr|W9SFP7|W9SFP7_9ROSA	tr|W9SFP7|W9SFP7_9ROSA	tr|W9SFP7|W9SFP7_9ROSA Uncharacterized protein OS=Morus notabilis GN=L484_022794 PE=4 SV=1 Split=0 	0.0
+tr|A0A101IIB5|A0A101IIB5_9EURY	tr|A0A0Q1AQK2|A0A0Q1AQK2_9EURY	tr|A0A0Q1AQK2|A0A0Q1AQK2_9EURY Diaminopimelate epimerase OS=Methanolinea sp. SDB GN=dapF PE=3 SV=1 Split=0 	2.77e-105
+tr|D4I5I8|D4I5I8_ASF	sp|P0C9W5|EV164_ASFK5	sp|P0C9W5|EV164_ASFK5 Envelope protein 164 OS=African swine fever virus (isolate Pig/Kenya/KEN-50/1950) GN=Ken-164 PE=2 SV=1 Split=0 	7.70e-29
+tr|A0A0E1AHS0|A0A0E1AHS0_STAAU	tr|A0A0D1H6Z9|A0A0D1H6Z9_STAAU	tr|A0A0D1H6Z9|A0A0D1H6Z9_STAAU DNA helicase OS=Staphylococcus aureus subsp. aureus GN=ACR58_12670 PE=3 SV=1 Split=0 	0.0
+tr|A0A0G4E409|A0A0G4E409_9MYCO	tr|R4M7M5|R4M7M5_MYCTX	tr|R4M7M5|R4M7M5_MYCTX Ribonuclease VapC OS=Mycobacterium tuberculosis CAS/NITR204 GN=vapC PE=3 SV=1 Split=0 	2.75e-101
+tr|A0A0A4BEN1|A0A0A4BEN1_CANAX	tr|A0A0A3D8P3|A0A0A3D8P3_CANAX	tr|A0A0A3D8P3|A0A0A3D8P3_CANAX Polynucleotide 5'-hydroxyl-kinase GRC3 OS=Candida albicans P37037 GN=MG9_06003 PE=4 SV=1 Split=0 	0.0
+sp|A6VN75|TGT_ACTSZ	tr|A0A0P7JMI8|A0A0P7JMI8_9GAMM	tr|A0A0P7JMI8|A0A0P7JMI8_9GAMM Queuine tRNA-ribosyltransferase OS=Shewanella sp. Sh95 GN=tgt PE=3 SV=1 Split=0 	0.0
+tr|A0A091P4I4|A0A091P4I4_LEPDC	tr|A0A093I2C4|A0A093I2C4_FULGA	tr|A0A093I2C4|A0A093I2C4_FULGA Otogelin-like (Fragment) OS=Fulmarus glacialis GN=N327_02664 PE=4 SV=1 Split=0 	0.0
+tr|D5HJQ8|D5HJQ8_BCHK3	tr|D5HJY7|D5HJY7_BCHK3	tr|D5HJY7|D5HJY7_BCHK3 Putative uncharacterized protein OS=Bat SARS coronavirus HKU3-11 PE=4 SV=1 Split=0 	1.29e-87
+tr|H9FVA4|H9FVA4_MACMU	tr|I2CUP3|I2CUP3_MACMU	tr|I2CUP3|I2CUP3_MACMU 45 kDa calcium-binding protein isoform 2 OS=Macaca mulatta GN=SDF4 PE=2 SV=1 Split=0 	0.0
+tr|A0A0A1Z7C8|A0A0A1Z7C8_PROMR	tr|A0A0A1Z7C8|A0A0A1Z7C8_PROMR	tr|A0A0A1Z7C8|A0A0A1Z7C8_PROMR 50S ribosomal protein L21 OS=Prochlorococcus marinus str. GP2 GN=rplU PE=3 SV=1 Split=0 	2.87e-103
+tr|A0A0A1WN57|A0A0A1WN57_BACCU	tr|A0A0A1WN57|A0A0A1WN57_BACCU	tr|A0A0A1WN57|A0A0A1WN57_BACCU Protein SMG8 OS=Bactrocera cucurbitae GN=CPIJ003128_1 PE=4 SV=1 Split=0 	0.0
+tr|A0A0U3AHS4|A0A0U3AHS4_9BACT	tr|B4CV19|B4CV19_9BACT	tr|B4CV19|B4CV19_9BACT NADH-quinone oxidoreductase subunit K OS=Chthoniobacter flavus Ellin428 GN=nuoK PE=3 SV=1 Split=0 	3.46e-56
+tr|G9L2B3|G9L2B3_MUSPF	tr|M3XNX8|M3XNX8_MUSPF	tr|M3XNX8|M3XNX8_MUSPF Uncharacterized protein OS=Mustela putorius furo GN=C1orf141 PE=4 SV=1 Split=0 	1.01e-50
+tr|E3LMS7|E3LMS7_CAERE	tr|A0A0Q5VVU6|A0A0Q5VVU6_DROER	tr|A0A0Q5VVU6|A0A0Q5VVU6_DROER Uncharacterized protein, isoform B OS=Drosophila erecta GN=Dere\GG20092 PE=3 SV=1 Split=0 	5.12e-23
+sp|O21970|DARA_BPP1	tr|A0A0K6A627|A0A0K6A627_ECOLX	tr|A0A0K6A627|A0A0K6A627_ECOLX Internal head protein OS=Escherichia coli GN=ERS150876_05426 PE=4 SV=1 Split=0 	0.0
+tr|E2QZT7|E2QZT7_CANLF	tr|G1TVD5|G1TVD5_RABIT	tr|G1TVD5|G1TVD5_RABIT Uncharacterized protein OS=Oryctolagus cuniculus PE=3 SV=1 Split=0 	6.07e-91
+tr|G1L423|G1L423_AILME	tr|M3YDQ9|M3YDQ9_MUSPF	tr|M3YDQ9|M3YDQ9_MUSPF Uncharacterized protein OS=Mustela putorius furo GN=AIM1 PE=4 SV=1 Split=0 	0.0
+sp|Q9DC28|KC1D_MOUSE	tr|G3TPC2|G3TPC2_LOXAF	tr|G3TPC2|G3TPC2_LOXAF Uncharacterized protein OS=Loxodonta africana GN=CSNK1E PE=3 SV=1 Split=0 	0.0
+tr|F4PLH8|F4PLH8_DICFS	tr|M9NDM4|M9NDM4_DROME	tr|M9NDM4|M9NDM4_DROME Will die slowly, isoform B OS=Drosophila melanogaster GN=wds PE=4 SV=1 Split=0 	1.61e-20
+tr|F4PLH8|F4PLH8_DICFS	tr|M9NDM4|M9NDM4_DROME	tr|M9NDM4|M9NDM4_DROME Will die slowly, isoform B OS=Drosophila melanogaster GN=wds PE=4 SV=1 Split=0 	5.08e-19
+tr|F4PLH8|F4PLH8_DICFS	tr|M9NDM4|M9NDM4_DROME	tr|M9NDM4|M9NDM4_DROME Will die slowly, isoform B OS=Drosophila melanogaster GN=wds PE=4 SV=1 Split=0 	1.12e-17
+tr|F4PLH8|F4PLH8_DICFS	tr|M9NDM4|M9NDM4_DROME	tr|M9NDM4|M9NDM4_DROME Will die slowly, isoform B OS=Drosophila melanogaster GN=wds PE=4 SV=1 Split=0 	2.56e-17
+tr|F4PLH8|F4PLH8_DICFS	tr|M9NDM4|M9NDM4_DROME	tr|M9NDM4|M9NDM4_DROME Will die slowly, isoform B OS=Drosophila melanogaster GN=wds PE=4 SV=1 Split=0 	9.15e-12
+tr|E5Y4J3|E5Y4J3_BILWA	sp|Q3ANV5|MURD_CHLCH	sp|Q3ANV5|MURD_CHLCH UDP-N-acetylmuramoylalanine--D-glutamate ligase OS=Chlorobium chlorochromatii (strain CaD3) GN=murD PE=3 SV=1 Split=0 	7.63e-61
+tr|A0A101DNG0|A0A101DNG0_9EURY	tr|A0A101DNG0|A0A101DNG0_9EURY	tr|A0A101DNG0|A0A101DNG0_9EURY Probable tRNA pseudouridine synthase D OS=Thermococcales archaeon 44_46 GN=truD PE=3 SV=1 Split=0 	0.0
+tr|A0A059JHJ0|A0A059JHJ0_9EURO	tr|A0A022ULC3|A0A022ULC3_9EURO	tr|A0A022ULC3|A0A022ULC3_9EURO ATP-dependent RNA helicase DRS1 OS=Trichophyton interdigitale H6 GN=H101_02112 PE=4 SV=1 Split=0 	0.0
+tr|G0H316|G0H316_METMI	sp|Q6M083|GGR_METMP	sp|Q6M083|GGR_METMP Digeranylgeranylglycerophospholipid reductase OS=Methanococcus maripaludis (strain S2 / LL) GN=MMP0388 PE=3 SV=1 Split=0 	0.0
+tr|Q46A32|Q46A32_METBF	tr|Q46A32|Q46A32_METBF	tr|Q46A32|Q46A32_METBF Phosphoglycolate phosphatase OS=Methanosarcina barkeri (strain Fusaro / DSM 804) GN=Mbar_A2337 PE=3 SV=1 Split=0 	5.92e-166

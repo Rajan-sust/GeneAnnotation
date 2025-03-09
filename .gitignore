@@ -1,6 +1,4 @@
 qdrant_storage/
 venv/
-data/
-**/*.gz
 __pycache__
 .DS_Store
