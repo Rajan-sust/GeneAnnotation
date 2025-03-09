@@ -42,3 +42,16 @@ large_db=uniprot_trembl.fasta
 small_seq=stdin.part_001.fasta
 medium_seq=stdin.part_002.fasta
 long_seq=stdin.part_003.fasta
+
+
+# blastp
+cd /Users/rashedulislam/Documents/git_repos/GeneAnnotation/data
+
+# blastp with defaul parameters
+makeblastdb -in DB.fasta -dbtype prot -out my_blast_db
+# output 1 and 10 seqs
+blastp -query QUERY.fasta -db my_blast_db -out blastp_results.txt -num_threads 4 -evalue 1e-10 -outfmt "6 qseqid sseqid evalue" -max_target_seqs 1
+blastp -query QUERY.fasta -db my_blast_db -out blastp_results_10.txt -num_threads 4 -evalue 1e-10 -outfmt "6 qseqid sseqid evalue" -max_target_seqs 10
+
+# mmseq2
+
