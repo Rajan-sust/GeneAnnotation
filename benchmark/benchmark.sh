@@ -50,8 +50,15 @@ cd /Users/rashedulislam/Documents/git_repos/GeneAnnotation/data
 # blastp with defaul parameters
 makeblastdb -in DB.fasta -dbtype prot -out my_blast_db
 # output 1 and 10 seqs
-blastp -query QUERY.fasta -db my_blast_db -out blastp_results.txt -num_threads 4 -evalue 1e-10 -outfmt "6 qseqid sseqid evalue" -max_target_seqs 1
-blastp -query QUERY.fasta -db my_blast_db -out blastp_results_10.txt -num_threads 4 -evalue 1e-10 -outfmt "6 qseqid sseqid evalue" -max_target_seqs 10
+blastp -query QUERY.fasta -db my_blast_db -out blastp_results.txt -num_threads 4 -evalue 1e-10 -outfmt "6 qseqid sseqid stitle evalue" -max_target_seqs 1
+blastp -query QUERY.fasta -db my_blast_db -out blastp_results_10.txt -num_threads 4 -evalue 1e-10 -outfmt "6 qseqid sseqid stitle evalue" -max_target_seqs 10
 
-# mmseq2
 
+awk '!seen[$1]++' blastp_results.txt >blastp_results_remdupli.txt
+
+
+# downlaod from: https://www.uniprot.org/uniprotkb?query=ATP-dependent+DNA+helicase+RecG
+uniprotkb_ATP_dependent_DNA_helicase_Re_2025_03_09.fasta.gz
+
+# extract only "ATP-dependent DNA helicase RecG"
+python extract_seq.py uniprotkb_ATP_dependent_DNA_helicase_Re_2025_03_09.fasta ATP-dependent_DNA_helicase_RecG_only.fasta "ATP-dependent DNA helicase RecG OS="
