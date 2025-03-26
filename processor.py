@@ -2,7 +2,6 @@ import logging
 from dataclasses import dataclass
 from typing import List
 from Bio import SeqIO
-from qdrant_client import models
 
 logger = logging.getLogger(__name__)
 
