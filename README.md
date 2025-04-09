@@ -61,9 +61,8 @@ prodigal -i my.genome.fna  -g 11 -a protein.translations.faa
 - `--input_faa`: Path to input FASTA file containing protein sequences (required)
 - `--db_name`: Name of the Qdrant collection to search against (required)
 - `--output_file`: Path to output TSV file for results (required)
-- `--threshold`: Similarity threshold for annotations (default: 0.98)
-- `--model_name`: Protein embedding model to use ["prot_bert", "esm2", "prot_t5"] (default: "esm2")
-- `--qdrant_url`: URL for Qdrant server (default: "http://localhost:6333")
+- `--model_name`: Protein embedding model to use (choices: `prot_bert`, `esm2`, `prot_t5`, `openai`)
+
 
 ###### Example
 
