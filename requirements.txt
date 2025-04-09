@@ -3,7 +3,6 @@ numpy
 transformers
 torch
 biopython
-qdrant-client
 pandas
 sentencepiece
 openai

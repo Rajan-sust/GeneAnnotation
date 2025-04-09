@@ -116,10 +116,10 @@ class ProtT5Embedder(ProteinEmbedder):
 
         try:
             from transformers import T5EncoderModel, T5Tokenizer
-            tokenizer = T5Tokenizer.from_pretrained(model_name, do_lower_case=False)
-            model = T5EncoderModel.from_pretrained(model_name)
-            model = model.to(self.device)
-            model = model.eval()
+            self.tokenizer = T5Tokenizer.from_pretrained(model_name, do_lower_case=False)
+            self.model = T5EncoderModel.from_pretrained(model_name)
+            self.model = self.model.to(self.device)
+            self.model = self.model.eval()
         except Exception as e:
             logger.error(f"Failed to initialize T5 model: {str(e)}")
             raise EmbeddingError(f"Failed to initialize T5 model: {str(e)}")
@@ -133,16 +133,16 @@ class ProtT5Embedder(ProteinEmbedder):
             sequence = " ".join(re.sub(r"[UZOB]", "X", sequence))
 
             # Tokenize sequence
-            token_encoding = tokenizer.encode_plus(seq, add_special_tokens=True, return_tensors='pt')
-            input_ids = token_encoding['input_ids'].to(device)
-            attention_mask = token_encoding['attention_mask'].to(device)
+            token_encoding = self.tokenizer.encode_plus(sequence, add_special_tokens=True, return_tensors='pt')
+            input_ids = token_encoding['input_ids'].to(self.device)
+            attention_mask = token_encoding['attention_mask'].to(self.device)
 
             # Generate embeddings
             with torch.no_grad():
-                embedding_repr = model(input_ids, attention_mask=attention_mask)
+                embedding_repr = self.model(input_ids, attention_mask=attention_mask)
 
             # Extract embeddings (removing special tokens)
-            emb = embedding_repr.last_hidden_state[0, :len(protein_seq)]
+            emb = embedding_repr.last_hidden_state[0, :len(sequence)]
             result = emb.mean(dim=0).detach().cpu().numpy()
 
             # Normalize and convert to list
@@ -322,17 +322,17 @@ if __name__ == '__main__':
     # sequence = "MALLHSARVLSGVASAFHPGLAAAASARASSWWAHVEMGPPDPILGVTEAYKRDTNSKKL"
 
     # Test T5Embedder
-    # embedder = ProtT5Embedder()
-    # sequence = "MALLHSARVLSGVASAFHPGLAAAASARASSWWAHVEMGPPDPILGVTEAYKRDTNSKKL"
-    # embedding = embedder.get_embedding(sequence)
-    # print(f"ProtT5 embedding: {embedding}")
+    embedder = ProtT5Embedder()
+    sequence = "MALLHSARVLSGVASAFHPGLAAAASARASSWWAHVEMGPPDPILGVTEAYKRDTNSKKL"
+    embedding = embedder.get_embedding(sequence)
+    print(f"ProtT5 embedding: {embedding}")
 
     # OpenAIEmbedder
-    embedder = OpenAIEmbedder()
-    seq_q = "MRFSDNLAKILDKYENLGNKLSSGIMGDEFVKASKEYAELEDVVAKIKEYNKAKSELEEANNFKLEVGLDNATLEMIEDEIHTLENSLPKLERAVKIALLPKDDADSKSAIIEVRAGSGGEEAALFAAVLFNMYQRYAELKGWRFEILAISDTGIGGYKEASASIKGKDVFSKLKFESGVHRVQRVPETESQGRIHTSAATVAVLPEAEEVDIQIEDKDLRIDTYRASGAGGQHVNTTDSAVRITHIPTGITVALQDEKSQHKNKAKALKILRARIYEEERRKKEQERADSRRGQVGSGDRSERIRTYNFPQGRVSDHRINLTLYKIDEVVKNGQLDEFVEALIADDEAKKLLGIYSKNTA"
-    seq_target = "MSFSDNLAKILDKYENLGKKLSSGIMGDEFVKASKEYAEFEDVVAKIKEYNKAKSELEEANNFKLEVGLDNATLEMIEDEIHTLENSLPKLERAVKIALLPKDDADSKSAIIEVRAGSGGEEAALFAAVLFNMYQRYAELKGWRFEILAISDTGIGGYKEASASIKGKDVFSKLKFESGVHRVQRVPETESQGRIHTSAATVAVLPEAEEVDIKIEDKDLKIDTYRASGAGGQHVNTTDSAVRITHIPTSITVALQDEKSQHKNKAKAFKILRARIYEEERRKKEQERADSRRGQVGSGDRSERIRTYNFPQGRVSDHRINLTLYKIDEVVKNGQLDEFVEALIADDEAKKLSEI"
+    # embedder = OpenAIEmbedder()
+    # seq_q = "MRFSDNLAKILDKYENLGNKLSSGIMGDEFVKASKEYAELEDVVAKIKEYNKAKSELEEANNFKLEVGLDNATLEMIEDEIHTLENSLPKLERAVKIALLPKDDADSKSAIIEVRAGSGGEEAALFAAVLFNMYQRYAELKGWRFEILAISDTGIGGYKEASASIKGKDVFSKLKFESGVHRVQRVPETESQGRIHTSAATVAVLPEAEEVDIQIEDKDLRIDTYRASGAGGQHVNTTDSAVRITHIPTGITVALQDEKSQHKNKAKALKILRARIYEEERRKKEQERADSRRGQVGSGDRSERIRTYNFPQGRVSDHRINLTLYKIDEVVKNGQLDEFVEALIADDEAKKLLGIYSKNTA"
+    # seq_target = "MSFSDNLAKILDKYENLGKKLSSGIMGDEFVKASKEYAEFEDVVAKIKEYNKAKSELEEANNFKLEVGLDNATLEMIEDEIHTLENSLPKLERAVKIALLPKDDADSKSAIIEVRAGSGGEEAALFAAVLFNMYQRYAELKGWRFEILAISDTGIGGYKEASASIKGKDVFSKLKFESGVHRVQRVPETESQGRIHTSAATVAVLPEAEEVDIKIEDKDLKIDTYRASGAGGQHVNTTDSAVRITHIPTSITVALQDEKSQHKNKAKAFKILRARIYEEERRKKEQERADSRRGQVGSGDRSERIRTYNFPQGRVSDHRINLTLYKIDEVVKNGQLDEFVEALIADDEAKKLSEI"
 
-    q_emb = embedder.get_embedding(seq_q)
-    target_emb = embedder.get_embedding(seq_target)
+    # q_emb = embedder.get_embedding(seq_q)
+    # target_emb = embedder.get_embedding(seq_target)
 
-    print(np.dot(q_emb, target_emb))
+    # print(np.dot(q_emb, target_emb))
