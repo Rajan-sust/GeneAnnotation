@@ -275,10 +275,7 @@ class OpenAIEmbedder(ProteinEmbedder):
 
     def get_embedding(self, sequence: str) -> List[float]:
         try:
-            k = 21
-            stride = 13 # overlap 21 - 13
-            k_mers = [sequence[i:i+k] for i in range(0, len(sequence)-k+1, stride)]
-            sequence = " ".join(k_mers)
+            sequence = " ".join(re.sub(r"[UZOB]", "X", sequence))
             
             response = self.client.embeddings.create(
                 input=sequence,

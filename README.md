@@ -24,15 +24,16 @@ pip install -r requirements.txt
 - Support for multiple protein embedding models:
   - ProtBERT (Rostlab/prot_bert)
   - ESM2 (facebook/esm2)
+  - ProtT5 (Rostlab)
+  - OpenAI
 - Multi-threaded processing of FASTA files
-- Integration with Qdrant vector database
 - Flexible and modular architecture
 
 ###### Command Line Arguments
 
 - `--fasta_path`: Path to input FASTA file (required)
 - `--collection`: Name of the collection to create in the Database (required)
-- `--model_name`: Protein embedding model to use (choices: `prot_bert`, `esm2`, `prot_t5` default: `prot_bert`)
+- `--model_name`: Protein embedding model to use (choices: `prot_bert`, `esm2`, `prot_t5`, `openai`. default: `esm2`)
 - `--batch_size`: Batch size for processing sequences (default: 50)
 - `--qdrant_url`: URL for Qdrant server (default: "http://localhost:6333")
 
