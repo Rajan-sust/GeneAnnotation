@@ -1,5 +1,5 @@
 ### Prerequisite
-- Docker (https://docs.docker.com/engine/install/)
+
 - Prodigal (https://github.com/hyattpd/prodigal)
 - HF Access Token (https://huggingface.co/docs/hub/en/security-tokens)
 
@@ -17,16 +17,6 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### Pull the Qdrant Vector Database Image & run the db server
-```
-# Prerequisite: Docker Installation
-docker pull qdrant/qdrant
-
-docker run -d -p 6333:6333 \
-    -v $(pwd)/qdrant_storage:/qdrant/storage \
-    qdrant/qdrant
-```
-
 ### Build Vector DB of Protein
 
 ###### Features
@@ -42,7 +32,7 @@ docker run -d -p 6333:6333 \
 
 - `--fasta_path`: Path to input FASTA file (required)
 - `--collection`: Name of the collection to create in the Database (required)
-- `--model_name`: Protein embedding model to use (choices: "prot_bert", "esm2", "prot_t5" default: "prot_bert")
+- `--model_name`: Protein embedding model to use (choices: `prot_bert`, `esm2`, `prot_t5` default: `prot_bert`)
 - `--batch_size`: Batch size for processing sequences (default: 50)
 - `--qdrant_url`: URL for Qdrant server (default: "http://localhost:6333")
 
