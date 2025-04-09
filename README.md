@@ -35,7 +35,7 @@ pip install -r requirements.txt
 - `--collection`: Name of the collection to create in the Database (required)
 - `--model_name`: Protein embedding model to use (choices: `prot_bert`, `esm2`, `prot_t5`, `openai`. default: `esm2`)
 - `--batch_size`: Batch size for processing sequences (default: 50)
-- `--qdrant_url`: URL for Qdrant server (default: "http://localhost:6333")
+
 
 
 ###### Usage
