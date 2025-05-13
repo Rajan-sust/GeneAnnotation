@@ -32,7 +32,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--fasta_path', type=str, required=True, help='Path to input FASTA file')
     parser.add_argument('--collection', type=str, required=True, help='Name of the collection to create in the Database')
     parser.add_argument('--batch_size', type=int, default=50, help='Batch size for processing sequences')
-    parser.add_argument('--model_name', type=str, default="esm2", choices=["prot_bert", "esm2", "prot_t5", "openai"], help='Protein embedding model to use')
+    parser.add_argument('--model_name', type=str, default="esm2", choices=["prot_bert", "esm2_small", "esm2_large", "prot_t5", "openai"], help='Protein embedding model to use')
 
     args = parser.parse_args()
 
