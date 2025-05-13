@@ -293,8 +293,10 @@ def get_embedder(model_name: str) -> ProteinEmbedder:
     try:
         if model_name.lower() == "prot_bert":
             return ProtBertEmbedder()
-        elif model_name.lower() == "esm2":
-            return ESM2Embedder()
+        elif model_name.lower() == "esm2_small":
+            return ESM2Embedder(model_name="facebook/esm2_t12_35M_UR50D")
+        elif model_name.lower() == "esm2_large":
+            return ESM2Embedder(model_name="facebook/esm2_t36_3B_UR50D")
         elif model_name.lower() == "prot_t5":
             return ProtT5Embedder()
         elif model_name.lower() == "openai":

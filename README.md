@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 - `--fasta_path`: Path to input FASTA file (required)
 - `--collection`: Name of the collection to create in the Database (required)
-- `--model_name`: Protein embedding model to use (choices: `prot_bert`, `esm2`, `prot_t5`, `openai`. default: `esm2`)
+- `--model_name`: Protein embedding model to use (choices: `prot_bert`, `esm2_small`, `esm2_large`, `prot_t5`, `openai`. default: `esm2`)
 - `--batch_size`: Batch size for processing sequences (default: 50)
 
 
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 ```
 python3 db_build.py --fasta_path ./db.faa \
 --collection esm2_tbl \
---model_name esm2 \
+--model_name esm2_small \
 --batch_size 2
 ```
 
@@ -61,7 +61,7 @@ prodigal -i my.genome.fna  -g 11 -a protein.translations.faa
 - `--input_faa`: Path to input FASTA file containing protein sequences (required)
 - `--db_name`: Name of the Qdrant collection to search against (required)
 - `--output_file`: Path to output TSV file for results (required)
-- `--model_name`: Protein embedding model to use (choices: `prot_bert`, `esm2`, `prot_t5`, `openai`)
+- `--model_name`: Protein embedding model to use (choices: `prot_bert`, `esm2_small`, `esm2_large`, `prot_t5`, `openai`)
 
 
 ###### Example
@@ -70,7 +70,7 @@ prodigal -i my.genome.fna  -g 11 -a protein.translations.faa
 python3 annotate.py --input_faa ./QUERY.fasta \
                     --collection esm2_tbl \
                     --output_file results_esm2.tsv \
-                    --model_name esm2
+                    --model_name esm2_small
 ```
 
 ###### Output Format
