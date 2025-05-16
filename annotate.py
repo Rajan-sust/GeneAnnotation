@@ -29,8 +29,8 @@ def parse_args():
                        help='Path to output TSV file')
     parser.add_argument('--threshold', type=float, default=0.98, 
                        help='Similarity threshold for annotations')
-    parser.add_argument('--model_name', type=str, default="esm2",
-                       choices=["prot_bert", "esm2", "openai"],
+    parser.add_argument('--model_name', type=str, default="esm2_small",
+                       choices=["prot_bert", "esm2_small", "esm2_large", "openai", "prot_t5"],
                        help='Protein embedding model to use')
     return parser.parse_args()
 
