@@ -144,7 +144,7 @@ class ProteinAnnotator:
                 # print(self.results)            
                 # Log progress every 100 sequences
                 if len(self.results) % 100 == 0:
-                    logger.info(f"Processed {len(self.results)} sequences...")
+                    logger.info(f"Processed a batch ...")
 
             # Save results
             df = pd.DataFrame(self.results)
