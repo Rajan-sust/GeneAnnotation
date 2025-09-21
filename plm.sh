@@ -24,12 +24,14 @@ for model in esm2_large; do
             --embedding_batch_size 12 \
             --num_workers 20
 
-        # Annotate with the same model
+        # Annotate with the same model using CPU optimization
         python3 annotate.py \
             --input_faa "data/uniprot_sprot_5000.fasta" \
             --collection "${filename}_${model}_tbl" \
             --output_file $output/"${filename}_${model}_results.tsv" \
-            --model_name "$model"
+            --model_name "$model" \
+            --embedding_batch_size 12 \
+            --num_workers 20
     done 
 done
 
