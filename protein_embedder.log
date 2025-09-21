@@ -1,0 +1,33 @@
+2025-09-20 16:06:42,687 - INFO - Initializing ESM2Embedder using device: mps
+2025-09-20 16:07:11,999 - ERROR - Program failed: Failed to initialize database: <ConnectionConfigException: (code=1, message=milvus-lite is required for local database connections. Please install it with: pip install pymilvus[milvus_lite])>
+2025-09-20 16:08:43,636 - INFO - Initializing ESM2Embedder using device: mps
+2025-09-20 16:09:07,763 - ERROR - Program failed: Failed to initialize database: <ConnectionConfigException: (code=1, message=milvus-lite is required for local database connections. Please install it with: pip install pymilvus[milvus_lite])>
+2025-09-20 16:10:30,759 - INFO - Initializing ESM2Embedder using device: mps
+2025-09-20 16:10:57,445 - INFO - Processing 5000 sequences from data/uniprot_sprot_5000.fasta
+2025-09-20 16:12:11,759 - INFO - Successfully Processed 2/5000
+2025-09-20 16:13:23,027 - INFO - Successfully Processed 4/5000
+2025-09-20 17:25:43,021 - INFO - Initializing ESM2Embedder using device: mps
+2025-09-20 17:26:15,612 - INFO - Processing 5000 valid sequences from data/uniprot_sprot_5000.fasta
+2025-09-20 17:30:53,660 - INFO - Initializing ESM2Embedder using device: mps
+2025-09-20 17:31:22,379 - INFO - Processing 5000 valid sequences from data/uniprot_sprot_5000.fasta
+2025-09-20 17:34:53,053 - INFO - Embedding Progress: 16/5000 sequences (0.3%) | Elapsed: 211.0s | ETA: 65725.1s
+2025-09-20 17:34:53,253 - INFO - Database Upload: 16 sequences uploaded to database
+2025-09-20 17:37:39,974 - INFO - Loading embedding model: esm2_large
+2025-09-20 17:37:40,009 - INFO - Initializing ESM2Embedder using device: mps
+2025-09-20 17:38:03,416 - INFO - Embedding model loaded successfully: ESM2Embedder
+2025-09-20 17:38:04,763 - INFO - Processor initialized successfully
+2025-09-20 17:38:05,107 - INFO - Processing 5000 valid sequences from data/uniprot_sprot_5000.fasta
+2025-09-20 17:38:05,107 - INFO - Starting embedding batch 1: sequences 1-16
+2025-09-20 17:38:05,107 - INFO - Processing batch of 16 sequences with ESM2 batch embedding
+2025-09-20 17:38:05,107 - INFO - Tokenizing 16 sequences...
+2025-09-20 17:38:05,131 - INFO - Moving batch to device: mps
+2025-09-20 17:38:05,135 - INFO - Generating embeddings on mps...
+2025-09-20 17:41:29,772 - INFO - Embeddings generated successfully
+2025-09-20 17:41:31,016 - INFO - Completed embedding batch 1 in 205.9s (16 successful)
+2025-09-20 17:41:31,016 - INFO - Embedding Progress: 16/5000 sequences (0.3%) | Elapsed: 206.3s | ETA: 64247.6s
+2025-09-20 17:41:31,134 - INFO - Database Upload: 16 sequences uploaded to database
+2025-09-20 17:41:31,135 - INFO - Starting embedding batch 2: sequences 17-32
+2025-09-20 17:41:31,135 - INFO - Processing batch of 16 sequences with ESM2 batch embedding
+2025-09-20 17:41:31,137 - INFO - Tokenizing 16 sequences...
+2025-09-20 17:41:31,169 - INFO - Moving batch to device: mps
+2025-09-20 17:41:31,171 - INFO - Generating embeddings on mps...

@@ -2,12 +2,14 @@
 
 # Clone the repo from here (https://github.com/Rajan-sust/GeneAnnotation) and run the benchmarking. 
 
-cd /home/rashedul/project/GeneAnnotation/
+#cd /home/rashedul/project/GeneAnnotation/
+
+cd /Users/rashedulislam/Documents/git_repos/GeneAnnotation
 
 # Build database and run annotation
 # for model in prot_bert prot_t5 esm2; do
 for model in prot_t5; do  
-    for f in data/uniprot_sprot_80000.fasta; do 
+    for f in data/uniprot_sprot_5000.fasta; do 
         echo "Processing file: $f with model: $model"
         filename=$(basename "$f" .fasta)  
 

@@ -45,6 +45,10 @@ class ProteinEmbedder(ABC):
         """Generate embedding for a protein sequence."""
         pass
 
+    def get_batch_embeddings(self, sequences: List[str]) -> List[List[float]]:
+        """Generate embeddings for a batch of protein sequences. Override for optimized batch processing."""
+        return [self.get_embedding(seq) for seq in sequences]
+
     def validate_embedding(self, embedding: List[float]) -> List[float]:
         """Validate embeddings to ensure they are well-formed."""
         if not embedding:
@@ -253,6 +257,58 @@ class ESM2Embedder(ProteinEmbedder):
             logger.error(f"Failed to generate embedding: {str(e)}")
             raise EmbeddingError(f"Failed to generate embedding: {str(e)}")
 
+    def get_batch_embeddings(self, sequences: List[str], max_length: int = 1024) -> List[List[float]]:
+        """Generate embeddings for a batch of sequences efficiently."""
+        logger.info(f'Processing batch of {len(sequences)} sequences with ESM2 batch embedding')
+        try:
+            # Preprocess all sequences
+            processed_sequences = []
+            for sequence in sequences:
+                # Remove whitespace and non-amino acid characters
+                sequence = re.sub(r'[^A-Z]', '', sequence.upper())
+                # Replace rare amino acids with X
+                sequence = re.sub(r'[UZOB]', 'X', sequence)
+                processed_sequences.append(sequence)
+
+            # Tokenize all sequences at once with padding
+            logger.info(f'Tokenizing {len(processed_sequences)} sequences...')
+            inputs = self.tokenizer(
+                processed_sequences,
+                return_tensors="pt",
+                padding=True,
+                truncation=True,
+                max_length=max_length,
+                add_special_tokens=True
+            )
+
+            # Move to device
+            logger.info(f'Moving batch to device: {self.device}')
+            inputs = {key: val.to(self.device) for key, val in inputs.items()}
+
+            # Generate embeddings for the entire batch
+            logger.info(f'Generating embeddings on {self.device}...')
+            with torch.no_grad():
+                outputs = self.model(**inputs)
+            logger.info(f'Embeddings generated successfully')
+
+            # Process batch embeddings
+            last_hidden_state = outputs.last_hidden_state
+            batch_embeddings = torch.mean(last_hidden_state, dim=1)
+            batch_embeddings = batch_embeddings.cpu().numpy()
+
+            # Normalize and convert to lists
+            result_embeddings = []
+            for embedding in batch_embeddings:
+                normalized_embedding = normalize_l2(embedding)
+                result_embeddings.append(self.validate_embedding(normalized_embedding.tolist()))
+
+            return result_embeddings
+
+        except Exception as e:
+            logger.error(f"Failed to generate batch embeddings: {str(e)}")
+            # Fallback to individual processing
+            return [self.get_embedding(seq) for seq in sequences]
+
 
 class OpenAIEmbedder(ProteinEmbedder):
     """Protein embedder using the OpenAI GPT model."""
@@ -293,7 +349,7 @@ def get_embedder(model_name: str) -> ProteinEmbedder:
     try:
         if model_name.lower() == "prot_bert":
             return ProtBertEmbedder()
-        elif model_name.lower() == "esm2_small":
+        elif model_name.lower() in ["esm2", "esm2_small"]:
             return ESM2Embedder(model_name="facebook/esm2_t12_35M_UR50D")
         elif model_name.lower() == "esm2_large":
             return ESM2Embedder(model_name="facebook/esm2_t36_3B_UR50D")
